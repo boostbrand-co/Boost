@@ -1,6 +1,6 @@
 # BOOST Studio OS
 
-BOOST Studio OS is the internal operating layer for repeatable strategic, creative, research, writing, design, communication, and AI-assisted workflows.
+BOOST Studio OS is the internal operating layer for repeatable strategic, creative, research, writing, design, communication, growth, and AI-assisted workflows.
 
 It exists so future work does not start from zero and quality does not depend on remembering how a prior project was handled.
 
@@ -13,11 +13,13 @@ Reusable systems such as:
 - verbal identity systems
 - research and audit methods
 - design-system direction
+- offer strategy
 - content strategy
+- growth strategy
 - website experience standards
 - client communication rules
 - prose quality standards
-- future growth / operations skills
+- future operations / creative systems
 
 ## What does not belong here
 
@@ -49,9 +51,13 @@ Project-specific truth stays in the project. Studio OS stores the method used to
       SKILL.md
     design-system-direction/
       SKILL.md
-    research-audit/
+    offer-strategy/
       SKILL.md
     content-strategy/
+      SKILL.md
+    growth-strategy/
+      SKILL.md
+    research-audit/
       SKILL.md
     web-experience/
       SKILL.md
