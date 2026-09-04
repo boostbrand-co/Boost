@@ -1,8 +1,8 @@
-# BOOST Studio Skills
+# BOOST Studio OS — Skill Registry
 
 This directory contains reusable Claude skills maintained by Ana Pau Hinojosa / BOOST.
 
-The goal is to turn repeated creative and strategic standards into explicit operating systems so future work starts from the same quality bar.
+The purpose is to turn repeated strategic, creative, research, writing, design, and communication standards into explicit operating systems so future work starts from the same quality bar.
 
 ## Naming standard
 
@@ -11,7 +11,6 @@ Use lowercase kebab-case for every skill directory and frontmatter `name`.
 Examples:
 
 - `presentation-design`
-- `investor-grade-presentations`
 - `brand-strategy`
 - `verbal-identity`
 - `design-system-direction`
@@ -25,9 +24,9 @@ Each skill lives at:
 
 `.claude/skills/<skill-name>/SKILL.md`
 
-Use `SKILL.md` as the only canonical filename inside a skill folder. Do not version filenames such as `skill-v2.md`; keep version numbers in frontmatter.
+Use `SKILL.md` as the canonical filename inside every skill folder. Keep version numbers in frontmatter, never in filenames.
 
-## Skill frontmatter standard
+## Frontmatter standard
 
 ```yaml
 ---
@@ -41,19 +40,6 @@ metadata:
 ---
 ```
 
-## Skill title standard
-
-The folder and frontmatter use machine-friendly kebab-case.
-The visible H1 uses clear title case.
-
-Example:
-
-Folder: `presentation-design`
-
-Frontmatter: `name: presentation-design`
-
-Document title: `# Presentation Design`
-
 ## Current skills
 
 ### `presentation-design`
@@ -62,20 +48,76 @@ Universal presentation quality system. Use for client decks, proposals, sales pr
 ### `investor-grade-presentations`
 Specialized extension for fundraising and investor-facing presentations. Apply `presentation-design` first, then add investor-specific narrative, evidence, financial, validation, and ask discipline.
 
+### `prose-quality`
+Universal professional writing standard. Applies Stop-Slop principles while preserving useful professional language, specificity, and natural rhythm.
+
+### `brand-strategy`
+Reusable method for category definition, business objective, audiences, positioning, differentiation, promise, product truth, and messaging architecture.
+
+### `verbal-identity`
+Reusable voice-system method covering personality, tone, sliders, lexicon, message rules, UX copy, and examples.
+
+### `design-system-direction`
+Reusable creative-direction method for translating strategy into visual systems across web, product, presentations, campaigns, and social content.
+
+### `research-audit`
+Evidence-first research and audit system with source hierarchy, contradiction tracking, competitive analysis, findings, and prioritized recommendations.
+
+### `content-strategy`
+Audience- and business-led content planning system covering territories, formats, proof, hooks, CTA logic, production, and measurement.
+
+### `web-experience`
+Website and landing-page system covering information architecture, offer hierarchy, conversion paths, proof placement, product truth, motion, mobile, and measurement.
+
+### `client-communications`
+Natural, concise client communication system for Slack, email, WhatsApp, updates, feedback, decisions, follow-ups, and boundaries.
+
+## Skill categories
+
+Use these values consistently in `metadata.category`:
+
+- `strategy`
+- `research`
+- `writing`
+- `design`
+- `communication`
+- `operations`
+- `growth`
+
+Do not invent a new category when an existing one fits.
+
 ## Governance
 
-When a workflow becomes repeatable and materially improves quality, document it as a skill.
+Create a skill when a workflow is:
+
+1. reusable across multiple projects
+2. important enough that inconsistency hurts quality
+3. mature enough to state decision rules
+4. distinct from client-specific brand/product information
 
 A skill should contain:
 
 - purpose and trigger
-- quality standard
+- core principle
 - workflow
 - decision rules
-- evidence / safety constraints
+- evidence / safety constraints where relevant
 - acceptance checklist
 
-Do not create a skill for a single client's branding or one-off project. Client-specific systems belong in that project's files. Skills capture reusable methodology.
+Do not create skills for one client’s branding, one campaign, or a one-off deliverable. Client-specific systems belong in project files. Skills capture reusable methodology.
+
+## Dependency rule
+
+Skills may build on other skills.
+
+Examples:
+
+- `investor-grade-presentations` depends on `presentation-design`
+- `verbal-identity` uses `prose-quality`
+- `client-communications` uses `prose-quality`
+- `web-experience` may use `brand-strategy`, `verbal-identity`, and `design-system-direction`
+
+When multiple skills apply, use the most foundational skill first.
 
 ## Repository direction
 
@@ -83,4 +125,9 @@ Recommended repository identity: **BOOST Studio OS**.
 
 Recommended GitHub repository slug: `boost-studio-os`.
 
-This name is broad enough to contain presentation systems, writing standards, brand strategy methods, creative direction, research workflows, and future internal AI operating standards without tying the repository to one website or one client.
+Recommended long-term separation:
+
+- `boost-website` — public BOOST website/application
+- `boost-studio-os` — reusable internal methods, skills, standards, templates, and AI operating rules
+
+Until the repositories are separated, keep Studio OS assets inside `.claude/skills/` and `studio-os/` so they remain clearly distinct from website code.
