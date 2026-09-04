@@ -2,7 +2,7 @@
 
 This directory contains reusable Claude skills maintained by Ana Pau Hinojosa / BOOST.
 
-The purpose is to turn repeated strategic, creative, research, writing, design, and communication standards into explicit operating systems so future work starts from the same quality bar.
+The purpose is to turn repeated strategic, creative, research, writing, design, communication, growth, and operating standards into explicit systems so future work starts from the same quality bar.
 
 ## Naming standard
 
@@ -14,7 +14,9 @@ Examples:
 - `brand-strategy`
 - `verbal-identity`
 - `design-system-direction`
+- `offer-strategy`
 - `content-strategy`
+- `growth-strategy`
 - `research-audit`
 - `web-experience`
 - `client-communications`
@@ -60,11 +62,17 @@ Reusable voice-system method covering personality, tone, sliders, lexicon, messa
 ### `design-system-direction`
 Reusable creative-direction method for translating strategy into visual systems across web, product, presentations, campaigns, and social content.
 
-### `research-audit`
-Evidence-first research and audit system with source hierarchy, contradiction tracking, competitive analysis, findings, and prioritized recommendations.
+### `offer-strategy`
+Commercial packaging method for ICP fit, offer architecture, scope, pricing logic, qualification, proof, and conversion paths.
 
 ### `content-strategy`
 Audience- and business-led content planning system covering territories, formats, proof, hooks, CTA logic, production, and measurement.
+
+### `growth-strategy`
+Measured acquisition and growth method covering funnel logic, channel roles, paid acquisition, experiments, budgets, KPI trees, operating cadence, and scale gates.
+
+### `research-audit`
+Evidence-first research and audit system with source hierarchy, contradiction tracking, competitive analysis, findings, and prioritized recommendations.
 
 ### `web-experience`
 Website and landing-page system covering information architecture, offer hierarchy, conversion paths, proof placement, product truth, motion, mobile, and measurement.
@@ -116,8 +124,27 @@ Examples:
 - `verbal-identity` uses `prose-quality`
 - `client-communications` uses `prose-quality`
 - `web-experience` may use `brand-strategy`, `verbal-identity`, and `design-system-direction`
+- `content-strategy` may use `brand-strategy`, `verbal-identity`, and `growth-strategy`
+- `growth-strategy` may use `offer-strategy` and `research-audit`
 
 When multiple skills apply, use the most foundational skill first.
+
+## Recommended execution order by task
+
+### Brand rebuild
+`research-audit` → `brand-strategy` → `verbal-identity` → `design-system-direction`
+
+### Website
+`research-audit` → `offer-strategy` → `brand-strategy` → `verbal-identity` → `design-system-direction` → `web-experience`
+
+### Content system
+`research-audit` → `brand-strategy` → `verbal-identity` → `content-strategy` → `growth-strategy`
+
+### Growth / GTM
+`research-audit` → `offer-strategy` → `growth-strategy`
+
+### Presentation
+Relevant strategy/research skill(s) → `presentation-design`; add `investor-grade-presentations` only for fundraising/investor work.
 
 ## Repository direction
 
