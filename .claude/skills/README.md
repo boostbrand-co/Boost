@@ -1,32 +1,23 @@
 # BOOST Studio OS — Skill Registry
 
-This directory contains reusable Claude skills maintained by Ana Pau Hinojosa / BOOST.
+This directory is the canonical machine-readable skill library for BOOST.
 
-The purpose is to turn repeated strategic, creative, research, writing, design, communication, growth, and operating standards into explicit systems so future work starts from the same quality bar.
+Human-friendly documentation lives in:
+
+- `studio-os/README.md`
+- `studio-os/SKILLS_CATALOG.md`
+- `studio-os/IMPORT_SKILLS.md`
+- `studio-os/SKILL_TEMPLATE.md`
 
 ## Naming standard
 
 Use lowercase kebab-case for every skill directory and frontmatter `name`.
 
-Examples:
-
-- `presentation-design`
-- `brand-strategy`
-- `verbal-identity`
-- `design-system-direction`
-- `offer-strategy`
-- `content-strategy`
-- `growth-strategy`
-- `research-audit`
-- `web-experience`
-- `client-communications`
-- `prose-quality`
-
 Each skill lives at:
 
 `.claude/skills/<skill-name>/SKILL.md`
 
-Use `SKILL.md` as the canonical filename inside every skill folder. Keep version numbers in frontmatter, never in filenames.
+The canonical filename is always `SKILL.md`. Keep version numbers in frontmatter, never filenames.
 
 ## Frontmatter standard
 
@@ -35,7 +26,7 @@ Use `SKILL.md` as the canonical filename inside every skill folder. Keep version
 name: presentation-design
 description: One concise sentence describing when Claude should use the skill.
 metadata:
-  owner: Ana Pau Hinojosa / BOOST
+  owner: BOOST
   category: design
   purpose: Universal presentation quality standard
   version: 1.0
@@ -44,77 +35,76 @@ metadata:
 
 ## Current skills
 
-### `presentation-design`
-Universal presentation quality system. Use for client decks, proposals, sales presentations, brand decks, audits, research, workshops, internal decks, reports, case-study decks, keynotes, and investor presentations.
+### Strategy
+- `brand-strategy`
+- `offer-strategy`
+- `content-strategy`
+- `growth-strategy`
 
-### `investor-grade-presentations`
-Specialized extension for fundraising and investor-facing presentations. Apply `presentation-design` first, then add investor-specific narrative, evidence, financial, validation, and ask discipline.
+### Research
+- `research-audit`
 
-### `prose-quality`
-Universal professional writing standard. Applies Stop-Slop principles while preserving useful professional language, specificity, and natural rhythm.
+### Writing & communication
+- `verbal-identity`
+- `prose-quality`
+- `client-communications`
 
-### `brand-strategy`
-Reusable method for category definition, business objective, audiences, positioning, differentiation, promise, product truth, and messaging architecture.
+### Design & experience
+- `presentation-design`
+- `design-system-direction`
+- `web-experience`
 
-### `verbal-identity`
-Reusable voice-system method covering personality, tone, sliders, lexicon, message rules, UX copy, and examples.
+### Specialized extensions
+- `investor-grade-presentations`
 
-### `design-system-direction`
-Reusable creative-direction method for translating strategy into visual systems across web, product, presentations, campaigns, and social content.
+See `studio-os/SKILLS_CATALOG.md` for descriptions and recommended skill chains.
 
-### `offer-strategy`
-Commercial packaging method for ICP fit, offer architecture, scope, pricing logic, qualification, proof, and conversion paths.
+## Categories
 
-### `content-strategy`
-Audience- and business-led content planning system covering territories, formats, proof, hooks, CTA logic, production, and measurement.
-
-### `growth-strategy`
-Measured acquisition and growth method covering funnel logic, channel roles, paid acquisition, experiments, budgets, KPI trees, operating cadence, and scale gates.
-
-### `research-audit`
-Evidence-first research and audit system with source hierarchy, contradiction tracking, competitive analysis, findings, and prioritized recommendations.
-
-### `web-experience`
-Website and landing-page system covering information architecture, offer hierarchy, conversion paths, proof placement, product truth, motion, mobile, and measurement.
-
-### `client-communications`
-Natural, concise client communication system for Slack, email, WhatsApp, updates, feedback, decisions, follow-ups, and boundaries.
-
-## Skill categories
-
-Use these values consistently in `metadata.category`:
+Use only these values in `metadata.category` unless the taxonomy is deliberately revised:
 
 - `strategy`
 - `research`
 - `writing`
 - `design`
 - `communication`
-- `operations`
 - `growth`
-
-Do not invent a new category when an existing one fits.
+- `operations`
 
 ## Governance
 
-Create a skill when a workflow is:
+Create a new skill only when a workflow is:
 
 1. reusable across multiple projects
 2. important enough that inconsistency hurts quality
 3. mature enough to state decision rules
-4. distinct from client-specific brand/product information
+4. meaningfully distinct from existing skills
+5. separate from client-specific facts or branding
 
-A skill should contain:
+Every mature skill should contain:
 
-- purpose and trigger
-- core principle
+- purpose / trigger
+- core principles
 - workflow
 - decision rules
-- evidence / safety constraints where relevant
+- boundaries / evidence discipline where relevant
 - acceptance checklist
 
-Do not create skills for one client’s branding, one campaign, or a one-off deliverable. Client-specific systems belong in project files. Skills capture reusable methodology.
+## Merge-before-create rule
 
-## Dependency rule
+Before creating a skill, check whether an existing skill already owns the topic.
+
+Examples:
+
+- slide quality / deck layouts → `presentation-design`
+- AI writing cleanup → `prose-quality`
+- positioning → `brand-strategy`
+- messaging / voice → `verbal-identity`
+- acquisition planning → `growth-strategy`
+
+Do not create duplicate variants such as `presentation-v2`, `premium-decks`, or `better-copy`.
+
+## Dependencies
 
 Skills may build on other skills.
 
@@ -129,32 +119,29 @@ Examples:
 
 When multiple skills apply, use the most foundational skill first.
 
-## Recommended execution order by task
+## Recommended execution order
 
 ### Brand rebuild
-`research-audit` → `brand-strategy` → `verbal-identity` → `design-system-direction`
+`research-audit → brand-strategy → verbal-identity → design-system-direction`
 
 ### Website
-`research-audit` → `offer-strategy` → `brand-strategy` → `verbal-identity` → `design-system-direction` → `web-experience`
+`research-audit → offer-strategy → brand-strategy → verbal-identity → design-system-direction → web-experience`
 
 ### Content system
-`research-audit` → `brand-strategy` → `verbal-identity` → `content-strategy` → `growth-strategy`
+`research-audit → brand-strategy → verbal-identity → content-strategy`
 
 ### Growth / GTM
-`research-audit` → `offer-strategy` → `growth-strategy`
+`research-audit → offer-strategy → growth-strategy`
 
 ### Presentation
-Relevant strategy/research skill(s) → `presentation-design`; add `investor-grade-presentations` only for fundraising/investor work.
+Relevant strategy/research skill(s) → `presentation-design`
 
-## Repository direction
+For investor-facing work:
 
-Recommended repository identity: **BOOST Studio OS**.
+Relevant strategy/research skill(s) → `presentation-design → investor-grade-presentations`
 
-Recommended GitHub repository slug: `boost-studio-os`.
+## Importing existing Claude skills
 
-Recommended long-term separation:
+Use `studio-os/IMPORT_SKILLS.md`.
 
-- `boost-website` — public BOOST website/application
-- `boost-studio-os` — reusable internal methods, skills, standards, templates, and AI operating rules
-
-Until the repositories are separated, keep Studio OS assets inside `.claude/skills/` and `studio-os/` so they remain clearly distinct from website code.
+Inventory first. Merge duplicates. Strip client-specific facts. Normalize naming and frontmatter. Update this registry and `studio-os/SKILLS_CATALOG.md` after migration.
