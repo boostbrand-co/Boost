@@ -1,61 +1,121 @@
-# BOOST® website
+# BOOST Studio OS
 
-Complete multi-page website. Next.js 16 (App Router), React 19, TypeScript, Tailwind v4.
-49 public routes, all statically prerendered.
+**BOOST Studio OS** is the internal operating system for how BOOST researches, thinks, writes, designs, presents, audits, and executes work with AI.
 
-## Run it
+It turns repeated standards into reusable skills so quality does not depend on memory, one chat, or one person remembering how a previous project was handled.
 
-```bash
-npm install
-npm run dev     # http://localhost:3000
-npm run build   # production build
-npm start       # serve the production build
-npx tsc --noEmit && npx eslint .   # typecheck and lint
+> **Method lives here. Client truth stays with the client.**
+
+## Start here
+
+### For Claude / AI work
+
+Read:
+
+1. `CLAUDE.md`
+2. `.claude/skills/README.md`
+3. the applicable `.claude/skills/<skill-name>/SKILL.md`
+
+### For humans
+
+Read:
+
+- [`studio-os/README.md`](studio-os/README.md) — how the operating system works
+- [`studio-os/SKILLS_CATALOG.md`](studio-os/SKILLS_CATALOG.md) — current skill library
+- [`studio-os/IMPORT_SKILLS.md`](studio-os/IMPORT_SKILLS.md) — how to bring existing Claude skills into the system
+- [`studio-os/SKILL_TEMPLATE.md`](studio-os/SKILL_TEMPLATE.md) — standard for creating a new skill
+
+## Current skill library
+
+### Strategy
+
+- `brand-strategy`
+- `offer-strategy`
+- `content-strategy`
+- `growth-strategy`
+
+### Research
+
+- `research-audit`
+
+### Writing & communication
+
+- `verbal-identity`
+- `prose-quality`
+- `client-communications`
+
+### Design & experience
+
+- `presentation-design`
+- `design-system-direction`
+- `web-experience`
+
+### Specialized extension
+
+- `investor-grade-presentations`
+
+The universal presentation standard is **`presentation-design`**. The investor skill is an extension only when the audience is investors, financing partners, or diligence reviewers.
+
+## Repository structure
+
+```text
+Boost/
+├── README.md
+├── CLAUDE.md
+├── AGENTS.md
+├── WEBSITE.md
+│
+├── .claude/
+│   └── skills/
+│       ├── README.md
+│       ├── presentation-design/
+│       │   └── SKILL.md
+│       ├── brand-strategy/
+│       │   └── SKILL.md
+│       ├── verbal-identity/
+│       │   └── SKILL.md
+│       └── ...
+│
+├── studio-os/
+│   ├── README.md
+│   ├── SKILLS_CATALOG.md
+│   ├── IMPORT_SKILLS.md
+│   └── SKILL_TEMPLATE.md
+│
+├── app/
+├── components/
+├── data/
+├── docs/
+└── public/
 ```
 
-Node 20 or newer. No environment variables are required to run. Analytics IDs are optional and
-documented in `docs/ANALYTICS_PLAN.md`.
+## Core operating principle
 
-## Deploy
+Before substantial work begins:
 
-**Vercel (recommended):** import the repo, framework detection handles the rest. No build config
-needed. Set the production domain, then update `site.domain` in `data/site.ts` so canonicals,
-sitemap and schema point at the right host.
+1. Identify the task and desired outcome.
+2. Identify the relevant skill or skill chain.
+3. Read the skill before executing.
+4. Layer project-specific facts, evidence, brand, and constraints on top.
+5. Execute to the skill’s acceptance checklist.
+6. If the project teaches a reusable lesson, update the skill after the project.
 
-**Any Node host:** `npm run build` then `npm start`, port 3000 by default.
+## What belongs in Studio OS
 
-**Static export:** possible with `output: "export"` in `next.config.ts` since every route is static,
-but the 404 and future API routes behave better on a Node host.
+Reusable methods, standards, quality bars, workflows, decision rules, templates, and acceptance criteria.
 
-Before going live: replace the team placeholders, confirm pricing, get legal sign-off on
-`/privacy` and `/terms` and remove their noindex flags, add the scheduling link, and add Open Graph
-images. The full list is in `docs/MISSING_CONTENT.md`.
+## What does not belong in Studio OS
 
-## Editing content
+Client logos, client facts, pricing, credentials, passwords, project-specific contracts, one-off campaign details, or unsupported assumptions.
 
-Content lives in `/data`, not in page files. Edit these and the pages follow:
+## Website
 
-| File | Contains |
-|---|---|
-| `data/site.ts` | Site facts, navigation, footer |
-| `data/services.ts` | 5 capability groups, 7 services |
-| `data/cases.ts` | 13 case studies, real metrics with sources |
-| `data/situations.ts` | 5 buyer situations |
-| `data/engagements.ts` | 4 engagement models, fit criteria |
-| `data/team.ts` | Team roles (placeholder, replace before launch) |
-| `data/insights.ts` | 6 research articles |
-| `data/system.ts` | Operating loop and all demonstration artifacts |
+The current BOOST website still lives in this repository. Its documentation has been separated so the Studio OS remains easy to understand.
 
-Structured this way so moving to a CMS later is a mapping exercise rather than a rebuild.
+See [`WEBSITE.md`](WEBSITE.md).
 
-## Rules this codebase follows
+---
 
-- No invented clients, metrics, quotes, credentials, prices or contract terms. Real client metrics
-  carry a visible source; illustrative data carries a demonstration badge.
-- Pricing appears as `[INVESTMENT RANGE TO CONFIRM]` until confirmed.
-- No em dashes in shipped copy.
-- Every page ships full HTML. Nothing important is JS-only.
-
-## Documentation
-
-See `docs/README.md`.
+**Owner:** BOOST  
+**System:** BOOST Studio OS  
+**Primary use:** Claude / AI-assisted strategic and creative work
