@@ -41,7 +41,7 @@ Read:
 ### Writing & communication
 
 - `verbal-identity`
-- `prose-quality`
+- `stop-slop-2`
 - `client-communications`
 
 ### Design & experience
@@ -53,6 +53,8 @@ Read:
 ### Specialized extension
 
 - `investor-grade-presentations`
+
+The universal writing cleanup standard is **`stop-slop-2`**. It combines Hardik Pandya's Stop Slop framework with BOOST's professional application and Message Mode.
 
 The universal presentation standard is **`presentation-design`**. The investor skill is an extension only when the audience is investors, financing partners, or diligence reviewers.
 
@@ -69,6 +71,8 @@ Boost/
 │   └── skills/
 │       ├── README.md
 │       ├── presentation-design/
+│       │   └── SKILL.md
+│       ├── stop-slop-2/
 │       │   └── SKILL.md
 │       ├── brand-strategy/
 │       │   └── SKILL.md
