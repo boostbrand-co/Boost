@@ -5,7 +5,7 @@ metadata:
   owner: Ana Pau Hinojosa / BOOST
   category: communication
   purpose: Reusable client communication standard
-  version: 1.0
+  version: 1.1
 ---
 
 # Client Communications
@@ -141,9 +141,9 @@ Avoid:
 
 Follow the client relationship and the user’s actual voice.
 
-## 10. Apply prose-quality
+## 10. Apply Stop Slop 2
 
-Always apply `prose-quality`.
+Always apply `stop-slop-2` in Message Mode.
 
 Especially avoid:
 
@@ -152,6 +152,8 @@ Especially avoid:
 - formulaic empathy
 - long justification
 - vague action language
+
+`stop-slop-2` owns the universal anti-AI writing rules and the channel-specific Message Mode. This skill adds client-relationship, scope, recommendation, and boundary logic.
 
 ## Acceptance checklist
 
