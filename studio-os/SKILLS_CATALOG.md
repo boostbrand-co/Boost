@@ -34,11 +34,11 @@ Defines how to audit a business, brand, market, customer, competitor set, websit
 ### `verbal-identity` — Core
 Defines brand voice, messaging hierarchy, terminology, language rules, audience adaptation, and practical verbal-system use.
 
-### `prose-quality` — Core
-Applies professional Stop-Slop principles to remove AI tells, filler, generic phrasing, dramatic formulae, and weak prose while preserving professional precision.
+### `stop-slop-2` — Core
+BOOST's universal human-writing standard. It combines Hardik Pandya's Stop Slop framework with professional application rules, speaker-voice preservation, and a dedicated Message Mode for Slack, WhatsApp, email, DMs, texts, replies, and other interpersonal communication.
 
 ### `client-communications` — Core
-Defines how BOOST writes client-facing messages, updates, requests, explanations, follow-ups, and recommendations clearly and naturally.
+Defines how BOOST handles client-facing decisions, updates, requests, explanations, follow-ups, scope, recommendations, and boundaries. It uses `stop-slop-2` in Message Mode for the writing itself.
 
 ## Design & experience
 
@@ -85,6 +85,14 @@ Relevant strategic context → `presentation-design`
 If investor-facing:
 
 Relevant strategic context → `presentation-design → investor-grade-presentations`
+
+### Writing / editing
+
+`stop-slop-2`
+
+For client communication:
+
+`client-communications → stop-slop-2` (Message Mode)
 
 ## Governance
 
