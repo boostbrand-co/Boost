@@ -31,7 +31,7 @@ If an existing skill already owns the topic, merge the useful methodology into t
 Examples:
 
 - deck layout guidance → `presentation-design`
-- copy humanization / AI-tell removal → `prose-quality`
+- copy humanization / AI-tell removal / natural message writing → `stop-slop-2`
 - positioning methodology → `brand-strategy`
 - tone / messaging rules → `verbal-identity`
 
@@ -56,7 +56,7 @@ Extract the reusable lesson instead.
 
 If a skill was derived from a public framework or named methodology, note the source inside the skill where appropriate.
 
-Example: `prose-quality` may reference Hardik Pandya’s public Stop-Slop framework while preserving BOOST’s professional application rules.
+Example: `stop-slop-2` materially incorporates Hardik Pandya’s public Stop Slop framework and adds BOOST’s professional application and Message Mode. Preserve attribution and source license information in the canonical skill.
 
 ## Required skill structure
 
@@ -92,6 +92,7 @@ Good:
 - `brand-strategy`
 - `client-communications`
 - `research-audit`
+- `stop-slop-2`
 
 Avoid:
 
