@@ -18,7 +18,7 @@ Reusable systems such as:
 - growth strategy
 - website experience standards
 - client communication rules
-- prose quality standards
+- human-writing / anti-AI prose standards
 - future operations / creative systems
 
 ## What does not belong here
@@ -43,7 +43,7 @@ Project-specific truth stays in the project. Studio OS stores the method used to
       SKILL.md
     investor-grade-presentations/
       SKILL.md
-    prose-quality/
+    stop-slop-2/
       SKILL.md
     brand-strategy/
       SKILL.md
@@ -79,6 +79,8 @@ Before Claude begins substantial work, it should:
 4. layer project-specific evidence and brand constraints on top
 5. execute to the skill’s acceptance checklist
 
+For prose, copy, editing, or messages, `stop-slop-2` is the default human-writing quality layer. When the output is a message, reply, Slack note, WhatsApp, email response, DM, or text, use its Message Mode.
+
 ## Naming
 
 Use lowercase kebab-case for machine-readable folders and frontmatter.
@@ -90,6 +92,7 @@ Good:
 - `brand-strategy`
 - `presentation-design`
 - `client-communications`
+- `stop-slop-2`
 
 Avoid:
 
