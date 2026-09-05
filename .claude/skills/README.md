@@ -46,7 +46,7 @@ metadata:
 
 ### Writing & communication
 - `verbal-identity`
-- `prose-quality`
+- `stop-slop-2`
 - `client-communications`
 
 ### Design & experience
@@ -97,7 +97,7 @@ Before creating a skill, check whether an existing skill already owns the topic.
 Examples:
 
 - slide quality / deck layouts → `presentation-design`
-- AI writing cleanup → `prose-quality`
+- AI writing cleanup / humanized prose / message naturalness → `stop-slop-2`
 - positioning → `brand-strategy`
 - messaging / voice → `verbal-identity`
 - acquisition planning → `growth-strategy`
@@ -111,8 +111,8 @@ Skills may build on other skills.
 Examples:
 
 - `investor-grade-presentations` depends on `presentation-design`
-- `verbal-identity` uses `prose-quality`
-- `client-communications` uses `prose-quality`
+- `verbal-identity` uses `stop-slop-2`
+- `client-communications` uses `stop-slop-2` in Message Mode
 - `web-experience` may use `brand-strategy`, `verbal-identity`, and `design-system-direction`
 - `content-strategy` may use `brand-strategy`, `verbal-identity`, and `growth-strategy`
 - `growth-strategy` may use `offer-strategy` and `research-audit`
