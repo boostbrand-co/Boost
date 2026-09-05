@@ -5,7 +5,7 @@ metadata:
   owner: Ana Pau Hinojosa / BOOST
   category: writing
   purpose: Reusable verbal identity method
-  version: 1.0
+  version: 1.1
 ---
 
 # Verbal Identity
@@ -159,7 +159,9 @@ Microcopy should state:
 
 ## 10. Professional prose filter
 
-Apply the `prose-quality` skill.
+Apply the `stop-slop-2` skill.
+
+Use its universal mode for brand copy and its Message Mode when writing replies, DMs, email responses, Slack, WhatsApp, or other interpersonal communication.
 
 Avoid:
 
