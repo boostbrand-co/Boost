@@ -53,6 +53,15 @@ Defines how to translate strategy into a visual system with hierarchy, typograph
 ### `web-experience` — Core
 Defines how to structure and critique websites around buyer logic, offer clarity, proof, conversion, content hierarchy, UX, brand expression, and credible interaction patterns.
 
+## Operations
+
+### `performance-reporting` — Core
+Defines how BOOST turns monthly marketing source data into a reconciled, evidence-led client report.
+
+It owns data normalization, period discipline, KPI directionality, evidence levels, correlation-vs-causation rules, content and paid-media analysis, strategic recommendations, account memory, report module selection, and final reporting QA.
+
+Use `stop-slop-2` for client-facing prose. When the output is a presentation, hand the approved analysis to `presentation-design` and the current BOOST Reporting Design System.
+
 ## Specialized extensions
 
 ### `investor-grade-presentations` — Specialized
@@ -85,6 +94,14 @@ Relevant strategic context → `presentation-design`
 If investor-facing:
 
 Relevant strategic context → `presentation-design → investor-grade-presentations`
+
+### Monthly performance report
+
+`performance-reporting → stop-slop-2 → presentation-design`
+
+Then apply:
+
+`studio-os/reporting/BOOST_REPORTING_DESIGN_SYSTEM.md → active client reporting config`
 
 ### Writing / editing
 
