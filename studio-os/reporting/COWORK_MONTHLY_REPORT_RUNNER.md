@@ -55,6 +55,7 @@ Identify:
 - paid / organic scope
 - primary client objective
 - service role of each channel
+- strategic priorities / active business initiatives in the client config
 - priority KPIs
 - reporting depth by channel
 - comparison period
@@ -67,6 +68,8 @@ Examples:
 - If Meta Ads is an add-on used mainly to amplify content, do not build a campaign-operations report around it.
 - If Meta Ads is the core acquisition service, deeper campaign and creative analysis may be appropriate.
 - If the client is building a personal brand / community, prioritize reach quality, profile actions, saves, content patterns and consistency over forcing sales metrics to the front.
+
+Do not infer that the most measurable channel is the most important channel.
 
 If the client config contains unresolved fields that materially affect analysis, flag them before final delivery. Continue collecting data when possible instead of stopping the workflow unnecessarily.
 
@@ -199,6 +202,17 @@ Winners, losers, repeatable signals, outliers.
 ### Paid media
 Match depth to the account's service role. Separate client-relevant result from agency-only diagnostics.
 
+### Strategic priorities
+Evaluate active business initiatives even when their current executions underperform.
+
+Separate:
+
+- current performance
+- strategic / commercial importance
+- what should change in the next execution or test
+
+Do not recommend dropping a client-approved priority solely because one post, one format or one short test performed poorly.
+
 ### FACTS
 What the data directly supports.
 
@@ -308,6 +322,7 @@ The design should be client-ready without a normal Canva cleanup step.
 
 Use:
 
+- the canonical BOOST report cover
 - real content thumbnails when available
 - presentation-grade charts
 - designed tables
@@ -326,12 +341,33 @@ Avoid:
 - tiny text
 - screenshot-heavy analytics pages
 - full client-color wallpaper on every slide
+- stretched, squeezed or distorted images
 
 ### Cover requirement
 
-Use the approved client identity and `CLIENT × BOOST` system.
+Use the canonical BOOST report-cover structure from `BOOST_REPORTING_DESIGN_SYSTEM.md`.
 
-Do not generate an unrelated decorative cover.
+The cover is not a fresh design prompt every month.
+
+Required behavior:
+
+- black / near-black left panel
+- dark verified client-color right panel
+- thin BOOST-orange far-left rule
+- approved BOOST identifier top-left
+- fixed editorial title / metadata structure
+- reporting period treatment on the right
+
+Photography is optional.
+
+If a photo is used:
+
+- preserve its aspect ratio
+- crop intentionally to fill the frame
+- never stretch it horizontally or vertically
+- choose another asset or no image if the source cannot fit cleanly
+
+A clean non-photographic cover is preferable to a distorted image.
 
 ## Phase 10 — Presentation QA
 
@@ -357,6 +393,8 @@ Check:
 - chart legibility
 - table legibility
 - image crop
+- image aspect ratio
+- logo proportions
 - metric consistency
 - text length
 - source notes
@@ -374,10 +412,13 @@ Check:
 - Did unnecessary acronyms survive?
 - Is any agency-only information taking up client-facing space?
 - Are next moves scannable?
+- Are strategic business priorities represented accurately even when current executions underperformed?
 
 Create:
 
 `qa/presentation-qa.md`
+
+Any stretched / distorted image is a QA failure and must be corrected before delivery.
 
 ## Phase 11 — Final-state QA
 
@@ -387,6 +428,8 @@ Before client-ready export:
 - verify all dates use the correct local timezone
 - verify report period on every slide / footer
 - verify client-facing file names
+- verify the canonical cover is used correctly
+- verify no image, screenshot or logo is distorted
 
 ## Phase 12 — Deliver for BOOST review
 
@@ -408,7 +451,8 @@ Return a concise handoff to Ana containing:
 2. primary period read
 3. material data caveats
 4. 2–4 decisions proposed
-5. anything that needs human confirmation
+5. strategic-priority updates
+6. anything that needs human confirmation
 
 ## Monthly runner command template
 
@@ -423,9 +467,11 @@ Do not modify any live account, campaign, content, budget, settings, messages, o
 
 Complete data QA before analysis.
 Match reporting depth to the client's actual objective and BOOST's service role on each channel.
+Respect strategic priorities from the client config even when their current executions underperform.
 Translate technical platform data into clear client-facing language before designing the deck.
 Apply performance-reporting, stop-slop-2, presentation-design, and the BOOST Reporting Design System.
 Use prior reports for continuity, not as rigid slide templates.
+Use the canonical BOOST report cover and never stretch or distort imagery.
 
 Produce a final-quality editable presentation and PDF preview for BOOST review. Keep unnecessary technical detail in appendix / internal notes. Do not send it to the client.
 ```
@@ -434,4 +480,4 @@ Produce a final-quality editable presentation and PDF preview for BOOST review. 
 
 This workflow succeeds when Ana can review the report as an editor / strategist instead of rebuilding it manually.
 
-If routine delivery still requires rebuilding the cover, restyling slides in Canva, manually transcribing platform tables, translating marketing jargon for the client, or rewriting generic AI analysis, the system needs another iteration.
+If routine delivery still requires rebuilding the cover, restyling slides in Canva, manually transcribing platform tables, translating marketing jargon for the client, correcting distorted imagery, or rewriting generic AI analysis, the system needs another iteration.
