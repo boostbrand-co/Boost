@@ -5,7 +5,7 @@ metadata:
   owner: BOOST
   category: operations
   purpose: Monthly marketing performance analysis and reporting standard
-  version: 1.1
+  version: 1.2
 ---
 
 # Performance Reporting
@@ -274,6 +274,27 @@ Useful analysis asks:
 - Which creative produces the downstream result the account cares about?
 - Are we seeing a repeatable pattern or one outlier?
 
+### Strategic priority vs current performance
+
+Performance and strategic importance are not the same thing.
+
+A client may have an initiative that matters commercially even when the first content or campaign executions perform poorly. In that case:
+
+1. state that the current execution underperformed,
+2. preserve the business importance of the initiative,
+3. diagnose what can change in framing, creative, offer communication, format, distribution or paid support,
+4. recommend a better test before recommending that the initiative be dropped.
+
+Do not remove or deprioritize a client-approved strategic priority solely because one organic post, one format, or one short test underperformed.
+
+Weak:
+`The student promotion ranked last, so remove it from the content plan.`
+
+Better:
+`The student offer underperformed in its first three organic executions. Because the offer remains a business priority, the next step is to strengthen the hook and value communication and support the new creative with paid amplification before deciding whether the initiative has low demand.`
+
+If the client config marks an initiative as a strategic priority, include it in analysis and next-step logic even when it is not a performance winner.
+
 ## 12. Paid-media analysis
 
 Match the depth of paid-media reporting to the role paid media plays in the account.
@@ -417,6 +438,8 @@ Do not prescribe arbitrary schedules, budgets, formats, or audience claims unles
 
 For client-facing next moves, keep each action scannable. Put technical implementation detail in speaker notes, appendix or internal analysis when it is not needed for client approval.
 
+When a strategic priority underperforms, recommendations should distinguish between **weak execution** and **weak business importance**. Improve the test before dropping the priority unless the client has changed direction or the evidence is strong enough to support that decision.
+
 ## 17. What not to do
 
 Do not:
@@ -435,6 +458,7 @@ Do not:
 - write six recommendations of equal priority when only two matter
 - soften material declines until they become meaningless
 - overwhelm the client with campaign / ad-set taxonomy that only the agency needs
+- treat a strategic initiative as unimportant only because its first execution performed poorly
 
 ## 18. Strategic memory
 
@@ -447,6 +471,7 @@ Track:
 - decisions made
 - recurring winners
 - recurring underperformers
+- strategic priorities
 - known benchmarks
 - unresolved questions
 - measurement gaps
@@ -563,6 +588,7 @@ Before delivery, verify:
 - [ ] recommendations trace to evidence
 - [ ] uncertainties are visible
 - [ ] reporting depth matches the actual service role
+- [ ] client-approved strategic priorities remain visible even when current execution underperforms
 
 ### Client comprehension
 - [ ] a smart non-marketer can understand the core report without explanation
