@@ -7,25 +7,60 @@ client:
 
 reporting:
   cadence: monthly
-  primary_report_type: mixed-social-paid
-  comparison_default: previous_comparable_month
+  primary_report_type: brand-content-with-paid-amplification
+  comparison_default: previous_comparable_period
   delivery_state: boost-review-before-client
+  core_deck_target: 8-10
+  appendix_allowed: true
+  client_comprehension_level: smart_business_owner_non_marketer
 
-business_objective:
-  primary: Generate customer conversations from digital marketing
-  status: inferred_from_existing_report
-  needs_confirmation: true
-  note: Existing July reporting treats initiated messages / conversations as the main paid-media outcome. Confirm whether this remains the account's current north-star business KPI.
+business_context:
+  primary_objective: Build AB Premium and its owner as a visible, trusted automotive personal brand and community presence
+  secondary_objectives:
+    - maintain consistent brand visibility
+    - strengthen authority and trust through educational and real-case content
+    - create community and profile interest around the workshop / owner
+  sales_context:
+    status: strong_existing_demand
+    note: The workshop already operates with strong appointment demand. It recently expanded into the neighboring unit, approximately doubling the physical workshop footprint because the original space was consistently full.
+  reporting_implication: Do not force sales or appointment growth to be the main success frame for this account. Brand visibility, content performance, community / profile signals and useful audience action are more central to the current engagement.
+
+service_scope:
+  organic_content:
+    role: primary
+    depth: deep
+    purpose: personal_brand_authority_visibility_community
+  meta_ads:
+    role: add_on_amplification
+    depth: concise_client_facing
+    purpose: awareness_and_content_distribution_with_message_generation_as_a_useful_secondary_result
+    note: BOOST is not running a full paid-acquisition strategy for this account. Paid activity mainly amplifies published content / awareness and is rotated as needed.
 
 priority_kpis:
+  - metric: content_views_or_reach
+    channel: social
+    directionality: higher_is_better
+    priority: primary
+  - metric: profile_visits
+    channel: social
+    directionality: higher_is_better
+    priority: primary
+  - metric: saves_shares_or_useful_interactions
+    channel: social
+    directionality: higher_is_better
+    priority: primary
+  - metric: recurring_content_winners
+    channel: social
+    directionality: contextual
+    priority: primary
   - metric: conversations_initiated
     channel: paid_media
     directionality: higher_is_better
-    priority: primary
+    priority: secondary
   - metric: cost_per_conversation
     channel: paid_media
     directionality: lower_is_better
-    priority: primary
+    priority: secondary
   - metric: ad_spend
     channel: paid_media
     directionality: contextual
@@ -34,14 +69,11 @@ priority_kpis:
     channel: social
     directionality: higher_is_better
     priority: secondary
-  - metric: profile_visits
+  - metric: follower_growth
     channel: social
-    directionality: higher_is_better
+    directionality: contextual
     priority: diagnostic
-  - metric: reach
-    channel: social
-    directionality: higher_is_better
-    priority: diagnostic
+    note: Evaluate quality / geography before treating follower growth as a success metric.
   - metric: interactions
     channel: social
     directionality: contextual
@@ -51,56 +83,119 @@ platforms:
   instagram:
     active: true
     scope: organic_and_platform_reported_distribution
+    reporting_depth: deep
   facebook:
     active: true
     scope: organic_and_platform_reported_distribution
+    reporting_depth: deep
   meta_ads:
     active: true
-    objective: messages_or_conversations
+    objective: awareness_amplification_with_messages
+    reporting_depth: concise
   metricool:
     active: optional
     note: Use when Ana has Metricool connected or when it supplies cleaner cross-platform exports than Meta.
 
 source_priority:
-  - Meta Ads Manager export
   - Meta Business Suite export
+  - Meta Ads Manager export
   - Metricool export when available
   - screenshots for visual verification / creative evidence only
 
 content_analysis:
   include_real_thumbnails: true
+  priority: high
+  analyze:
+    - hooks
+    - topics
+    - real_case_series
+    - educational_or_myth_content
+    - format
+    - consistency
+    - saves_shares_profile_actions_when_available
   rank_by:
     - views_or_reach
     - interactions
+    - saves_or_shares_when_available
+    - profile_or_follower_action_when_available
     - retention_when_available
-  note: Do not infer a repeatable content mechanism from one winning Reel. Track hook, topic, format, length, and downstream action where possible.
+  note: Content analysis is strategically more important than ad-account mechanics for this client. Do not infer a repeatable content mechanism from one winning Reel; distinguish outlier from pattern.
 
 paid_media_analysis:
-  required_metrics:
-    - spend
-    - conversations_initiated
-    - cost_per_conversation
-    - reach
-    - frequency
-  optional_diagnostics:
+  client_facing_core:
+    required_metrics:
+      - spend
+      - conversations_initiated
+      - cost_per_conversation
+    optional_metrics:
+      - reach
+      - trend_vs_comparable_period
+    required_read: Summarize whether amplification is producing useful reach / conversations efficiently and flag only the paid-media issues that require a client-level decision.
+  appendix_or_internal:
+    - campaign_names
+    - ad_set_names
+    - ad_names
+    - cbo_mechanics
+    - attribution_window
     - ctr
     - cpc
-    - impressions
-  note: Do not call CPR competitive for the Monterrey premium automotive market without a verified benchmark.
+    - cpm
+    - detailed_frequency_analysis
+    - ad_level_delivery_tables
+  escalation_rule: Move technical paid-media detail into the core deck only if it explains a material problem, a meaningful budget decision, or a result the client needs to understand.
+  benchmark_rule: Do not call cost per conversation competitive for the Monterrey premium automotive market without a verified benchmark.
+
+client_language:
+  principle: business_meaning_first
+  avoid_unexplained_terms:
+    - CBO
+    - CPR
+    - CPC
+    - CPM
+    - CTR
+    - attribution window
+    - ad set
+  preferred_examples:
+    - "Costo por conversación"
+    - "Conversaciones generadas por anuncios"
+    - "La publicidad amplificó el contenido y generó X conversaciones a un costo de Y cada una"
+  strategic_labels:
+    - "LECTURA BOOST"
+    - "DECISIÓN"
+    - "EN OBSERVACIÓN"
 
 visual_skin:
-  logo: pending_asset_reference
-  client_primary_accent: pending_confirmation
+  logo: use_verified_client_asset
+  palette_mode: client_colors_plus_black_white
+  client_primary_accent: use_verified_brand_color
+  client_secondary_accent: use_verified_brand_color_if_available
+  fallback_if_secondary_missing: use_neutral_tone_do_not_invent_brand_color
   base_surface: mixed
+  preferred_environments:
+    - warm_white
+    - client_color_emphasis
+    - near_black_visual
+    - soft_client_wash
+  max_same_surface_core_slides: 3
   boost_cosign: true
   boost_orange_usage: signature_only
-  note: Until client brand assets are confirmed, use the approved BOOST Reporting Design System neutral base rather than inventing an AB palette.
+  note: Build visual rhythm without mechanically changing background every slide. Use the client's actual colors plus black / white; do not invent a decorative palette.
 
 known_reporting_lessons:
-  - July 2026 report used a dark BOOST-orange presentation language and strong strategic commentary.
-  - Keep the depth of the July report, but improve evidence discipline and layout range.
-  - Period labels must be checked carefully; July report contained a stale May label on the cover metadata.
-  - Paid-media date ranges must match the monthly report period or be explicitly labeled when they do not.
+  - July 2026 reporting established the desired depth of analysis: metrics should lead to interpretation and action.
+  - The first automated Jul 1–Aug 18 pilot proved the workflow can produce strong strategic output but became too technical in paid-media sections.
+  - Client-facing Meta Ads reporting should stay concise because paid media is an add-on, not the center of the engagement.
+  - Content, personal-brand authority, visibility and community signals should carry more narrative weight than campaign mechanics.
+  - Keep technical campaign / attribution detail in appendix or internal QA unless it changes a client decision.
+  - Use varied visual environments; avoid long runs of white analytical slides without a narrative reason.
+  - Period labels and local dates must be checked carefully.
+
+period_specific_notes:
+  2026-07-01_to_2026-08-18:
+    reason_for_custom_period: July report was not delivered separately, so this report intentionally combines July 1 through August 18.
+    content_pause_after_aug_18: No new content was published after August 18 because client material was delayed.
+    interpretation_rule: Do not frame the post-August-18 publication gap as a BOOST strategy or cadence failure.
+    report_length: Extended period may justify more than the normal 8–10 core-slide target.
 
 monthly_memory:
   enabled: true
@@ -110,6 +205,7 @@ monthly_memory:
     - decisions
     - recurring_winners
     - recurring_underperformers
+    - content_series
     - benchmarks
     - measurement_gaps
     - unresolved_questions
