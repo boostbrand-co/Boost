@@ -36,6 +36,21 @@ service_scope:
     purpose: awareness_and_content_distribution_with_message_generation_as_a_useful_secondary_result
     note: BOOST is not running a full paid-acquisition strategy for this account. Paid activity mainly amplifies published content / awareness and is rotated as needed.
 
+strategic_priorities:
+  plan_estudiante:
+    status: active_priority
+    importance: high
+    business_context: The student plan matters commercially even though the first organic executions underperformed.
+    evidence_from_period:
+      - Reel, photo and carousel executions ranked near the bottom of organic content performance in the Jul 1–Aug 18 period.
+      - Weak organic performance is evidence that the current communication / distribution needs adjustment, not evidence that the initiative should be abandoned.
+    current_direction:
+      - strengthen the creative and message around Plan Estudiante
+      - give the campaign more punch instead of removing the initiative
+      - support the offer with paid amplification where appropriate
+      - test stronger hooks / framing and clearer value communication
+    reporting_rule: Treat Plan Estudiante as a strategically important initiative with weak current response. State both facts. Do not recommend deprioritizing it solely because organic posts underperformed.
+
 priority_kpis:
   - metric: content_views_or_reach
     channel: social
@@ -113,13 +128,14 @@ content_analysis:
     - format
     - consistency
     - saves_shares_profile_actions_when_available
+    - strategic_priority_content_even_when_it_underperforms
   rank_by:
     - views_or_reach
     - interactions
     - saves_or_shares_when_available
     - profile_or_follower_action_when_available
     - retention_when_available
-  note: Content analysis is strategically more important than ad-account mechanics for this client. Do not infer a repeatable content mechanism from one winning Reel; distinguish outlier from pattern.
+  note: Content analysis is strategically more important than ad-account mechanics for this client. Do not infer a repeatable content mechanism from one winning Reel; distinguish outlier from pattern. Do not confuse low performance with low strategic importance when the client has an active business priority such as Plan Estudiante.
 
 paid_media_analysis:
   client_facing_core:
@@ -179,6 +195,14 @@ visual_skin:
   max_same_surface_core_slides: 3
   boost_cosign: true
   boost_orange_usage: signature_only
+  cover:
+    template: boost_standard_report_cover
+    left_panel: near_black
+    right_panel: dark_client_color
+    left_accent_rule: boost_orange
+    image_usage: optional_only_if_high_quality_and_correctly_fitted
+    image_fit_rule: preserve_aspect_ratio_crop_never_stretch
+    note: Use the approved BOOST split cover structure. Do not invent a photographic cover when the source image cannot fill the intended crop cleanly.
   note: Build visual rhythm without mechanically changing background every slide. Use the client's actual colors plus black / white; do not invent a decorative palette.
 
 known_reporting_lessons:
@@ -189,6 +213,8 @@ known_reporting_lessons:
   - Keep technical campaign / attribution detail in appendix or internal QA unless it changes a client decision.
   - Use varied visual environments; avoid long runs of white analytical slides without a narrative reason.
   - Period labels and local dates must be checked carefully.
+  - Plan Estudiante is a business priority despite weak current organic performance; the next action is to improve the campaign and creative framing, not drop the initiative by default.
+  - Cover photography must never be stretched. Preserve aspect ratio and crop intentionally, or use the standard non-photographic split cover.
 
 period_specific_notes:
   2026-07-01_to_2026-08-18:
@@ -206,6 +232,7 @@ monthly_memory:
     - recurring_winners
     - recurring_underperformers
     - content_series
+    - strategic_priorities
     - benchmarks
     - measurement_gaps
     - unresolved_questions
