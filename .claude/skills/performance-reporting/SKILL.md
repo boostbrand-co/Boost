@@ -1,11 +1,11 @@
 ---
 name: performance-reporting
-description: Turn raw monthly marketing data into accurate, evidence-led client reporting with BOOST-style analysis, recommendations, QA, and strategic memory.
+description: Turn raw marketing data into accurate, evidence-led client reporting with BOOST-style analysis, recommendations, QA, strategic memory, and client-level translation.
 metadata:
   owner: BOOST
   category: operations
   purpose: Monthly marketing performance analysis and reporting standard
-  version: 1.0
+  version: 1.1
 ---
 
 # Performance Reporting
@@ -14,19 +14,19 @@ Use this skill when preparing, auditing, or updating a recurring client performa
 
 This skill owns the **analysis and reporting logic**. It does not own universal slide design. When the deliverable is a presentation, apply `presentation-design` after this skill. Apply `stop-slop-2` to all prose.
 
-The reporting standard is simple: show what happened, explain what the evidence supports, decide what changes next, and make uncertainty visible.
+The reporting standard is simple: show what happened, explain what the evidence supports, translate it into language the client can use, decide what changes next, and make uncertainty visible.
 
 ## 1. Required outcome
 
-A BOOST performance report should let the client answer five questions quickly:
+A BOOST performance report should let the client answer these questions quickly:
 
 1. What changed this period?
-2. Which results matter most to the business?
-3. What appears to be driving those results?
+2. Which results matter most for what we are trying to accomplish?
+3. What do those results mean in practical terms?
 4. What have we learned with enough evidence to act on?
 5. What will BOOST do next?
 
-A report is incomplete if it only reproduces platform metrics.
+A report is incomplete if it only reproduces platform metrics. It is also incomplete if the analysis is technically correct but the client needs marketing expertise to understand it.
 
 ## 2. Source hierarchy
 
@@ -117,15 +117,49 @@ Verify:
 - currency is consistent
 - decimals and thousands separators are consistent
 - dates and month labels are correct throughout
+- client-facing dates use the account / client timezone, not UTC by default
 - metric names are not being used interchangeably when the platform treats them differently
 
 If two valid sources disagree, document the conflict. Do not pick the number that makes the report look better.
 
-## 6. Business-first metric selection
+## 6. Business objective and service-role context
+
+Before choosing KPIs or depth, determine both:
+
+1. **What the client is trying to accomplish.**
+2. **What BOOST is actually responsible for in this account.**
+
+The report must reflect the real engagement.
+
+Examples of client objectives:
+
+- direct acquisition
+- awareness
+- personal-brand growth
+- community building
+- authority / category presence
+- reservations
+- qualified conversations
+- ecommerce revenue
+- retention or repeat demand
+
+Examples of service roles:
+
+- core acquisition program
+- organic content / brand building
+- paid-media add-on or amplification
+- full-funnel performance management
+- reporting-only or advisory support
+
+Do not make a secondary add-on look like the strategic center of the account because the platform provides more data.
+
+If paid media is only used to amplify published content or support awareness, summarize the client-relevant outcome and keep campaign mechanics secondary. If paid media is the core growth service, deeper campaign and creative analysis may belong in the main report.
+
+## 7. Business-first metric selection
 
 Do not give every available metric equal visual weight.
 
-Start with the client's business objective and reporting scope.
+Start with the client's objective and service scope.
 
 Possible priority layers:
 
@@ -141,14 +175,14 @@ Link clicks, profile actions, landing-page sessions, inquiries, saves, direct me
 ### Distribution
 Reach, impressions, views, unique viewers.
 
-### Community
-Follower growth, engagement, reactions, comments.
+### Community / brand-building signals
+Follower quality, profile visits, saves, shares, recurring viewers, engagement, reactions, comments, non-follower reach.
 
-A follower count should not become a hero KPI for a lead-generation client merely because the platform displays it prominently.
+A follower count should not become a hero KPI for a lead-generation client merely because the platform displays it prominently. Sales should not become the hero KPI for an account whose current job is personal-brand visibility or community.
 
-If a downstream business metric is unavailable, state that limitation and use the closest defensible proxy.
+If a downstream business metric is unavailable or outside BOOST's scope, state that limitation and use the closest defensible proxy.
 
-## 7. Evidence levels
+## 8. Evidence levels
 
 Every strategic statement should fit one of four evidence levels.
 
@@ -178,9 +212,15 @@ The action BOOST will take because of current evidence.
 Example:
 `Produce two additional checklist Reels and compare retention and profile actions against the account median.`
 
-Use these distinctions internally even when the client-facing copy does not display the labels explicitly.
+Use these distinctions internally even when the client-facing copy does not display all four labels explicitly.
 
-## 8. Correlation is not causation
+For client-facing strategic sections, prefer this simplified taxonomy:
+
+- **LECTURA BOOST** — what the evidence reasonably suggests
+- **DECISIÓN** — what changes next
+- **EN OBSERVACIÓN** — a signal worth monitoring that is not yet mature enough to call a conclusion
+
+## 9. Correlation is not causation
 
 Avoid causal language unless the source supports it.
 
@@ -194,9 +234,9 @@ Weak:
 `The strategy is working.`
 
 Better:
-`Paid distribution increased reach and link clicks this month. Conversion quality is not available in the current dataset, so the next read should include downstream outcomes.`
+`Paid distribution increased reach and link clicks this month. Conversion quality is not available in the current dataset, so the next read should include downstream outcomes if that metric matters to the engagement.`
 
-## 9. Benchmark discipline
+## 10. Benchmark discipline
 
 Do not call a metric "good," "excellent," "competitive," "low," or "high for the market" without one of these:
 
@@ -207,7 +247,7 @@ Do not call a metric "good," "excellent," "competitive," "low," or "high for the
 
 If no benchmark exists, compare against the client's own history or state the raw change.
 
-## 10. Content analysis
+## 11. Content analysis
 
 Content reporting should move past ranking posts.
 
@@ -231,27 +271,52 @@ Useful analysis asks:
 - Which topics drive reach versus action?
 - Which formats produce stronger engagement efficiency?
 - Which content attracts non-followers?
-- Which creative produces the downstream result the business cares about?
+- Which creative produces the downstream result the account cares about?
 - Are we seeing a repeatable pattern or one outlier?
 
-## 11. Paid-media analysis
+## 12. Paid-media analysis
 
-When paid data is available, prioritize:
+Match the depth of paid-media reporting to the role paid media plays in the account.
 
-- spend
+### Client-facing default
+
+For most mixed-service reports, lead with:
+
+- total spend
 - primary result
 - cost per result
-- conversion / lead quality signal when available
-- CTR / CPC where diagnostically useful
-- frequency
-- campaign or ad-set comparison
-- creative performance
+- one to three key implications
+
+Add reach, frequency, CTR, CPC or other diagnostics only when they help explain a decision.
+
+### Technical detail
+
+Campaign names, ad-set names, attribution windows, placement breakdowns, CPM, CPC, CTR, CBO mechanics and detailed ad-level tables belong in the core report only when:
+
+- paid media is a primary service,
+- the detail changes a decision,
+- a material anomaly needs explanation, or
+- the client is sophisticated enough to use the detail.
+
+Otherwise move them to appendix / internal notes.
 
 Do not recommend scaling because CPL is low if lead quality or downstream performance is unknown.
 
 Do not recommend changing a campaign solely because frequency increased; interpret frequency alongside cost, results, audience size, and creative fatigue signals.
 
-## 12. Strategic reading format
+### Translation rule
+
+Write the business meaning before the platform mechanic.
+
+Prefer:
+`265 conversations came from ads at $27.79 each, while cost improved 6.7%. Results remain efficient, but most conversations depend on one long-running creative, so BOOST should refresh the creative bank before performance weakens.`
+
+Over:
+`CBO concentrated delivery in BULK 28 OCT with frequency 3.01 and 7-day click / 1-day view attribution.`
+
+The technical version may still exist in notes or appendix.
+
+## 13. Strategic reading format
 
 For each important development, think in this sequence:
 
@@ -272,9 +337,48 @@ Example:
 
 **Decision:** Test stronger profile-directed CTAs on two Reels and measure profile visits per 1,000 reached accounts.
 
-This is the core BOOST reporting voice: analytical, specific, calm, and useful.
+This is the core BOOST reporting voice: analytical, specific, calm, useful, and understandable without marketing expertise.
 
-## 13. Executive summary
+## 14. Client-comprehension layer
+
+The final report is a translation layer between platform data and the client.
+
+Assume the client is smart about their business but may not know marketing terminology.
+
+### Write in this order
+
+1. business meaning
+2. plain-language metric explanation
+3. technical label only if useful
+
+Examples:
+
+Prefer:
+`Costo por conversación: $27.79`
+
+Over:
+`CPR: $27.79`
+
+Prefer:
+`Meta mostró el contenido a la misma audiencia unas 3 veces en promedio.`
+
+Over:
+`Frecuencia: 3.01`
+
+Prefer:
+`Los clics al enlace subieron 67%, una señal de que más personas pasaron de ver el contenido a buscar más información.`
+
+Over:
+`Link clicks +66.8%.`
+
+### Jargon rules
+
+- Spell out a technical term before using an acronym.
+- Do not introduce an acronym if it appears only once.
+- Keep attribution mechanics, campaign taxonomy and platform setup details out of the client narrative unless they change the decision.
+- Keep enough detail to make the analysis credible; simplify wording, not evidence.
+
+## 15. Executive summary
 
 The executive summary is a decision layer, not a duplicate dashboard.
 
@@ -291,7 +395,7 @@ Do not force equal numbers of positive and negative points.
 
 Do not hide poor performance behind neutral language.
 
-## 14. Recommendations
+## 16. Recommendations
 
 Every recommendation must trace to evidence.
 
@@ -307,11 +411,13 @@ Weak:
 `Post more Reels.`
 
 Better:
-`Publish two additional condition-specific Reels using the checklist structure; compare 3-second hold, completion, saves, and profile visits against the July Reel median.`
+`Publish two additional condition-specific Reels using the checklist structure; compare saves, profile visits and reach against the account median.`
 
 Do not prescribe arbitrary schedules, budgets, formats, or audience claims unless the source supports them or they are explicitly labeled as a test.
 
-## 15. What not to do
+For client-facing next moves, keep each action scannable. Put technical implementation detail in speaker notes, appendix or internal analysis when it is not needed for client approval.
+
+## 17. What not to do
 
 Do not:
 
@@ -321,14 +427,16 @@ Do not:
 - call one result a trend
 - turn correlation into causation
 - use platform jargon as analysis
+- make the most data-rich channel the center of the report when it is only an add-on service
 - recommend tactics only to make the report feel comprehensive
 - include demographics that do not affect a decision
 - show every exported metric
 - use the same report structure because the previous client had it
 - write six recommendations of equal priority when only two matter
 - soften material declines until they become meaningless
+- overwhelm the client with campaign / ad-set taxonomy that only the agency needs
 
-## 16. Strategic memory
+## 18. Strategic memory
 
 When prior reports or account notes are available, maintain a lightweight account memory.
 
@@ -351,7 +459,7 @@ Month 1: checklist Reel wins → HYPOTHESIS
 Month 2: checklist wins again → emerging PATTERN
 Month 3: checklist wins across two topics → stronger PATTERN / possible content system decision
 
-## 17. Report architecture
+## 19. Report architecture
 
 Report sections are a menu, not a fixed slide count.
 
@@ -375,9 +483,23 @@ Possible modules:
 
 Use only the modules the account needs.
 
+### Core report vs appendix
+
+For a normal monthly report, aim for roughly **8–10 core slides** when the content supports it, plus appendix as needed. This is a pacing target, not a quota.
+
+Move detail to appendix when it proves the analysis but is not required to understand the decision. Common appendix material:
+
+- full content rankings
+- detailed campaign / ad-set tables
+- attribution notes
+- source methodology
+- secondary platform diagnostics
+
+A longer report is appropriate when the reporting period is extended, multiple missed months are combined, or the account genuinely needs more evidence.
+
 Avoid a fixed rule such as "Facebook is always slide 3" or "every report has 9 slides."
 
-## 18. Language standard
+## 20. Language standard
 
 Apply `stop-slop-2`.
 
@@ -390,6 +512,7 @@ Prefer:
 - specific numbers
 - measured interpretation
 - concise recommendations
+- plain-language explanations before jargon
 
 Avoid:
 
@@ -400,22 +523,25 @@ Avoid:
 - empty celebration
 - dramatic one-liners
 - generic AI summaries
+- acronyms that make the client decode the report
 
 Do not repeat the metric and then restate it in different words without adding interpretation.
 
-## 19. Presentation handoff
+## 21. Presentation handoff
 
 When the final output is a deck:
 
 1. Complete data QA and analysis first.
 2. Build the report narrative and select modules.
-3. Apply `stop-slop-2` to copy.
-4. Apply `presentation-design` for slide strategy, visual hero, charts, layout variation, rhythm, and art direction.
-5. Apply the current approved BOOST Reporting Design System or client-specific reporting skin.
+3. Apply the client-comprehension layer.
+4. Apply `stop-slop-2` to copy.
+5. Apply `presentation-design` for slide strategy, visual hero, charts, layout variation, rhythm, and art direction.
+6. Apply the current approved BOOST Reporting Design System or client-specific reporting skin.
+7. Move nonessential technical detail into appendix or speaker notes.
 
 The presentation should be final-quality without requiring Canva cleanup as a normal workflow step.
 
-## 20. Final QA checklist
+## 22. Final QA checklist
 
 Before delivery, verify:
 
@@ -427,6 +553,7 @@ Before delivery, verify:
 - [ ] paid / organic scope is clear
 - [ ] directionality is interpreted correctly
 - [ ] no metric was invented
+- [ ] client-facing dates use the correct local timezone
 
 ### Analysis
 - [ ] every conclusion has evidence
@@ -435,9 +562,17 @@ Before delivery, verify:
 - [ ] benchmarks are sourced
 - [ ] recommendations trace to evidence
 - [ ] uncertainties are visible
+- [ ] reporting depth matches the actual service role
+
+### Client comprehension
+- [ ] a smart non-marketer can understand the core report without explanation
+- [ ] technical terms are translated or moved to appendix
+- [ ] the report states business meaning before platform mechanics
+- [ ] no acronym appears only to make the report sound technical
+- [ ] next moves are scannable and decision-oriented
 
 ### Client value
-- [ ] the most important business outcome is easy to find
+- [ ] the account's real objective is easy to identify
 - [ ] the report explains more than the source dashboards already do
 - [ ] the client can see what BOOST will change next
 - [ ] weak or irrelevant metrics were removed
@@ -449,6 +584,7 @@ Before delivery, verify:
 - [ ] charts answer one question each
 - [ ] top content uses real thumbnails when available
 - [ ] the deck reads clearly at laptop size
+- [ ] draft-only labels are removed before client delivery
 - [ ] no Canva cleanup is required for basic consistency
 
-A report is finished when the numbers are correct, the interpretation is defensible, and the next decision is clear.
+A report is finished when the numbers are correct, the interpretation is defensible, the language is understandable, and the next decision is clear.
