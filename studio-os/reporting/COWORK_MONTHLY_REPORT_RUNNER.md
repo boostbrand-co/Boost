@@ -4,13 +4,9 @@ Use this as the governing task brief for recurring monthly client reporting.
 
 The goal is to remove manual collection, transcription, analysis, and formatting work while keeping BOOST responsible for judgment and final approval.
 
-## Mission
-
-Prepare a client-ready monthly performance report using the client's approved reporting config, source platforms, BOOST reporting methodology, writing standards, and presentation system.
-
 The workflow is:
 
-`Collect → Validate → Normalize → Analyze → Structure → Design → QA → Review`
+`Collect → Validate → Normalize → Analyze → Translate → Structure → Design → QA → Review`
 
 Do not publish, send, or modify live marketing activity unless the user separately asks.
 
@@ -48,19 +44,29 @@ reports/
 
 Keep raw source exports untouched inside `sources/`.
 
-## Phase 1 — Confirm reporting scope
+## Phase 1 — Confirm reporting scope and service role
 
 Identify:
 
 - client
-- reporting month
+- reporting period
 - report language
 - platforms in scope
 - paid / organic scope
-- primary business objective
+- primary client objective
+- service role of each channel
 - priority KPIs
+- reporting depth by channel
 - comparison period
 - available source platforms
+
+The reporting depth must reflect the actual engagement.
+
+Examples:
+
+- If Meta Ads is an add-on used mainly to amplify content, do not build a campaign-operations report around it.
+- If Meta Ads is the core acquisition service, deeper campaign and creative analysis may be appropriate.
+- If the client is building a personal brand / community, prioritize reach quality, profile actions, saves, content patterns and consistency over forcing sales metrics to the front.
 
 If the client config contains unresolved fields that materially affect analysis, flag them before final delivery. Continue collecting data when possible instead of stopping the workflow unnecessarily.
 
@@ -148,6 +154,7 @@ Do not write strategic conclusions yet.
 Run reconciliation checks first:
 
 - date consistency
+- timezone / local client date consistency
 - account consistency
 - currency
 - totals
@@ -190,7 +197,7 @@ Current result, comparison, context.
 Winners, losers, repeatable signals, outliers.
 
 ### Paid media
-Efficiency, scale, campaign differences, creative signals.
+Match depth to the account's service role. Separate client-relevant result from agency-only diagnostics.
 
 ### FACTS
 What the data directly supports.
@@ -209,7 +216,28 @@ Signals that are interesting but not mature enough to drive a conclusion.
 
 Use prior reports to identify longitudinal patterns when available.
 
-## Phase 6 — Apply writing standard
+## Phase 6 — Translate for the client
+
+Create a client-facing layer before slide design.
+
+Apply these rules:
+
+- Assume the client understands their business but may not know marketing terminology.
+- Lead with business meaning, then the metric, then technical detail only if useful.
+- Spell out a technical term before using an acronym.
+- Do not use an acronym that appears only once.
+- Move campaign names, ad-set taxonomy, attribution windows, CBO mechanics, CPM, CPC, CTR and other platform diagnostics to appendix / notes unless the detail changes the client's decision.
+- Keep evidence and nuance. Simplify language, not thinking.
+
+For strategic sections, client-facing labels should favor:
+
+- **LECTURA BOOST**
+- **DECISIÓN**
+- **EN OBSERVACIÓN**
+
+The internal analysis can remain more technical.
+
+## Phase 7 — Apply writing standard
 
 Apply `stop-slop-2` to all client-facing copy.
 
@@ -217,9 +245,9 @@ The report should read like a capable agency team reviewed the account.
 
 Keep:
 
-- domain language
+- useful domain language
 - numbers
-- useful caveats
+- caveats that affect the decision
 - specific recommendations
 
 Remove:
@@ -229,12 +257,15 @@ Remove:
 - dramatic one-liners
 - unsupported certainty
 - filler
+- platform jargon the client does not need
 
-## Phase 7 — Build report architecture
+## Phase 8 — Build report architecture
 
 Do not force a fixed number of slides.
 
 Select modules from the BOOST Reporting Design System based on what the data needs.
+
+For a normal monthly report, aim for roughly **8–10 core slides plus appendix** when appropriate. Extended periods may justify more.
 
 Possible sequence:
 
@@ -242,7 +273,7 @@ Possible sequence:
 2. Executive Summary
 3. Primary outcome / performance
 4. Platform or channel analysis
-5. Paid media
+5. Paid media at the depth required by the account
 6. Content evidence
 7. Strategic read
 8. Next moves
@@ -252,6 +283,8 @@ Possible sequence:
 Combine slides when the information is closely related.
 
 Split only when a slide would otherwise carry two separate strategic jobs.
+
+Move detailed campaign tables, full content rankings and source methodology to appendix when they support the analysis but do not need to interrupt the core narrative.
 
 Write a slide plan before designing:
 
@@ -264,8 +297,10 @@ For each slide include:
 - desired takeaway
 - visual hero
 - source data
+- visual environment
+- core vs appendix
 
-## Phase 8 — Design the presentation
+## Phase 9 — Design the presentation
 
 Apply `presentation-design` and `BOOST_REPORTING_DESIGN_SYSTEM.md`.
 
@@ -278,12 +313,15 @@ Use:
 - designed tables
 - diagrams when relationships matter
 - multiple layout families
-- client accent with BOOST co-sign
+- multiple visual environments
+- client accents with BOOST co-sign
 - high useful visual density
 
 Avoid:
 
 - repeated generic cards
+- long runs of identical white slides
+- mechanical background rotation
 - empty minimalist slides
 - tiny text
 - screenshot-heavy analytics pages
@@ -295,9 +333,9 @@ Use the approved client identity and `CLIENT × BOOST` system.
 
 Do not generate an unrelated decorative cover.
 
-## Phase 9 — Presentation QA
+## Phase 10 — Presentation QA
 
-Review the deck twice.
+Review the deck three times.
 
 ### Thumbnail pass
 
@@ -308,6 +346,7 @@ Check:
 - density
 - color balance
 - section pacing
+- no unnecessary run of identical surfaces
 
 ### Slide pass
 
@@ -324,11 +363,32 @@ Check:
 - report period
 - client name / logo
 
+### Client-comprehension pass
+
+Read the core deck as a smart business owner who does not work in marketing.
+
+Check:
+
+- Can every slide be understood without explaining platform terminology aloud?
+- Is the practical meaning visible before technical detail?
+- Did unnecessary acronyms survive?
+- Is any agency-only information taking up client-facing space?
+- Are next moves scannable?
+
 Create:
 
 `qa/presentation-qa.md`
 
-## Phase 10 — Deliver for BOOST review
+## Phase 11 — Final-state QA
+
+Before client-ready export:
+
+- remove `Para revisión`, `Draft`, `Internal review`, or other draft-only labels unless intentionally requested
+- verify all dates use the correct local timezone
+- verify report period on every slide / footer
+- verify client-facing file names
+
+## Phase 12 — Deliver for BOOST review
 
 Place final outputs in:
 
@@ -345,7 +405,7 @@ Do not send directly to the client.
 Return a concise handoff to Ana containing:
 
 1. files created
-2. primary monthly read
+2. primary period read
 3. material data caveats
 4. 2–4 decisions proposed
 5. anything that needs human confirmation
@@ -355,22 +415,23 @@ Return a concise handoff to Ana containing:
 Use this instruction when starting a report:
 
 ```text
-Generate the <MONTH YYYY> performance report for <CLIENT>.
+Generate the <PERIOD> performance report for <CLIENT>.
 
-Follow the BOOST Monthly Report Runner in studio-os/reporting/COWORK_MONTHLY_REPORT_RUNNER.md.
-Use the active client config.
+Follow the BOOST Monthly Report Runner in studio-os/reporting/COWORK_MONTHLY_REPORT_RUNNER.md and the active client config.
 Collect authorized data from the available connected sources, preferring structured exports over screenshots.
 Do not modify any live account, campaign, content, budget, settings, messages, or permissions.
 
 Complete data QA before analysis.
+Match reporting depth to the client's actual objective and BOOST's service role on each channel.
+Translate technical platform data into clear client-facing language before designing the deck.
 Apply performance-reporting, stop-slop-2, presentation-design, and the BOOST Reporting Design System.
-Use the prior report for continuity, not as a rigid slide template.
+Use prior reports for continuity, not as rigid slide templates.
 
-Produce a final-quality editable presentation and PDF preview for BOOST review. Do not send it to the client.
+Produce a final-quality editable presentation and PDF preview for BOOST review. Keep unnecessary technical detail in appendix / internal notes. Do not send it to the client.
 ```
 
 ## Success condition
 
 This workflow succeeds when Ana can review the report as an editor / strategist instead of rebuilding it manually.
 
-If routine delivery still requires rebuilding the cover, restyling slides in Canva, manually transcribing platform tables, or rewriting generic AI analysis, the system needs another iteration.
+If routine delivery still requires rebuilding the cover, restyling slides in Canva, manually transcribing platform tables, translating marketing jargon for the client, or rewriting generic AI analysis, the system needs another iteration.
