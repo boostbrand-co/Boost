@@ -1,6 +1,6 @@
 # BOOST Reporting Design System
 
-Status: V1 working standard  
+Status: V1.1 working standard  
 Owner: BOOST  
 Applies to: recurring client performance reports, monthly marketing reviews, paid-media reports, social reports, and mixed-channel performance decks.
 
@@ -12,7 +12,7 @@ The system is:
 
 **BOOST skeleton + client skin.**
 
-BOOST owns the grid, hierarchy, typography behavior, chart language, tables, evidence blocks, pacing, analysis structure, and document craft. The client contributes its logo, primary accent, selected imagery, and relevant brand personality.
+BOOST owns the grid, hierarchy, typography behavior, chart language, tables, evidence blocks, pacing, analysis structure, and document craft. The client contributes its logo, primary / secondary brand accents when usable, selected imagery, and relevant brand personality.
 
 A set of reports for six different clients should feel related when viewed side by side. Each report should still feel native to the client it represents.
 
@@ -34,16 +34,16 @@ Use as a reference for:
 
 Do not copy its visual identity. Preserve its discipline.
 
-### AB Premium monthly report
+### AB Premium reporting
 Use as the reference for reporting language and strategic depth:
 
 - metrics followed by interpretation
-- clear monthly read
+- clear period read
 - content analysis beyond raw rankings
-- paid-media efficiency analysis
-- actionable recommendations tied to the data
+- paid-media results translated into decisions
+- actionable recommendations tied to evidence
 
-V1 should improve AB's evidence discipline, layout range, chart quality, and visual hierarchy without losing the amount of useful analysis.
+V1.1 should preserve that depth while making the client-facing layer easier to understand, moving unnecessary technical detail into appendix, and improving visual rhythm across the deck.
 
 ## 3. Design objective
 
@@ -57,6 +57,7 @@ The report should feel:
 - easy to scan
 - substantive
 - intentional
+- understandable to a smart non-marketer
 
 It should not feel:
 
@@ -65,6 +66,7 @@ It should not feel:
 - like a SaaS dashboard pasted into slides
 - empty for the sake of minimalism
 - dense because every metric was included
+- technical because the platform exposes technical detail
 - text-heavy because the analysis was not visualized
 - decorative without explanatory value
 
@@ -94,6 +96,8 @@ A slide should use its canvas well, but it does not need to fill every corner.
 
 When a slide feels empty, add **useful visual information**, not filler.
 
+For a normal monthly report, target roughly **8–10 core slides plus appendix** when the material supports it. Extended reporting periods can run longer.
+
 ## 5. Core brand architecture
 
 ### Client signature
@@ -112,6 +116,7 @@ The `×` is the most consistent BOOST signature and may use BOOST orange when co
 
 - logo
 - primary accent
+- secondary brand color when useful
 - approved photography / imagery
 - category-relevant visual context
 
@@ -128,34 +133,43 @@ The `×` is the most consistent BOOST signature and may use BOOST orange when co
 - report logic
 - QA standard
 
-## 6. Color system
+## 6. Working color system
+
+Use a restrained four-color working palette whenever the client's brand supports it:
+
+1. client primary
+2. client secondary or approved supporting tone
+3. black / near-black
+4. white / warm white
+
+Soft gray may appear as a neutral utility surface, not as a fifth expressive brand color.
+
+BOOST orange is a micro-signature outside this working palette.
 
 ### Base neutrals
 
-Use a restrained neutral foundation:
+Use:
 
 - white / warm white for analytical slides
-- near-black for high-emphasis or closing slides
+- near-black for high-emphasis, visual evidence, or closing slides
 - soft gray for secondary surfaces
 - thin neutral rules
 
 Avoid cold dashboard gray when a warmer neutral feels more editorial.
 
-### Client accent
+### Client accents
 
-Use one primary client color as the main report accent when it has enough contrast and works for data visualization.
-
-The client accent can appear in:
+Use the client primary and secondary colors intentionally for:
 
 - section labels
 - selected chart series
 - key numbers
 - rules / separators
 - small markers
-- selected table headers
-- content tags
+- table highlights
+- selected background environments
 
-Do not flood every slide with the client color.
+Do not flood every slide with client color.
 
 ### BOOST orange
 
@@ -184,7 +198,68 @@ Examples:
 
 Avoid red/green confetti across a deck.
 
-## 7. Typography
+## 7. Visual environments and deck rhythm
+
+The deck should use multiple visual environments without rotating them mechanically.
+
+### Environment A — Warm analytical
+
+White or warm-white background, dark type, subtle rules, client color used selectively.
+
+Best for:
+
+- executive summary
+- platform performance
+- charts
+- comparisons
+- action plans
+
+### Environment B — Client-color emphasis
+
+Primary or secondary client color used as a controlled full or partial background.
+
+Best for:
+
+- major turning points
+- channel / section emphasis
+- strategic synthesis
+- transitions
+
+Keep text simple and contrast high.
+
+### Environment C — Near-black / visual evidence
+
+Near-black or black background with strong photography, creative thumbnails, or one high-emphasis conclusion.
+
+Best for:
+
+- content evidence
+- paid-media highlights
+- section pauses
+- close
+
+### Environment D — Soft client wash
+
+A light tint or restrained secondary-brand surface.
+
+Best for:
+
+- strategic read
+- what we're learning
+- synthesis
+- controlled variation between analytical slides
+
+### Rhythm rule
+
+Do not let the deck become a run of identical white slides simply because analytical content is easiest to place on white.
+
+As a working rule, avoid more than **three consecutive core slides with the same dominant surface treatment** unless the narrative genuinely benefits from continuity.
+
+Do not alternate colors slide-by-slide by formula. Change environment when the strategic job changes.
+
+Thumbnail view should feel authored.
+
+## 8. Typography
 
 Use the approved active project typeface when the client has a strong brand system and it is practical for the output environment. Otherwise use BOOST's approved presentation type system.
 
@@ -213,7 +288,7 @@ Do not turn every insight into an engineered quote.
 
 Use type weight and composition before adding colored boxes.
 
-## 8. Layout system
+## 9. Layout system
 
 Use a consistent underlying grid with multiple layout families.
 
@@ -221,10 +296,10 @@ Use a consistent underlying grid with multiple layout families.
 
 Use for:
 
-- monthly overview
+- period overview
 - selected KPIs
 - strongest movement
-- one concise monthly read
+- one concise read
 
 Possible structure:
 
@@ -240,7 +315,7 @@ Use for:
 
 - platform performance
 - trend analysis
-- paid-media efficiency
+- paid-media results
 
 Possible structure:
 
@@ -253,7 +328,7 @@ Possible structure:
 
 Use for:
 
-- campaign comparison
+- campaign comparison when decision-relevant
 - platform comparison
 - content-format comparison
 - period comparison
@@ -290,9 +365,13 @@ Use for:
 
 Prefer evidence blocks with hierarchy over six identical cards.
 
-Useful internal structure:
+Client-facing taxonomy:
 
-`RESULT → READING → DECISION`
+- **LECTURA BOOST**
+- **DECISIÓN**
+- **EN OBSERVACIÓN**
+
+Internal reasoning may still use `RESULT → READING → DECISION`.
 
 ### Layout family F — Action plan
 
@@ -303,8 +382,10 @@ Prioritize 3–5 actions.
 Each action should contain:
 
 - action
-- evidence / reason
+- short evidence / reason
 - measurement or success condition when useful
+
+The core slide should be scannable. Put implementation mechanics in appendix or speaker notes when the client does not need them to approve the direction.
 
 ### Layout family G — Visual interstitial
 
@@ -323,15 +404,16 @@ Never use unrelated stock photography.
 
 Use for:
 
-- raw metric detail
-- secondary campaign tables
-- source definitions
+- full content rankings
+- detailed campaign / ad-set tables
 - attribution caveats
-- methodology
+- platform methodology
+- raw metric detail
+- secondary diagnostics
 
-Protect the clarity of the core report by moving nonessential detail here.
+Protect the clarity of the core report by moving nonessential technical detail here.
 
-## 9. Charts
+## 10. Charts
 
 Charts should look authored for the presentation, not exported from a spreadsheet.
 
@@ -359,7 +441,7 @@ Charts should look authored for the presentation, not exported from a spreadshee
 
 Annotate the chart when a specific inflection or result matters.
 
-## 10. KPI blocks
+## 11. KPI blocks
 
 Do not make every KPI block identical by default.
 
@@ -367,15 +449,17 @@ A hero KPI can be large and integrated with a chart or insight.
 
 Supporting KPI blocks should show:
 
-- metric name
+- metric name in plain language
 - current value
 - comparison period
 - meaningful change
 - optional short qualifier
 
-Use the client's actual business objective to choose hero metrics.
+Use the client's actual objective to choose hero metrics.
 
-## 11. Tables
+Avoid acronyms in metric labels when the full phrase remains readable.
+
+## 12. Tables
 
 Tables should be compact and presentation-grade.
 
@@ -395,7 +479,7 @@ Avoid:
 - tiny text
 - decorative color on every cell
 
-## 12. Insight treatments
+## 13. Insight treatments
 
 BOOST analysis should visually stand apart from raw data without becoming a repeated colored alert box.
 
@@ -412,7 +496,47 @@ Do not repeat `LO QUE SUGIERE ESTO` in the same visual format on every slide.
 
 Consistency comes from hierarchy and language, not one repeated container.
 
-## 13. Cover
+## 14. Client-comprehension design
+
+The presentation should visually reinforce plain-language reporting.
+
+Prioritize:
+
+- business result first
+- technical label second
+- one clear implication
+
+If a technical metric needs explanation, use a small qualifier rather than turning the slide into a glossary.
+
+Examples:
+
+`Costo por conversación` is better than a hero label `CPR`.
+
+`La audiencia vio el contenido unas 3 veces en promedio` is more client-friendly than making `Frecuencia 3.01` the visual hero.
+
+Do not make technical detail look more important than the business meaning simply because it has more columns.
+
+## 15. Paid-media presentation depth
+
+Match the slide depth to the client's paid-media service scope.
+
+### Add-on / amplification accounts
+
+The client-facing core usually needs:
+
+- investment
+- primary result
+- cost per result
+- one concise trend / implication
+- one decision if needed
+
+Detailed campaign names, ad-set structure, attribution windows, CTR, CPC, CPM and ad-level delivery belong in appendix or internal notes unless they explain a material issue.
+
+### Core performance accounts
+
+Deeper campaign comparison, creative diagnostics and funnel metrics can remain in the core deck when they support client decisions.
+
+## 16. Cover
 
 The cover should require no Canva repair.
 
@@ -430,36 +554,39 @@ Do not add decorative report metadata that nobody uses.
 
 Do not let an AI-generated cover invent colors, imagery, or brand marks.
 
-## 14. Closing
+Draft-only states such as `Para revisión` must be removed from final client export.
+
+## 17. Closing
 
 The close can be one of two forms:
 
 ### Strategic close
-One concise monthly takeaway + next-period focus.
+One concise period takeaway + next-period focus.
 
 ### Minimal close
 Client × BOOST, period, contact / account lead if relevant.
 
 Do not add generic motivational copy.
 
-## 15. Rhythm across the deck
+## 18. Rhythm across the deck
 
 Thumbnail view should have deliberate variation.
 
 A typical report may move through:
 
-- branded cover
-- analytical overview
-- data / chart slide
-- content evidence slide
-- comparative table
-- strategic read
-- action plan
-- quiet close
+- branded / photographic cover
+- warm analytical overview
+- light data slide
+- client-color or dark emphasis moment
+- platform evidence
+- dark / photographic content evidence
+- soft strategic synthesis
+- light action plan
+- quiet appendix / close
 
 Do not alternate backgrounds mechanically. Change visual environment when the content job changes.
 
-## 16. Density target
+## 19. Density target
 
 A good monthly report usually feels **compact but complete**.
 
@@ -477,7 +604,7 @@ If the same idea is repeated on two consecutive slides, combine them.
 
 If one slide carries two unrelated decisions, split it.
 
-## 17. Report language and visual hierarchy
+## 20. Report language and visual hierarchy
 
 Use `performance-reporting` for analysis and `stop-slop-2` for prose.
 
@@ -487,32 +614,36 @@ The visual hierarchy should make this sequence clear:
 
 The client should never have to guess which sentence is a fact and which is BOOST's read.
 
-## 18. Client-skin configuration
+## 21. Client-skin configuration
 
 Each client should have a lightweight reporting config containing:
 
 - client name
 - logo asset
 - primary accent
-- optional secondary neutral
+- secondary brand color / supporting tone
 - preferred background bias: light / dark / mixed
+- preferred visual environments
 - report language
 - currency
 - platforms
 - business objective
+- service role by channel
 - priority KPIs
-- any approved photography / image library
+- reporting depth by channel
+- approved photography / image library when available
 
 Do not redesign the report system for every client.
 
-## 19. Acceptance checklist
+## 22. Acceptance checklist
 
 Before approval:
 
 ### Cohesion
 - [ ] looks recognizably produced by BOOST
 - [ ] still feels native to the client
-- [ ] uses one coherent accent system
+- [ ] uses one coherent four-color working system
+- [ ] BOOST orange stays a signature, not a competing palette
 - [ ] cover does not need manual replacement
 
 ### Slide craft
@@ -520,6 +651,8 @@ Before approval:
 - [ ] no meaningless empty space
 - [ ] no cramped text
 - [ ] multiple layout families appear
+- [ ] multiple visual environments create rhythm
+- [ ] no unnecessary run of identical white core slides
 - [ ] every slide has a dominant job
 - [ ] no repetitive card grid controls the whole deck
 
@@ -529,18 +662,22 @@ Before approval:
 - [ ] tables are readable at laptop size
 - [ ] diagrams encode real logic
 
-### Analysis
+### Analysis and comprehension
 - [ ] data, interpretation, and action are visually distinguishable
 - [ ] conclusions do not look more certain than the evidence
 - [ ] next steps are prioritized
+- [ ] a smart non-marketer can understand the core deck
+- [ ] technical detail matches the client's service scope
+- [ ] appendix protects the core narrative from unnecessary mechanics
 
 ### Final output
 - [ ] presentation is client-ready on export
-- [ ] no normal Canva cleanup step is required
+- [ ] draft labels are removed
 - [ ] PDF and PPTX preserve hierarchy
+- [ ] no normal Canva cleanup step is required
 
-## 20. Governing rule
+## 23. Governing rule
 
-The report should contain more **useful visual explanation** than a platform dashboard and more **strategic judgment** than an automated analytics export.
+The report should contain more **useful visual explanation** than a platform dashboard and more **strategic judgment** than an automated analytics export, while remaining easy for the client to understand.
 
-If the client could get the same value by opening Meta Business Suite, the report is not finished.
+If the client could get the same value by opening Meta Business Suite, the report is not finished. If the client needs a marketing lesson to understand the report, it is not finished either.
