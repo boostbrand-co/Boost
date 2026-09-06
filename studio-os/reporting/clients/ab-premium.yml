@@ -1,0 +1,120 @@
+client:
+  id: ab-premium
+  name: AB Premium Taller Mecánico
+  display_name: AB Premium
+  report_language: es-MX
+  currency: MXN
+
+reporting:
+  cadence: monthly
+  primary_report_type: mixed-social-paid
+  comparison_default: previous_comparable_month
+  delivery_state: boost-review-before-client
+
+business_objective:
+  primary: Generate customer conversations from digital marketing
+  status: inferred_from_existing_report
+  needs_confirmation: true
+  note: Existing July reporting treats initiated messages / conversations as the main paid-media outcome. Confirm whether this remains the account's current north-star business KPI.
+
+priority_kpis:
+  - metric: conversations_initiated
+    channel: paid_media
+    directionality: higher_is_better
+    priority: primary
+  - metric: cost_per_conversation
+    channel: paid_media
+    directionality: lower_is_better
+    priority: primary
+  - metric: ad_spend
+    channel: paid_media
+    directionality: contextual
+    priority: secondary
+  - metric: link_clicks
+    channel: social
+    directionality: higher_is_better
+    priority: secondary
+  - metric: profile_visits
+    channel: social
+    directionality: higher_is_better
+    priority: diagnostic
+  - metric: reach
+    channel: social
+    directionality: higher_is_better
+    priority: diagnostic
+  - metric: interactions
+    channel: social
+    directionality: contextual
+    priority: diagnostic
+
+platforms:
+  instagram:
+    active: true
+    scope: organic_and_platform_reported_distribution
+  facebook:
+    active: true
+    scope: organic_and_platform_reported_distribution
+  meta_ads:
+    active: true
+    objective: messages_or_conversations
+  metricool:
+    active: optional
+    note: Use when Ana has Metricool connected or when it supplies cleaner cross-platform exports than Meta.
+
+source_priority:
+  - Meta Ads Manager export
+  - Meta Business Suite export
+  - Metricool export when available
+  - screenshots for visual verification / creative evidence only
+
+content_analysis:
+  include_real_thumbnails: true
+  rank_by:
+    - views_or_reach
+    - interactions
+    - retention_when_available
+  note: Do not infer a repeatable content mechanism from one winning Reel. Track hook, topic, format, length, and downstream action where possible.
+
+paid_media_analysis:
+  required_metrics:
+    - spend
+    - conversations_initiated
+    - cost_per_conversation
+    - reach
+    - frequency
+  optional_diagnostics:
+    - ctr
+    - cpc
+    - impressions
+  note: Do not call CPR competitive for the Monterrey premium automotive market without a verified benchmark.
+
+visual_skin:
+  logo: pending_asset_reference
+  client_primary_accent: pending_confirmation
+  base_surface: mixed
+  boost_cosign: true
+  boost_orange_usage: signature_only
+  note: Until client brand assets are confirmed, use the approved BOOST Reporting Design System neutral base rather than inventing an AB palette.
+
+known_reporting_lessons:
+  - July 2026 report used a dark BOOST-orange presentation language and strong strategic commentary.
+  - Keep the depth of the July report, but improve evidence discipline and layout range.
+  - Period labels must be checked carefully; July report contained a stale May label on the cover metadata.
+  - Paid-media date ranges must match the monthly report period or be explicitly labeled when they do not.
+
+monthly_memory:
+  enabled: true
+  fields:
+    - hypotheses
+    - tests_launched
+    - decisions
+    - recurring_winners
+    - recurring_underperformers
+    - benchmarks
+    - measurement_gaps
+    - unresolved_questions
+
+human_review:
+  required: true
+  reviewer: Ana Pau / BOOST
+  do_not_auto_send_to_client: true
