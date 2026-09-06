@@ -1,6 +1,6 @@
 # BOOST Reporting Design System
 
-Status: V1.1 working standard  
+Status: V1.2 working standard  
 Owner: BOOST  
 Applies to: recurring client performance reports, monthly marketing reviews, paid-media reports, social reports, and mixed-channel performance decks.
 
@@ -12,7 +12,7 @@ The system is:
 
 **BOOST skeleton + client skin.**
 
-BOOST owns the grid, hierarchy, typography behavior, chart language, tables, evidence blocks, pacing, analysis structure, and document craft. The client contributes its logo, primary / secondary brand accents when usable, selected imagery, and relevant brand personality.
+BOOST owns the grid, hierarchy, typography behavior, chart language, tables, evidence blocks, pacing, analysis structure, cover grammar, and document craft. The client contributes its logo, primary / secondary brand accents when usable, selected imagery, and relevant brand personality.
 
 A set of reports for six different clients should feel related when viewed side by side. Each report should still feel native to the client it represents.
 
@@ -43,7 +43,7 @@ Use as the reference for reporting language and strategic depth:
 - paid-media results translated into decisions
 - actionable recommendations tied to evidence
 
-V1.1 should preserve that depth while making the client-facing layer easier to understand, moving unnecessary technical detail into appendix, and improving visual rhythm across the deck.
+V1.2 should preserve that depth while making the client-facing layer easier to understand, moving unnecessary technical detail into appendix, improving visual rhythm, and using the approved BOOST report cover consistently.
 
 ## 3. Design objective
 
@@ -131,6 +131,7 @@ The `×` is the most consistent BOOST signature and may use BOOST orange when co
 - pagination
 - source notes
 - report logic
+- cover grammar
 - QA standard
 
 ## 6. Working color system
@@ -178,6 +179,7 @@ BOOST orange is a signature, not a second client palette.
 Use it sparingly for:
 
 - the `×` in CLIENT × BOOST
+- the thin cover rule
 - small BOOST metadata
 - occasional annotation or action marker
 - final co-sign
@@ -413,7 +415,30 @@ Use for:
 
 Protect the clarity of the core report by moving nonessential technical detail here.
 
-## 10. Charts
+## 10. Image handling
+
+Photography and creative evidence must preserve the source asset correctly.
+
+### Non-negotiable fit rules
+
+- Never stretch, squeeze, skew or distort an image to fill a frame.
+- Preserve the original aspect ratio.
+- Use a deliberate `cover` crop when the image should fill a frame.
+- Use `contain` / letterboxing only when showing the full asset is more important than filling the frame.
+- Reposition the crop around the actual subject; do not accept an automatic center crop when it cuts the important area.
+- Prefer a different asset over a bad crop.
+- If no available image fits the intended composition cleanly, use a non-photographic layout instead.
+
+### Quality rules
+
+- Do not upscale a visibly low-resolution image into a hero.
+- Do not use a screenshot as a photographic background when the UI / text becomes unreadable or pixelated.
+- Do not invent, redraw or alter client logos to make them fit.
+- Creative thumbnails may use their native portrait / square ratios inside a designed frame; do not force them into landscape crops when the content becomes unclear.
+
+Image fit is part of QA, not a cosmetic preference.
+
+## 11. Charts
 
 Charts should look authored for the presentation, not exported from a spreadsheet.
 
@@ -441,7 +466,7 @@ Charts should look authored for the presentation, not exported from a spreadshee
 
 Annotate the chart when a specific inflection or result matters.
 
-## 11. KPI blocks
+## 12. KPI blocks
 
 Do not make every KPI block identical by default.
 
@@ -459,7 +484,7 @@ Use the client's actual objective to choose hero metrics.
 
 Avoid acronyms in metric labels when the full phrase remains readable.
 
-## 12. Tables
+## 13. Tables
 
 Tables should be compact and presentation-grade.
 
@@ -479,7 +504,7 @@ Avoid:
 - tiny text
 - decorative color on every cell
 
-## 13. Insight treatments
+## 14. Insight treatments
 
 BOOST analysis should visually stand apart from raw data without becoming a repeated colored alert box.
 
@@ -496,7 +521,7 @@ Do not repeat `LO QUE SUGIERE ESTO` in the same visual format on every slide.
 
 Consistency comes from hierarchy and language, not one repeated container.
 
-## 14. Client-comprehension design
+## 15. Client-comprehension design
 
 The presentation should visually reinforce plain-language reporting.
 
@@ -516,7 +541,7 @@ Examples:
 
 Do not make technical detail look more important than the business meaning simply because it has more columns.
 
-## 15. Paid-media presentation depth
+## 16. Paid-media presentation depth
 
 Match the slide depth to the client's paid-media service scope.
 
@@ -536,27 +561,83 @@ Detailed campaign names, ad-set structure, attribution windows, CTR, CPC, CPM an
 
 Deeper campaign comparison, creative diagnostics and funnel metrics can remain in the core deck when they support client decisions.
 
-## 16. Cover
+## 17. Canonical report cover
 
-The cover should require no Canva repair.
+The BOOST monthly-report cover is a **fixed brand grammar**, not a fresh composition generated for every client.
 
-Required:
+### Core structure
+
+Use the approved split cover:
+
+- **Left panel:** approximately 72–75% of the slide, always black / near-black.
+- **Right panel:** approximately 25–28% of the slide, using a dark tone from the client's verified palette.
+- **Far-left rule:** thin BOOST-orange vertical line.
+- **Top-left:** BOOST B mark / approved BOOST identifier.
+- **Primary title block:** client name + report type / period in the lower-middle left area.
+- **Metadata row:** Presented to / Prepared by / Period, kept concise.
+- **Bottom-left:** report category / document label when useful.
+- **Right panel:** month / year or reporting-period treatment, plus restrained category metadata if needed.
+
+The proportions may adjust slightly for unusually long client names, but the cover should still read as the same BOOST template.
+
+### Color behavior
+
+- Left panel stays black / near-black across clients.
+- Right panel uses a **dark client color**, not a bright full-saturation field unless the brand requires it and contrast remains premium.
+- BOOST orange remains a signature accent, not the client's replacement color.
+- White / soft-gray type provides hierarchy.
+
+### Photography on the cover
+
+Photography is optional, not required.
+
+Use a client / brand image only when:
+
+- the asset is high enough resolution,
+- it fits the intended frame naturally,
+- the crop strengthens the client identity,
+- the image can be placed without harming legibility.
+
+If photography is used:
+
+- preserve aspect ratio,
+- crop intentionally,
+- never stretch it horizontally or vertically,
+- never distort the subject to fit the split layout,
+- use the strongest available crop or choose another asset.
+
+If no image fits cleanly, use the split black + dark-client-color cover with no photo. A clean non-photographic cover is always better than a distorted image.
+
+### Required content
 
 - client identity
-- `× BOOST`
+- `× BOOST` co-sign when appropriate to the specific cover treatment
 - report type
 - reporting period
-- optional category / account label
+- prepared-by / client metadata only when useful
 
-Keep it premium and simple.
+### Do not
 
-Do not add decorative report metadata that nobody uses.
+- invent a different cover every month
+- use random photography to make the cover feel designed
+- stretch a brand image
+- create decorative metadata that nobody uses
+- introduce colors outside the approved client + BOOST system
+- leave draft states such as `Para revisión` in the final client export
 
-Do not let an AI-generated cover invent colors, imagery, or brand marks.
+### Cover QA
 
-Draft-only states such as `Para revisión` must be removed from final client export.
+Before export:
 
-## 17. Closing
+- [ ] left panel follows the approved black BOOST structure
+- [ ] right panel uses a verified dark client tone
+- [ ] image aspect ratio is preserved
+- [ ] no subject / logo is visibly distorted
+- [ ] month, year and period are correct
+- [ ] no stale metadata remains
+- [ ] final cover requires no Canva repair
+
+## 18. Closing
 
 The close can be one of two forms:
 
@@ -568,13 +649,13 @@ Client × BOOST, period, contact / account lead if relevant.
 
 Do not add generic motivational copy.
 
-## 18. Rhythm across the deck
+## 19. Rhythm across the deck
 
 Thumbnail view should have deliberate variation.
 
 A typical report may move through:
 
-- branded / photographic cover
+- canonical BOOST report cover
 - warm analytical overview
 - light data slide
 - client-color or dark emphasis moment
@@ -586,7 +667,7 @@ A typical report may move through:
 
 Do not alternate backgrounds mechanically. Change visual environment when the content job changes.
 
-## 19. Density target
+## 20. Density target
 
 A good monthly report usually feels **compact but complete**.
 
@@ -604,7 +685,7 @@ If the same idea is repeated on two consecutive slides, combine them.
 
 If one slide carries two unrelated decisions, split it.
 
-## 20. Report language and visual hierarchy
+## 21. Report language and visual hierarchy
 
 Use `performance-reporting` for analysis and `stop-slop-2` for prose.
 
@@ -614,7 +695,7 @@ The visual hierarchy should make this sequence clear:
 
 The client should never have to guess which sentence is a fact and which is BOOST's read.
 
-## 21. Client-skin configuration
+## 22. Client-skin configuration
 
 Each client should have a lightweight reporting config containing:
 
@@ -629,13 +710,15 @@ Each client should have a lightweight reporting config containing:
 - platforms
 - business objective
 - service role by channel
+- strategic priorities / active initiatives
 - priority KPIs
 - reporting depth by channel
 - approved photography / image library when available
+- cover-specific dark client tone
 
 Do not redesign the report system for every client.
 
-## 22. Acceptance checklist
+## 23. Acceptance checklist
 
 Before approval:
 
@@ -644,6 +727,7 @@ Before approval:
 - [ ] still feels native to the client
 - [ ] uses one coherent four-color working system
 - [ ] BOOST orange stays a signature, not a competing palette
+- [ ] canonical cover is used correctly
 - [ ] cover does not need manual replacement
 
 ### Slide craft
@@ -661,6 +745,8 @@ Before approval:
 - [ ] content thumbnails are visible when useful
 - [ ] tables are readable at laptop size
 - [ ] diagrams encode real logic
+- [ ] all images preserve aspect ratio
+- [ ] no image, screenshot or logo is stretched or distorted
 
 ### Analysis and comprehension
 - [ ] data, interpretation, and action are visually distinguishable
@@ -669,6 +755,7 @@ Before approval:
 - [ ] a smart non-marketer can understand the core deck
 - [ ] technical detail matches the client's service scope
 - [ ] appendix protects the core narrative from unnecessary mechanics
+- [ ] strategic priorities are not confused with performance winners
 
 ### Final output
 - [ ] presentation is client-ready on export
@@ -676,7 +763,7 @@ Before approval:
 - [ ] PDF and PPTX preserve hierarchy
 - [ ] no normal Canva cleanup step is required
 
-## 23. Governing rule
+## 24. Governing rule
 
 The report should contain more **useful visual explanation** than a platform dashboard and more **strategic judgment** than an automated analytics export, while remaining easy for the client to understand.
 
