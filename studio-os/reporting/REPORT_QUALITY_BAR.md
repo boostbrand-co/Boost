@@ -1,6 +1,6 @@
 # BOOST Reporting Quality Bar
 
-Status: V1 working standard  
+Status: V1.1 working standard  
 Owner: BOOST  
 Applies to: all recurring client performance reports and monthly review decks.
 
@@ -58,7 +58,11 @@ For content-heavy accounts, the core report should usually include:
 - at least one content-evidence slide with real thumbnails / creative frames, and
 - at least one visual comparison, chart, diagram or before/after treatment that explains a meaningful difference.
 
-This is a default preference, not a quota. Do not force it when evidence does not exist.
+For an account where BOOST's primary deliverable is organic content, real content evidence is a default **client-facing requirement**, not an optional decoration. If published assets can be retrieved, the core deck should show them.
+
+Do not produce a content report that names the best posts in text while hiding the actual posts.
+
+This requirement may be waived only when the source assets genuinely cannot be retrieved or shown. In that case, document the limitation internally rather than silently delivering a visually weaker report.
 
 Do not reduce a creative finding to a text list if showing the actual creative would make the learning clearer.
 
@@ -82,6 +86,14 @@ Avoid a deck where every slide is:
 headline + 3 KPI cards + one paragraph.
 
 Avoid solving visual simplicity by adding more copy.
+
+A slide that has only a title, one short statement, and a large unused canvas should be challenged before delivery. Either:
+
+- add useful evidence,
+- combine it with a related slide,
+- or remove it.
+
+Negative space is intentional only when the slide still feels resolved.
 
 ## 5. Headline certainty must match evidence
 
@@ -203,12 +215,15 @@ Reports should not look identical, but they should feel equally authored.
 
 Before final delivery, compare the current deck against recent approved BOOST reports in thumbnail view.
 
+Current working quality references include the approved AB Premium and Onskin reports. Use them as a **craft benchmark**, not as layout templates.
+
 Ask:
 
 - Does this feel like the same level of agency craft?
 - Is the visual evidence as strong as the source material allows?
 - Did a smaller scope become a visually sparse report?
 - Did a larger scope become a cluttered dashboard?
+- Does the deck contain enough actual client work to make the service tangible?
 
 Do not copy another client's layouts mechanically. Compare quality, not sameness.
 
@@ -229,4 +244,66 @@ A report is not ready if any of the following are true:
 - the report repeats the same learning several times
 - the deck looks noticeably less crafted than other approved BOOST reports without a source-material reason
 
-The quality bar is met when the report is accurate, visually authored, strategically useful, client-readable, and proportionate to the evidence.
+## 14. Metric-scope reconciliation inside the deck
+
+The client-facing deck itself must be internally consistent, not only the source spreadsheet.
+
+Before delivery, reconcile any metric that appears in more than one place.
+
+Check that:
+
+- the same metric name uses the same scope everywhere,
+- `average per post` does not switch between feed-only and feed + Reels without labeling,
+- a format total matches the sum of the item-level appendix when both represent the same definition,
+- a summary total reconciles with the platform / content-detail slides,
+- a content ranking does not use one interaction definition while a format slide uses another under the same label.
+
+If two definitions are both legitimate, rename them so the difference is visible.
+
+Do not use one generic label such as `interactions` for two different platform definitions.
+
+A numerical contradiction between the core deck and appendix is a QA failure even if both numbers came from the platform.
+
+## 15. Content visibility requirement
+
+For content-management accounts, the report should make BOOST's work tangible.
+
+At least one core slide should normally show the actual content that supports the analysis. Depending on the account, this can be:
+
+- top 3–5 posts,
+- representative format examples,
+- a winning Reel first frame,
+- a carousel sequence,
+- before / after creative,
+- same creative across two platforms.
+
+When enough content exists, prefer two visual-content moments across the deck rather than confining all evidence to one appendix table.
+
+The appendix can contain the complete ranking. The core deck should contain the **visual proof**.
+
+## 16. Experiment vs recommendation
+
+A recommendation for an untested format must be framed as a test, not as an established solution.
+
+Example:
+
+If an account has published zero carousels, `publish two carousels` can be a reasonable operational experiment when video is constrained.
+
+Client-facing framing should make the status clear:
+
+`Test two carousels to see whether the account can maintain reach without new filming.`
+
+Do not imply the format is already proven for that account.
+
+## 17. Unsupported offer / business-detail guardrail
+
+Do not introduce an offer, event, reservation mechanic, product detail, promotion, or operational fact in a recommendation unless it is verified in:
+
+- current client input,
+- published client content,
+- connected source data,
+- or approved client memory / config.
+
+If the next move depends on a detail such as a buffet, event, package, opening hours, reservation process or promotion, verify it before making it client-facing.
+
+The quality bar is met when the report is accurate, visually authored, strategically useful, client-readable, proportionate to the evidence, and visibly consistent with BOOST's approved craft standard.
