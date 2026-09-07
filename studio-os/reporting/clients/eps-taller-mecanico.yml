@@ -27,7 +27,10 @@ service_scope:
     role: active_service
     depth: medium_to_deep_if_ads_manager_available
     owner: Mau / BOOST
-    reporting_rule: Match analysis to the actual campaign objective. If Ads Manager access is unavailable, do not invent paid results; complete the organic-content report and flag the missing paid source internally.
+    reporting_rule: Match analysis to the actual campaign objective. If Ads Manager access is unavailable, do not invent paid results; use clearly labeled Meta Business Suite contact-source data when available and flag the missing Ads Manager source internally.
+  inbox_response:
+    role: not_confirmed_as_boost_scope
+    reporting_rule: Do not assign response-time or appointment-tagging actions to BOOST unless Ana confirms BOOST owns the inbox. Frame these as client-owned or shared operational recommendations when appropriate.
 
 platforms:
   meta_business_suite:
@@ -44,8 +47,8 @@ platforms:
     reporting_depth: medium_to_deep
 
 source_priority:
-  - Meta Business Suite native data / export
-  - Meta Ads Manager native data / export when accessible
+  - Meta Ads Manager native data / export when accessible for campaign delivery, spend and cost-per-result claims
+  - Meta Business Suite native data / export for social performance and contact-source context
   - prior monthly reports for continuity when available
   - screenshots for content / ad creative evidence and source verification
 
@@ -97,6 +100,11 @@ paid_media_analysis:
       - cost_efficiency_relevant_to_objective
       - frequency_when_decision_relevant
       - engagement_or_video_behavior_when_relevant
+  source_discipline:
+    - Meta Business Suite may identify contacts reported as coming from ads, but this is not a substitute for Ads Manager spend / delivery / cost data.
+    - Do not label a low-visibility day as a confirmed ad-delivery outage unless Ads Manager or another direct paid source verifies it.
+    - If Business Suite shows a distribution gap, call it a low-distribution / low-delivery signal to investigate with Mau.
+    - Do not publish counterfactual claims such as "X contacts were lost" unless the causal model, source completeness and assumptions are strong enough for client-facing use. Keep rough missed-volume estimates internal by default.
   never_do:
     - infer_revenue_from_messages
     - call_leads_qualified_without_downstream_data
@@ -118,6 +126,15 @@ content_analysis:
     - repeatable_winners_vs_outliers
   reporting_rule: Because BOOST contributes ideas and Reel editing, the report should show tangible creative evidence and explain what to repeat / adjust.
 
+measurement_gaps:
+  downstream_conversion:
+    status: not_reliably_measured_in_meta
+    reporting_rule: A platform value of 0 orders, 0 revenue, or 0 leads must not be presented as proof that the business generated zero real appointments / customers when tracking is not configured or the appointment happens outside Meta.
+    preferred_language: "Not measured in Meta" or "Downstream appointment outcome is not yet connected to the platform."
+  appointment_tracking:
+    status: recommended_if_client_operationally_feasible
+    ownership: client_or_shared_unless_confirmed
+
 client_language:
   principle: business_meaning_first
   tone: confident_positive_truthful_practical
@@ -126,6 +143,8 @@ client_language:
     - unsupported_sales_claims
     - unsupported_lead_quality_claims
     - generic_algorithm_language
+    - causal_loss_estimates_without_direct_paid_source
+    - presenting_untracked_business_outcomes_as_true_zero
   strategic_labels:
     - "LECTURA BOOST"
     - "DECISIÓN"
@@ -138,6 +157,7 @@ visual_skin:
   fallback_if_unverified: black_white_neutral_do_not_invent
   boost_cosign: true
   boost_orange_usage: signature_only
+  typography: inter_only
   include_real_content: true
   include_real_ad_creatives: true_when_available
   cover:
