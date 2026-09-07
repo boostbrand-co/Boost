@@ -1,6 +1,6 @@
 # BOOST Client Confidence Framing
 
-Status: V1 working standard  
+Status: V1.1 working standard  
 Owner: BOOST  
 Applies to: all recurring client performance reports and monthly review decks.
 
@@ -22,11 +22,44 @@ When the overall period is healthy and one channel, week, format or initiative s
 
 1. lead with the verified progress,
 2. name the softer result plainly,
-3. add relevant context without overclaiming causality,
+3. add only the context needed to interpret it,
 4. show the recovery / optimization plan,
 5. avoid repeating the same negative signal across multiple slides.
 
 When performance is materially weak across the account, say so clearly. Constructive framing must never become concealment.
+
+## Positive framing must stay concise
+
+Constructive framing is **not** permission to add more explanation.
+
+Do not turn a simple point into three or four sentences just to make it sound reassuring.
+
+Prefer one clean sentence that contains:
+
+`RESULT + CONTEXT + NEXT ACTION`
+
+when all three are needed.
+
+Example:
+
+`Instagram cerró el periodo arriba, aunque agosto bajó de ritmo con menos continuidad; recuperaremos la cadencia antes de cambiar la estrategia.`
+
+Do not expand this into a paragraph unless the client genuinely needs more context.
+
+A positive tone should come from proportion, word choice, hierarchy and the order of information — not from extra copy.
+
+### Working copy limits
+
+For core client-facing slides, use these as editorial targets rather than hard mechanical caps:
+
+- slide headline: usually 3–7 words
+- optional subhead: one short sentence
+- `LECTURA BOOST`: usually 1 sentence, ideally 15–30 words
+- `DECISIÓN`: usually 1 sentence, ideally 10–25 words
+- executive-summary bullets: one line when possible
+- action-plan entries: short enough to scan without reading a paragraph
+
+If a block needs multiple sentences to remain accurate, keep the shortest client-facing version in the core deck and move implementation detail to speaker notes, appendix or internal analysis.
 
 ## Executive-summary framing
 
@@ -61,25 +94,25 @@ Prefer calm, specific language.
 Examples:
 
 Prefer:
-`Instagram mantuvo crecimiento en el acumulado, pero agosto bajó de ritmo después del hueco de publicaciones.`
+`Instagram cerró arriba en el acumulado; agosto bajó de ritmo con menos continuidad.`
 
 Over:
 `Instagram perdió fuerza.`
 
 Prefer:
-`Plan Estudiante todavía está por debajo de la referencia; vamos a probar una ejecución más fuerte antes de sacar conclusiones.`
+`Plan Estudiante sigue por debajo de la referencia; probaremos una ejecución más fuerte antes de sacar conclusiones.`
 
 Over:
 `Plan Estudiante no conecta.`
 
 Prefer:
-`La caída coincide con una menor continuidad de publicación. Recuperaremos la cadencia y mediremos si vuelve el nivel anterior.`
+`La caída coincide con menor continuidad. Recuperaremos la cadencia y mediremos si vuelve el nivel anterior.`
 
 Over:
 `Instagram castiga los huecos.`
 
 Prefer:
-`El anuncio actual sigue resolviendo bien; vamos a renovar creativos para mantener el rendimiento.`
+`El anuncio actual sigue resolviendo bien; renovaremos creativos para mantener el rendimiento.`
 
 Over:
 `La cuenta depende peligrosamente de un solo anuncio.`
@@ -102,7 +135,7 @@ Do not use context as an excuse. Use it to explain scope and next action.
 When the cause is shared between BOOST and the client, use collaborative language rather than blame.
 
 Prefer:
-`Hubo un hueco de producción y publicación. Ya estamos reforzando el flujo de material y edición para recuperar una cadencia estable.`
+`Hubo un hueco de producción y publicación. Estamos reforzando el flujo de material y edición para recuperar una cadencia estable.`
 
 Avoid:
 `El cliente tardó en mandar material.`
@@ -117,9 +150,11 @@ Useful structure:
 
 `WHAT CHANGED → CONTEXT → WHAT WE ARE DOING`
 
+Keep the client-facing version compressed.
+
 Example:
 
-`Las vistas por video en Instagram bajaron durante agosto. La caída coincide con un hueco de publicación y no se repitió igual en Facebook con los mismos videos. El siguiente foco es recuperar continuidad y medir cuatro semanas completas antes de cambiar la estrategia de contenido.`
+`Las vistas por video bajaron durante agosto, coincidiendo con el hueco de publicación. Recuperaremos continuidad y mediremos cuatro semanas completas antes de cambiar la estrategia.`
 
 ## Do not repeat the problem
 
@@ -128,6 +163,24 @@ Once a negative signal has been established, do not restate it as a warning on t
 Repetition creates unnecessary alarm and makes the report feel worse than the data.
 
 The core deck should normally state a contained issue once in detail, then refer to the action rather than repeating the problem.
+
+## Avoid synthesis stacking
+
+Do not create several consecutive slides that all summarize the same findings under different labels.
+
+Common duplication pattern:
+
+`content learning → strategic read → what we're watching → next moves`
+
+If slide-level `LECTURA BOOST` blocks already explain the evidence, the core deck often needs only:
+
+- one executive summary,
+- the evidence slides with their local read,
+- one `PRÓXIMOS MOVIMIENTOS` slide.
+
+A separate strategic-read slide is optional. Keep it only when it adds a genuinely new cross-channel conclusion that is not already obvious from the preceding slides.
+
+A watchlist belongs in the core deck only when the client needs to know it now. Otherwise keep it in internal notes / strategic memory.
 
 ## Internal risk vs client-facing relevance
 
@@ -152,7 +205,7 @@ Instead, show control through specificity:
 
 - what improved,
 - what softened,
-- why that interpretation is reasonable,
+- the minimum context needed,
 - what BOOST will do next,
 - what will be measured to confirm recovery.
 
@@ -180,6 +233,9 @@ Before delivery, ask:
 - Does every important issue have a clear next action?
 - Did we repeat the same negative point unnecessarily?
 - Did we expose internal technical risk that the client cannot act on?
+- Did positive framing add unnecessary text?
+- Are there multiple synthesis slides repeating the same learning?
+- Could any `LECTURA BOOST` or `DECISIÓN` be reduced to one sentence without losing accuracy?
 - Does the report leave the client understanding both progress and the plan?
 
-The standard is met when the client gets the truth, understands the context, and feels that BOOST knows what to do next.
+The standard is met when the client gets the truth, understands the context, and feels that BOOST knows what to do next — without having to read an essay.
