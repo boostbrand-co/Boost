@@ -47,21 +47,34 @@ Do not stretch or distort any logo or image.
 
 ## Page 2 — Standard interior-slide chrome
 
-Page 2 is the reference for how a normal report slide should carry BOOST identity.
+Page 2 is the canonical reference for how **normal client-facing report slides** should carry BOOST identity.
 
-Treat it as **presentation chrome**, not as a rigid content layout.
-
-Preserve the recurring BOOST identifiers and spacing behavior shown on this page, especially:
+It defines the recurring frame around the content, especially:
 
 - B® placement
-- top-of-slide report / client metadata treatment
-- footer / pagination behavior when present
+- top-of-slide metadata / report identifier treatment
+- client / report context placement
 - safe margins
-- relationship between BOOST identity and the client content area
+- footer / page-number treatment when present
+- spacing relationship between the BOOST identity layer and the content area
 
-The body of each slide remains modular. Charts, tables, thumbnails, diagrams, KPI blocks and strategic reads may use different layout families from the Reporting Design System.
+Treat page 2 as **presentation chrome**, not as a rigid content layout.
 
-Do not force every interior slide to use the same composition as page 2. Use page 2 to standardize the frame around the content.
+The content area remains modular. Charts, tables, thumbnails, diagrams, KPI blocks, strategic reads, comparisons and action plans may use different layout families from the BOOST Reporting Design System.
+
+Do not force every interior slide to reproduce the same composition as page 2. Preserve the **shell** while allowing the middle of the slide to adapt to the content.
+
+### Important final-output rule
+
+Page 2 is a **reference / base slide**, not an extra blank slide that should remain in the final client deck.
+
+When assembling the final Canva:
+
+- use page 2 as the starting shell for interior slides when practical, or
+- reproduce its B®, top metadata, margin and footer behavior on imported body slides,
+- then place the real report content inside that frame.
+
+The final deck should never contain an unused blank `template reference` slide between the cover and report body.
 
 ## Page 3 — Canonical back cover
 
@@ -86,14 +99,15 @@ Preferred flow:
 
 1. Create or import the approved report body.
 2. Make a copy of `BOOST® REPORT TEMPLATE`; never overwrite the master.
-3. Keep page 1 as the first page.
-4. Use page 2 as the visual reference for interior-slide chrome while preserving the report body's modular layouts.
-5. Insert all approved report-body slides after the cover.
-6. Keep page 3 as the final page.
-7. Update dynamic cover / closing fields.
-8. Run Canva-specific QA.
-9. Rename the final design using the BOOST naming convention.
-10. Return the editable Canva link to Ana.
+3. Keep page 1 as the final cover.
+4. Use page 2 as the interior-slide shell / chrome reference.
+5. Apply that shell to the report-body slides while preserving modular content layouts.
+6. Do not leave the unused page-2 template reference as an extra client-facing page.
+7. Keep page 3 as the final back cover.
+8. Update dynamic cover / closing fields.
+9. Run Canva-specific QA.
+10. Rename the final design using the BOOST naming convention.
+11. Return the editable Canva link to Ana.
 
 ## Naming convention
 
@@ -114,11 +128,13 @@ Before delivery verify:
 
 - cover is page 1
 - back cover is last
+- no unused template-reference page remains in the final deck
 - client name is correct
 - period / month / year are correct
 - report title follows naming convention
-- B® and metadata treatment match the canonical template
+- B® and metadata treatment match page 2 of the canonical template
 - interior-slide chrome is consistent
+- interior content remains modular rather than template-locked
 - no imported page is missing or duplicated
 - no text overflows
 - no chart labels shifted during import
