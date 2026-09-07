@@ -13,6 +13,7 @@ reporting:
   core_deck_target: 8-10
   appendix_allowed: true
   client_comprehension_level: smart_business_owner_non_marketer
+  framing_standard: studio-os/reporting/CLIENT_CONFIDENCE_FRAMING.md
 
 business_context:
   primary_objective: Build AB Premium and its owner as a visible, trusted automotive personal brand and community presence
@@ -163,6 +164,7 @@ paid_media_analysis:
 
 client_language:
   principle: business_meaning_first
+  framing: constructive_confidence_truth_first
   avoid_unexplained_terms:
     - CBO
     - CPR
@@ -171,14 +173,31 @@ client_language:
     - CTR
     - attribution window
     - ad set
+  avoid_alarmist_phrasing_when_not_material:
+    - "perdió fuerza"
+    - "Instagram castiga los huecos"
+    - "no conecta"
+    - "riesgo" 
+    - "depende de un solo anuncio"
   preferred_examples:
     - "Costo por conversación"
     - "Conversaciones generadas por anuncios"
     - "La publicidad amplificó el contenido y generó X conversaciones a un costo de Y cada una"
+    - "Instagram cerró el periodo arriba; agosto bajó de ritmo durante el hueco de publicaciones"
+    - "Plan Estudiante todavía está por debajo de la referencia y vamos a probar una ejecución más fuerte"
+    - "El anuncio actual sigue resolviendo bien; renovaremos creativos para mantener el rendimiento"
   strategic_labels:
     - "LECTURA BOOST"
     - "DECISIÓN"
     - "EN OBSERVACIÓN"
+    - "FOCOS DEL SIGUIENTE PERIODO"
+
+client_confidence_framing:
+  account_health_for_2026-07-01_to_2026-08-18: healthy_optimizing
+  rule: Lead with verified overall growth and frame Instagram as a contained cadence issue with a clear recovery plan. Do not let the Instagram slowdown dominate the emotional tone of the report.
+  repetition_rule: Explain the Instagram slowdown once in detail; subsequent slides should emphasize the action rather than repeat the decline.
+  shared_process_rule: Do not blame the client for delayed material in client-facing copy. Use collaborative language around production cadence and a shared plan to avoid long publishing gaps.
+  reassurance_rule: Build confidence through specific progress, context and next actions. Do not use vague statements such as "todo está bien" if a metric is materially down.
 
 visual_skin:
   logo: use_verified_client_asset
@@ -215,13 +234,22 @@ known_reporting_lessons:
   - Period labels and local dates must be checked carefully.
   - Plan Estudiante is a business priority despite weak current organic performance; the next action is to improve the campaign and creative framing, not drop the initiative by default.
   - Cover photography must never be stretched. Preserve aspect ratio and crop intentionally, or use the standard non-photographic split cover.
+  - The client-facing report should preserve confidence when overall performance is healthy. Contained declines should be contextualized, paired with a plan and not repeated as warnings throughout the deck.
 
 period_specific_notes:
   2026-07-01_to_2026-08-18:
     reason_for_custom_period: July report was not delivered separately, so this report intentionally combines July 1 through August 18.
     content_pause_after_aug_18: No new content was published after August 18 because client material was delayed.
-    interpretation_rule: Do not frame the post-August-18 publication gap as a BOOST strategy or cadence failure.
-    report_length: Extended period may justify more than the normal 8–10 core-slide target.
+    production_status_as_of_2026-09-07: Approximately eight videos are currently in editing and no new content has been published since August 18.
+    instagram_context: Instagram finished the full Jul 1–Aug 18 period above the prior comparable period in views and reach, but performance softened during August as publishing consistency declined. The slowdown coincides with the publishing gap; do not state that Instagram "punishes" inconsistency as a proven causal mechanism.
+    client_facing_context: Explain that the team identified the importance of continuity and is reinforcing the shared production / editing flow so long gaps do not repeat. Keep the language collaborative and forward-looking rather than assigning blame.
+    interpretation_rule: Do not frame the post-August-18 publication gap as a BOOST strategy failure or a client failure. Frame it as a production-cadence gap with a concrete recovery plan.
+    recommended_priority_order:
+      - recover_consistent_instagram_cadence
+      - strengthen_plan_estudiante
+      - continue_real_work_and_myth_content_system
+      - refresh_paid_amplification_creatives
+    report_length: Extended period may justify more than the normal 8–10 core-slide target, but remove technical or repetitive slides that do not improve the client decision.
 
 monthly_memory:
   enabled: true
