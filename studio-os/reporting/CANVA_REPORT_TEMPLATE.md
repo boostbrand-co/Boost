@@ -122,6 +122,32 @@ Examples:
 
 Do not add version labels such as `V2`, `V3`, `FINAL`, `Claude`, or `Generated` unless Ana explicitly requests them.
 
+## Final chat handoff
+
+When Canva finalization succeeds, the **default user-facing delivery is the direct editable Canva link in the chat**.
+
+Do not make Ana open a separate handoff document to find the report.
+
+Do not surface Google Drive handoff docs, QA documents, PPTX files, PDFs, source files or internal analysis as separate chat attachments unless Ana asks for them or a blocker requires review.
+
+Internal working files may still be created and preserved for audit / QA, but they should stay out of the normal client-report handoff.
+
+### Default successful response
+
+Keep the final chat response minimal, for example:
+
+`Listo: [Abrir reporte en Canva](<editable Canva URL>)`
+
+Optionally add one short line only when Ana needs to know a material caveat or confirm one unresolved item.
+
+Do not provide a long handoff summary when the report is complete and there are no blockers.
+
+### If there is a blocker
+
+If Canva finalization is incomplete, say exactly what remains unresolved and provide the best available working link / artifact.
+
+Never imply that the Canva is final when the final Canva assembly or QA did not complete.
+
 ## Canva QA
 
 Before delivery verify:
@@ -140,6 +166,7 @@ Before delivery verify:
 - no chart labels shifted during import
 - no image or logo is stretched
 - no internal QA / source notes appear client-facing
+- the editable Canva link opens the intended final report
 
 If Canva import damages a slide, correct it before delivery when feasible.
 
@@ -148,3 +175,5 @@ If Canva import damages a slide, correct it before delivery when feasible.
 The BOOST reporting system should generate the **content and analysis modularly**, then finish inside the **fixed BOOST Canva shell**.
 
 The cover, interior identity chrome and back cover should become more consistent over time, not get redesigned by AI every month.
+
+The user-facing handoff should become simpler over time as the internal system becomes more sophisticated.
