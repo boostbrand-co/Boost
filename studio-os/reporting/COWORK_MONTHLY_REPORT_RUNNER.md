@@ -6,7 +6,7 @@ The goal is to remove manual collection, transcription, analysis, and formatting
 
 The workflow is:
 
-`Collect → Validate → Normalize → Analyze → Translate → Frame → Structure → Design → QA → Review`
+`Collect → Validate → Normalize → Analyze → Translate → Frame → Compress → Structure → Design → QA → Review`
 
 Do not publish, send, or modify live marketing activity unless the user separately asks.
 
@@ -19,8 +19,9 @@ Before working, read:
 3. `.claude/skills/presentation-design/SKILL.md`
 4. `studio-os/reporting/BOOST_REPORTING_DESIGN_SYSTEM.md`
 5. `studio-os/reporting/CLIENT_CONFIDENCE_FRAMING.md`
-6. the active client's reporting config
-7. prior report(s) when supplied or accessible
+6. `studio-os/reporting/REPORT_EDITORIAL_COMPRESSION.md`
+7. the active client's reporting config
+8. prior report(s) when supplied or accessible
 
 Follow the most specific approved client facts without overriding universal evidence rules.
 
@@ -277,12 +278,13 @@ Rules:
 - When a result coincides with an operational gap, state the relationship without inventing causality.
 - When a dependency is shared between BOOST and the client, use collaborative language. Do not blame the client in the report and do not falsely take sole responsibility for client-controlled dependencies.
 - Confidence should come from specific progress, context, ownership and next steps, not vague reassurance.
+- Positive framing must stay concise. Do not add paragraphs just to soften one decline.
 
-## Phase 7 — Apply writing standard
+## Phase 7 — Apply writing and editorial compression
 
-Apply `stop-slop-2` to all client-facing copy.
+Apply `stop-slop-2` and `REPORT_EDITORIAL_COMPRESSION.md` to all client-facing copy.
 
-The report should read like a capable agency team reviewed the account.
+The report should read like a capable agency team reviewed the account, but the reading should feel light.
 
 Keep:
 
@@ -300,6 +302,23 @@ Remove:
 - filler
 - platform jargon the client does not need
 - repeated warning language that makes a contained issue feel larger than it is
+- long slide titles that read like body copy
+- multiple learning / synthesis slides that repeat the same findings
+- multi-sentence insight blocks that can be reduced to one sentence
+
+### Compression targets
+
+Use as editorial targets, not mechanical caps:
+
+- eyebrow: 1–4 words
+- headline: usually 3–7 words
+- headline usually under ~45 characters
+- optional subhead: one short sentence
+- `LECTURA BOOST`: usually one sentence, roughly 15–30 words
+- `DECISIÓN`: usually one sentence, roughly 10–25 words
+- executive-summary bullets: one line when possible
+
+If the same learning already appears in the executive summary, evidence slides and next moves, do not create another dedicated strategic-read slide unless it adds a genuinely new cross-channel conclusion.
 
 ## Phase 8 — Build report architecture
 
@@ -309,7 +328,7 @@ Select modules from the BOOST Reporting Design System based on what the data nee
 
 For a normal monthly report, aim for roughly **8–10 core slides plus appendix** when appropriate. Extended periods may justify more.
 
-Possible sequence:
+A compact sequence can be:
 
 1. Cover
 2. Executive Summary
@@ -317,10 +336,14 @@ Possible sequence:
 4. Platform or channel analysis
 5. Paid media at the depth required by the account
 6. Content evidence
-7. Strategic read
+7. Strategic-priority initiative when relevant
 8. Next moves
 9. Optional appendix
 10. Close
+
+This is not a rigid template.
+
+A dedicated `Strategic Read`, `What We're Learning` or `What We're Watching` slide is optional. Keep it only when it adds information that is not already carried by the local insight blocks and next moves.
 
 Combine slides when the information is closely related.
 
@@ -372,6 +395,7 @@ Avoid:
 - screenshot-heavy analytics pages
 - full client-color wallpaper on every slide
 - stretched, squeezed or distorted images
+- headlines that require two lines because the full conclusion was placed in the title
 
 ### Cover requirement
 
@@ -401,7 +425,7 @@ A clean non-photographic cover is preferable to a distorted image.
 
 ## Phase 10 — Presentation QA
 
-Review the deck four times.
+Review the deck five times.
 
 ### Thumbnail pass
 
@@ -459,6 +483,17 @@ Check:
 - Are internal operational risks exposed even though the client cannot act on them?
 - Does the client finish the deck understanding both progress and the plan?
 
+### Editorial-compression pass
+
+Check:
+
+- Are slide titles short enough to scan?
+- Can any headline become an eyebrow + short headline + optional subhead?
+- Are multiple synthesis slides repeating the same learning?
+- Can any insight paragraph become one sentence?
+- Did positive framing add unnecessary copy?
+- Is implementation detail occupying core-slide space unnecessarily?
+
 Create:
 
 `qa/presentation-qa.md`
@@ -476,6 +511,7 @@ Before client-ready export:
 - verify the canonical cover is used correctly
 - verify no image, screenshot or logo is distorted
 - verify the close does not dramatize the next-period focus
+- verify the core deck does not contain redundant synthesis / learning slides
 
 ## Phase 12 — Deliver for BOOST review
 
@@ -516,6 +552,7 @@ Match reporting depth to the client's actual objective and BOOST's service role 
 Respect strategic priorities from the client config even when their current executions underperform.
 Translate technical platform data into clear client-facing language before designing the deck.
 Apply CLIENT_CONFIDENCE_FRAMING.md so the tone reflects the actual account health: truthful, constructive, specific and not unnecessarily alarming.
+Apply REPORT_EDITORIAL_COMPRESSION.md so the thinking stays deep while titles, insight blocks and synthesis stay concise.
 Apply performance-reporting, stop-slop-2, presentation-design, and the BOOST Reporting Design System.
 Use prior reports for continuity, not as rigid slide templates.
 Use the canonical BOOST report cover and never stretch or distort imagery.
@@ -527,4 +564,4 @@ Produce a final-quality editable presentation and PDF preview for BOOST review. 
 
 This workflow succeeds when Ana can review the report as an editor / strategist instead of rebuilding it manually.
 
-If routine delivery still requires rebuilding the cover, restyling slides in Canva, manually transcribing platform tables, translating marketing jargon for the client, correcting distorted imagery, reframing unnecessarily alarming language, or rewriting generic AI analysis, the system needs another iteration.
+If routine delivery still requires rebuilding the cover, restyling slides in Canva, manually transcribing platform tables, translating marketing jargon for the client, correcting distorted imagery, reframing unnecessarily alarming language, deleting redundant learning slides, shortening AI-length titles, or rewriting generic analysis, the system needs another iteration.
