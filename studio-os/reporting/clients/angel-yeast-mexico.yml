@@ -1,0 +1,174 @@
+client:
+  id: angel-yeast-mexico
+  name: Angel Yeast Mexico
+  display_name: Angel Yeast
+  report_language: es-MX
+  currency: MXN
+
+reporting:
+  cadence: monthly
+  primary_report_type: social-presence-content-execution
+  comparison_default: previous_comparable_month
+  delivery_state: boost-review-before-client
+  core_deck_target: 7-9
+  appendix_allowed: true
+  client_comprehension_level: smart_business_owner_non_marketer
+
+business_context:
+  primary_objective: Maintain an active, professional social presence for Angel Yeast in Mexico and support gradual brand visibility / market presence.
+  secondary_objectives:
+    - keep Instagram active and coherent
+    - keep LinkedIn active and professionally presented
+    - identify which client-directed topics and formats produce stronger response
+  reporting_implication: Do not force lead generation, sales, ecommerce, or aggressive growth to become the success frame unless verified scope and data support it.
+
+engagement_model:
+  planning_control: client_directed
+  primary_contact: Bruce
+  context: Bruce provides highly specific post direction, including topic, image and text. BOOST primarily produces the designs using the established visual style and publishes the content.
+  strategic_control: limited
+  reporting_rule: Separate content-performance observations from strategic recommendations that BOOST cannot implement without client approval. Do not imply BOOST has full control over topics, visual direction or messaging when it does not.
+
+service_scope:
+  instagram_content:
+    role: execution_and_publishing
+    depth: medium
+    purpose: active_presence_visibility
+  linkedin_content:
+    role: execution_and_publishing
+    depth: medium
+    purpose: professional_presence_visibility
+  paid_media:
+    role: out_of_scope_unless_verified
+    depth: none
+    note: Do not include paid-media analysis unless an active paid scope is verified for this account.
+
+platforms:
+  instagram:
+    active: true
+    scope: organic_content
+    reporting_depth: medium
+    source: Meta Business Suite when available
+  linkedin:
+    active: true
+    scope: organic_company_page_content
+    reporting_depth: medium
+    source: LinkedIn through authorized Chrome access
+  facebook:
+    active: verify_before_use
+    reporting_rule: Include only if BOOST is actively publishing / managing it and the period data is relevant.
+
+source_priority:
+  - Meta Business Suite native data / export for Instagram and any verified Meta properties
+  - LinkedIn native analytics through authorized Chrome access
+  - previous monthly report for historical continuity only
+  - screenshots for content evidence / source verification
+
+priority_kpis:
+  - metric: reach_or_impressions
+    channel: instagram
+    directionality: higher_is_better
+    priority: primary
+  - metric: interactions
+    channel: instagram
+    directionality: contextual
+    priority: primary
+  - metric: content_views
+    channel: instagram
+    directionality: higher_is_better
+    priority: secondary
+  - metric: follower_growth
+    channel: instagram
+    directionality: contextual
+    priority: diagnostic
+  - metric: impressions
+    channel: linkedin
+    directionality: higher_is_better
+    priority: primary
+  - metric: engagements
+    channel: linkedin
+    directionality: contextual
+    priority: primary
+  - metric: clicks_or_profile_actions
+    channel: linkedin
+    directionality: higher_is_better
+    priority: secondary
+  - metric: follower_growth
+    channel: linkedin
+    directionality: contextual
+    priority: diagnostic
+  - metric: publishing_volume
+    channel: cross_platform
+    directionality: contextual
+    priority: diagnostic
+
+content_analysis:
+  priority: high
+  include_real_thumbnails: true
+  mandatory_visual_evidence: true
+  analyze:
+    - topic
+    - post format
+    - hook / opening message when visible
+    - imagery type
+    - educational / product / corporate / event orientation
+    - reach / impressions
+    - interactions / engagements
+    - clicks when available
+    - repeatable performance differences by content type
+  reporting_rule: Because creative direction is largely client-directed, use the report to identify evidence about what performs relatively better without pretending BOOST controls the full strategy.
+
+strategic_constraints:
+  visual_style:
+    status: established_legacy_style
+    context: BOOST has proposed style updates multiple times, but the client prefers to retain the existing design direction created roughly two years ago.
+    reporting_implication: Do not make redesigning the visual identity a client-facing recommendation every month. Only surface design evolution when there is relevant evidence and a realistic approval path.
+  content_direction:
+    status: highly_client_directed
+    reporting_implication: Recommendations should focus on optimizations that can fit inside Bruce's planning process unless Ana explicitly wants a broader strategic proposal.
+
+client_language:
+  principle: business_meaning_first
+  tone: professional_positive_truthful_practical
+  avoid:
+    - blaming_the_client_for_content_quality
+    - implying_full_strategy_control
+    - unsupported_growth_claims
+    - unsupported_market_positioning_claims
+    - generic_algorithm_language
+  strategic_labels:
+    - "LECTURA BOOST"
+    - "DECISIÓN"
+    - "FOCOS DEL SIGUIENTE PERIODO"
+
+visual_skin:
+  palette_mode: verified_client_colors_plus_black_white
+  client_primary_accent: use_verified_brand_color_if_available
+  client_secondary_accent: use_verified_brand_color_if_available
+  fallback_if_unverified: black_white_neutral_do_not_invent
+  boost_cosign: true
+  boost_orange_usage: signature_only
+  include_real_content: true
+  cover:
+    template: boost_standard_report_cover
+    image_usage: optional_only_if_high_quality_and_correctly_fitted
+    image_fit_rule: preserve_aspect_ratio_crop_never_stretch
+
+monthly_memory:
+  enabled: true
+  fields:
+    - hypotheses
+    - recurring_winners
+    - recurring_underperformers
+    - instagram_patterns
+    - linkedin_patterns
+    - topic_patterns
+    - client_directed_constraints
+    - approved_optimizations
+    - measurement_gaps
+    - unresolved_questions
+
+human_review:
+  required: true
+  reviewer: Ana Pau / BOOST
+  do_not_auto_send_to_client: true
