@@ -1,6 +1,6 @@
 # BOOST Reporting Quality Bar
 
-Status: V1.1 working standard  
+Status: V1.2 working standard  
 Owner: BOOST  
 Applies to: all recurring client performance reports and monthly review decks.
 
@@ -306,4 +306,86 @@ Do not introduce an offer, event, reservation mechanic, product detail, promotio
 
 If the next move depends on a detail such as a buffet, event, package, opening hours, reservation process or promotion, verify it before making it client-facing.
 
-The quality bar is met when the report is accurate, visually authored, strategically useful, client-readable, proportionate to the evidence, and visibly consistent with BOOST's approved craft standard.
+## 18. BOOST typography is fixed: Inter only
+
+All BOOST recurring reports use **Inter** as the sole typeface across the full client-facing deck.
+
+This is BOOST brand grammar and overrides any client typeface preference for report typography.
+
+The client may influence color, imagery, logo, and selected visual accents. The report font family does not change.
+
+Use Inter through variation in:
+
+- weight
+- size
+- tracking
+- line height
+- case
+- spacing
+
+Do not introduce a serif, display font, client brand font, or alternate sans-serif for titles, data, appendix pages, cover, charts, or captions.
+
+If a generated/imported Canva slide uses a non-Inter font, that is a QA failure and must be corrected before delivery.
+
+## 19. Slide titles must be titles
+
+BOOST report slide titles should read like **editorial section titles / noun phrases**, not sentence-style conclusions, slogans, hooks, or conversational phrases.
+
+Use the title to name the analytical job of the slide. Put the interpretation in the chart, evidence, subhead, `BOOST READ`, or annotation.
+
+Prefer:
+
+- `August Performance Overview`
+- `Comparison Context`
+- `Instagram Performance`
+- `Published Content`
+- `Format Performance`
+- `Collaboration Performance`
+- `LinkedIn Performance`
+- `Cross-Platform Comparison`
+- `September Priorities`
+- `Content Detail`
+- `Sources & Definitions`
+
+Over:
+
+- `Cadence held, reach fell`
+- `July had paid media; August did not`
+- `The Reel doubles the photo`
+- `The topic decides the reach`
+- `The piece that went the farthest`
+
+A short eyebrow may carry the channel or section label. The main title still needs to function as a title, not as body copy disguised as a headline.
+
+Apply `stop-slop-2` to titles as rigorously as body copy. Generic AI phrasing is a QA failure even when it is short.
+
+## 20. Flat-slide prohibition
+
+No core or appendix slide should look unfinished simply because its content is operational, tabular, or methodological.
+
+Especially challenge:
+
+- next-moves slides
+- appendix tables
+- source / methodology slides
+- definitions pages
+
+These slides still need authored composition through useful devices such as:
+
+- structured color fields
+- numbered rails
+- hierarchy blocks
+- compact boxes
+- section bands
+- ranked bars
+- thumbnails
+- client-color accents
+- dark / light environment shifts
+- split-column layouts
+- designed tables
+
+Do not add decoration for decoration's sake. The slide should feel visually resolved and intentional.
+
+If an appendix or source slide cannot justify a full page, combine it with adjacent material rather than leaving a flat page in the deck.
+
+The quality bar is met when the report is accurate, visually authored, strategically useful, client-readable, proportionate to the evidence, visibly consistent with BOOST's approved craft standard, and unmistakably part of the BOOST reporting system.
