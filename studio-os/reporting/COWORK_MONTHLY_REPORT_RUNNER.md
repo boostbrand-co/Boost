@@ -6,7 +6,7 @@ The goal is to remove manual collection, transcription, analysis, and formatting
 
 The workflow is:
 
-`Collect → Validate → Normalize → Analyze → Translate → Structure → Design → QA → Review`
+`Collect → Validate → Normalize → Analyze → Translate → Frame → Structure → Design → QA → Review`
 
 Do not publish, send, or modify live marketing activity unless the user separately asks.
 
@@ -18,8 +18,9 @@ Before working, read:
 2. `.claude/skills/stop-slop-2/SKILL.md`
 3. `.claude/skills/presentation-design/SKILL.md`
 4. `studio-os/reporting/BOOST_REPORTING_DESIGN_SYSTEM.md`
-5. the active client's reporting config
-6. prior report(s) when supplied or accessible
+5. `studio-os/reporting/CLIENT_CONFIDENCE_FRAMING.md`
+6. the active client's reporting config
+7. prior report(s) when supplied or accessible
 
 Follow the most specific approved client facts without overriding universal evidence rules.
 
@@ -230,11 +231,11 @@ Signals that are interesting but not mature enough to drive a conclusion.
 
 Use prior reports to identify longitudinal patterns when available.
 
-## Phase 6 — Translate for the client
+## Phase 6 — Translate and frame for the client
 
 Create a client-facing layer before slide design.
 
-Apply these rules:
+### Client-comprehension rules
 
 - Assume the client understands their business but may not know marketing terminology.
 - Lead with business meaning, then the metric, then technical detail only if useful.
@@ -248,8 +249,34 @@ For strategic sections, client-facing labels should favor:
 - **LECTURA BOOST**
 - **DECISIÓN**
 - **EN OBSERVACIÓN**
+- **FOCOS DEL SIGUIENTE PERIODO**
 
 The internal analysis can remain more technical.
+
+### Client-confidence framing pass
+
+Apply `CLIENT_CONFIDENCE_FRAMING.md` before writing the final slide copy.
+
+Internally classify the account period as one of:
+
+- `HEALTHY / OPTIMIZING`
+- `MIXED / NEEDS ATTENTION`
+- `MATERIAL DECLINE`
+
+Use that classification to calibrate tone. Do not show the label to the client unless the account has an approved health-score treatment.
+
+Rules:
+
+- Lead with verified overall progress when the account is healthy.
+- Do not give one contained decline more emotional weight than the account's overall health warrants.
+- State material declines accurately; constructive framing never means hiding results.
+- Pair important softer results with context and a clear next action.
+- Do not repeat the same negative signal across multiple slides unless each repetition adds a new decision.
+- Prefer calm language such as `bajó de ritmo`, `quedó por debajo de la referencia`, `foco del siguiente periodo`, or `vamos a recuperar la cadencia` when those phrases match the evidence.
+- Avoid alarmist wording such as `riesgo`, `castiga`, `no conecta`, `perdió fuerza`, or `depende peligrosamente` unless the severity genuinely warrants it.
+- When a result coincides with an operational gap, state the relationship without inventing causality.
+- When a dependency is shared between BOOST and the client, use collaborative language. Do not blame the client in the report and do not falsely take sole responsibility for client-controlled dependencies.
+- Confidence should come from specific progress, context, ownership and next steps, not vague reassurance.
 
 ## Phase 7 — Apply writing standard
 
@@ -272,6 +299,7 @@ Remove:
 - unsupported certainty
 - filler
 - platform jargon the client does not need
+- repeated warning language that makes a contained issue feel larger than it is
 
 ## Phase 8 — Build report architecture
 
@@ -299,6 +327,8 @@ Combine slides when the information is closely related.
 Split only when a slide would otherwise carry two separate strategic jobs.
 
 Move detailed campaign tables, full content rankings and source methodology to appendix when they support the analysis but do not need to interrupt the core narrative.
+
+A watchlist / monitoring slide is optional, not required. Keep it only when the client benefits from seeing those signals. Internal thresholds and diagnostics can stay in notes / QA.
 
 Write a slide plan before designing:
 
@@ -371,7 +401,7 @@ A clean non-photographic cover is preferable to a distorted image.
 
 ## Phase 10 — Presentation QA
 
-Review the deck three times.
+Review the deck four times.
 
 ### Thumbnail pass
 
@@ -414,6 +444,21 @@ Check:
 - Are next moves scannable?
 - Are strategic business priorities represented accurately even when current executions underperformed?
 
+### Client-confidence pass
+
+Read the deck for emotional balance against the actual account health.
+
+Check:
+
+- Does the opening reflect the verified overall period before optimization areas?
+- Are positive developments visible enough when the data supports them?
+- Did one contained decline become the emotional center of the report through repetition?
+- Is every material negative still stated honestly?
+- Does each important issue have context and a concrete next step?
+- Is alarmist wording stronger than the evidence warrants?
+- Are internal operational risks exposed even though the client cannot act on them?
+- Does the client finish the deck understanding both progress and the plan?
+
 Create:
 
 `qa/presentation-qa.md`
@@ -430,6 +475,7 @@ Before client-ready export:
 - verify client-facing file names
 - verify the canonical cover is used correctly
 - verify no image, screenshot or logo is distorted
+- verify the close does not dramatize the next-period focus
 
 ## Phase 12 — Deliver for BOOST review
 
@@ -469,6 +515,7 @@ Complete data QA before analysis.
 Match reporting depth to the client's actual objective and BOOST's service role on each channel.
 Respect strategic priorities from the client config even when their current executions underperform.
 Translate technical platform data into clear client-facing language before designing the deck.
+Apply CLIENT_CONFIDENCE_FRAMING.md so the tone reflects the actual account health: truthful, constructive, specific and not unnecessarily alarming.
 Apply performance-reporting, stop-slop-2, presentation-design, and the BOOST Reporting Design System.
 Use prior reports for continuity, not as rigid slide templates.
 Use the canonical BOOST report cover and never stretch or distort imagery.
@@ -480,4 +527,4 @@ Produce a final-quality editable presentation and PDF preview for BOOST review. 
 
 This workflow succeeds when Ana can review the report as an editor / strategist instead of rebuilding it manually.
 
-If routine delivery still requires rebuilding the cover, restyling slides in Canva, manually transcribing platform tables, translating marketing jargon for the client, correcting distorted imagery, or rewriting generic AI analysis, the system needs another iteration.
+If routine delivery still requires rebuilding the cover, restyling slides in Canva, manually transcribing platform tables, translating marketing jargon for the client, correcting distorted imagery, reframing unnecessarily alarming language, or rewriting generic AI analysis, the system needs another iteration.
