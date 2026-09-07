@@ -2,7 +2,7 @@ client:
   id: angel-yeast-mexico
   name: Angel Yeast Mexico
   display_name: Angel Yeast
-  report_language: es-MX
+  report_language: en-US
   currency: MXN
 
 reporting:
@@ -128,6 +128,7 @@ strategic_constraints:
     reporting_implication: Recommendations should focus on optimizations that can fit inside Bruce's planning process unless Ana explicitly wants a broader strategic proposal.
 
 client_language:
+  language: English
   principle: business_meaning_first
   tone: professional_positive_truthful_practical
   avoid:
@@ -137,9 +138,9 @@ client_language:
     - unsupported_market_positioning_claims
     - generic_algorithm_language
   strategic_labels:
-    - "LECTURA BOOST"
-    - "DECISIÓN"
-    - "FOCOS DEL SIGUIENTE PERIODO"
+    - "BOOST READ"
+    - "DECISION"
+    - "NEXT-PERIOD PRIORITIES"
 
 visual_skin:
   palette_mode: verified_client_colors_plus_black_white
@@ -149,6 +150,9 @@ visual_skin:
   boost_cosign: true
   boost_orange_usage: signature_only
   include_real_content: true
+  typography:
+    font_family: Inter
+    rule: BOOST report typography is always Inter; vary weight, size, tracking, and case, never the font family.
   cover:
     template: boost_standard_report_cover
     image_usage: optional_only_if_high_quality_and_correctly_fitted
