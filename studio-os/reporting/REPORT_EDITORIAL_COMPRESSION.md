@@ -1,6 +1,6 @@
 # BOOST Report Editorial Compression
 
-Status: V1 working standard  
+Status: V1.1 working standard  
 Owner: BOOST  
 Applies to: client-facing recurring performance reports and monthly review decks.
 
@@ -11,6 +11,10 @@ BOOST reports should feel strategic and substantial without reading like documen
 The goal is **high useful density with low verbal drag**.
 
 A client should understand the point of a slide in a few seconds, then choose whether to read the supporting detail.
+
+Compression applies to **words and repetition**, not to useful evidence, visual richness or perceived craft.
+
+A report can be concise and still feel substantial.
 
 ## 1. Title system
 
@@ -153,7 +157,77 @@ Prefer:
 
 Over a multi-sentence paragraph explaining why the client should not worry.
 
-## 7. Text budget by slide type
+## 7. Compression is not visual minimalism
+
+Do not interpret editorial compression as permission to make the deck sparse, generic or visually underdeveloped.
+
+A smaller service scope does **not** justify a thin-looking report.
+
+When there are fewer channels or fewer business KPIs, use the available space to explain the evidence better through:
+
+- real content thumbnails,
+- carousel-page previews,
+- before / after creative comparisons,
+- annotated charts,
+- ranked bars,
+- format comparisons,
+- visual examples of hooks / structures,
+- compact diagrams,
+- designed tables,
+- stronger hierarchy between hero evidence and supporting context.
+
+Prefer reducing text while **increasing visual explanation**.
+
+### Visual richness target
+
+A normal report body should contain a meaningful mix of visual evidence, not only text + KPI blocks.
+
+When the source material permits it, aim for several of the following across the deck:
+
+- at least one strong chart / trend view,
+- at least one creative-evidence slide using real content,
+- at least one comparison / ranking / visual framework,
+- one or two higher-emphasis visual environments when appropriate,
+- visible proof behind major content conclusions.
+
+These are directional targets, not quotas.
+
+If a client only uses one channel, go **deeper into the creative / format evidence** rather than making the report feel smaller.
+
+## 8. Visual density vs text density
+
+A slide can feel full without containing more copy.
+
+Good density can come from:
+
+- 3–5 thumbnails with short metric labels,
+- a chart plus two evidence annotations,
+- a two-column before / after comparison,
+- a ranked bar chart with one concise insight,
+- a diagram showing a content structure or progression,
+- one hero metric supported by several small proof points.
+
+Avoid solving simplicity by adding more paragraphs.
+
+Avoid solving richness by adding decorative boxes with no analytical job.
+
+The goal is **useful visual density**.
+
+## 9. Client-to-client consistency
+
+Different clients should not receive carbon-copy decks, but the perceived level of craft should be comparable.
+
+A simple Instagram-only account can have fewer analytical modules than a mixed paid + organic account, while still feeling equally deliberate.
+
+Before delivery, compare thumbnail view against another approved BOOST report and ask:
+
+- Does this report feel equally authored?
+- Does it contain enough visual evidence for its scope?
+- Did we remove complexity or accidentally remove craft?
+
+Do not let `smaller scope` become `simpler-looking deliverable` by default.
+
+## 10. Text budget by slide type
 
 These are design targets, not hard caps.
 
@@ -188,7 +262,7 @@ Each action should be readable as:
 
 Avoid mini-paragraphs under every column.
 
-## 8. Remove before shrinking
+## 11. Remove before shrinking
 
 Never solve density by shrinking body copy below comfortable laptop reading size.
 
@@ -199,11 +273,12 @@ Edit in this order:
 3. shorten wording,
 4. move technical detail to notes / appendix,
 5. combine redundant synthesis slides,
-6. only then reconsider layout.
+6. replace prose with useful visual evidence when possible,
+7. only then reconsider layout.
 
 Do not preserve every sentence and reduce font size.
 
-## 9. Thumbnail test
+## 12. Thumbnail test
 
 At thumbnail size, the viewer should be able to distinguish:
 
@@ -213,7 +288,9 @@ At thumbnail size, the viewer should be able to distinguish:
 
 If every slide looks like a title followed by several text boxes, the editorial system has failed.
 
-## 10. Final editorial QA
+If most slides look equally sparse and visually interchangeable, the editorial system has also failed.
+
+## 13. Final editorial QA
 
 Before export, ask:
 
@@ -225,5 +302,7 @@ Before export, ask:
 - Did positive framing add words instead of improving proportion?
 - Are we keeping a strategic-read or watchlist slide only because the template expects one?
 - Could the client skim the core deck in a few minutes and still understand the story?
+- Did compression remove useful charts, creative evidence, comparisons or visual craft?
+- Does the deck feel as substantial and authored as other approved BOOST reports at a similar level of importance?
 
-A report is editorially finished when the thinking remains deep but the reading feels light.
+A report is editorially finished when the thinking remains deep, the reading feels light, and the visual evidence still feels rich.
