@@ -1,0 +1,232 @@
+# BOOST Reporting Quality Bar
+
+Status: V1 working standard  
+Owner: BOOST  
+Applies to: all recurring client performance reports and monthly review decks.
+
+## Purpose
+
+This file defines the minimum quality bar a BOOST report must meet before it is considered client-ready.
+
+A report can be concise without feeling simple, and detailed without feeling dense. The goal is to preserve strategic depth, visual craft, and evidence while removing repetition, jargon, and unnecessary text.
+
+The report should feel like senior agency work, not an analytics export and not an AI-generated summary deck.
+
+## 1. Scope does not determine craft
+
+A smaller engagement or a single-channel account should not automatically receive a visually weaker report.
+
+If there are fewer channels, go deeper into the strongest available evidence:
+
+- creative examples
+- content patterns
+- format comparisons
+- audience behavior
+- before / after changes
+- seasonality
+- operating constraints
+- strategic-priority tests
+
+Keep perceived craft comparable across clients even when the number of modules changes.
+
+## 2. Managed metrics vs ambient metrics
+
+Separate metrics BOOST directly influences from metrics that include activity outside BOOST's managed output.
+
+Examples:
+
+- account-level views including Stories vs views on published feed content
+- total profile reach vs reach on BOOST-created posts
+- paid + organic totals vs organic-only content performance
+
+Do not place an ambient metric beside a managed metric as if they measure the same thing.
+
+If both are useful, label their scopes clearly and explain why each matters.
+
+The client should always know which numbers describe:
+
+1. the whole account,
+2. the content BOOST manages,
+3. a specific format / campaign / initiative.
+
+## 3. Evidence-first visual depth
+
+When visual evidence exists, use it.
+
+For content-heavy accounts, the core report should usually include:
+
+- at least one content-evidence slide with real thumbnails / creative frames, and
+- at least one visual comparison, chart, diagram or before/after treatment that explains a meaningful difference.
+
+This is a default preference, not a quota. Do not force it when evidence does not exist.
+
+Do not reduce a creative finding to a text list if showing the actual creative would make the learning clearer.
+
+## 4. Visual richness without clutter
+
+Use useful visual density, not decorative density.
+
+A strong core deck will usually contain several visual modes across the report, for example:
+
+- hero metric + chart
+- creative evidence
+- ranked bars
+- before / after comparison
+- format comparison
+- annotated content sequence
+- compact table
+- action plan
+
+Avoid a deck where every slide is:
+
+headline + 3 KPI cards + one paragraph.
+
+Avoid solving visual simplicity by adding more copy.
+
+## 5. Headline certainty must match evidence
+
+The headline is part of the analysis. It cannot sound more certain than the data.
+
+If the sample is small, the headline should reflect that.
+
+Prefer:
+
+- `4–5 slides show the stronger signal`
+- `The new structure is gaining traction`
+- `Checklist remains a hypothesis worth repeating`
+
+Over:
+
+- `Longer carousels do not work`
+- `This format is the winner`
+- `The algorithm prefers consistency`
+
+A caveat buried in body copy does not repair an overconfident headline.
+
+## 6. One metric does not equal a behavior
+
+Do not rename a metric into a stronger business or behavioral claim.
+
+Examples:
+
+- interactions are not automatically conversations
+- reach is not awareness quality
+- followers are not patients / buyers
+- profile views are not booking intent
+- saves are not conversion
+
+Use the platform metric accurately, then interpret it at the appropriate evidence level.
+
+## 7. Threshold discipline
+
+Do not invent numerical success thresholds just to make a recommendation feel measurable.
+
+A target such as:
+
+- no gap longer than 4 days
+- profile visits above 70
+- CPR below $30
+
+must come from one of:
+
+- explicit client target
+- verified historical benchmark
+- operational capacity / planning decision
+- experiment design
+- external benchmark with source
+
+If BOOST chooses a practical operating target, label it internally as an operating target rather than presenting it as a proven performance threshold.
+
+## 8. Decision quality
+
+A report should not end with a generic marketing to-do list.
+
+Prioritize approximately 2–4 decisions that are:
+
+- evidence-linked
+- relevant to the real account objective
+- feasible within production / client constraints
+- distinct from one another
+- measurable when a useful measure exists
+
+Do not recommend more production by default.
+
+Do not recommend tactics that require assets, budget, access or client behavior that are not currently available.
+
+## 9. Strategic compression
+
+The thinking can be deep even when the client-facing copy is short.
+
+Prefer:
+
+`Evidence → concise BOOST read → decision`
+
+Do not add separate `Strategic Read`, `Learnings`, `What We're Watching` and `Next Moves` slides when they repeat the same conclusions.
+
+The report should feel more sophisticated because of the quality of evidence and judgment, not because it contains more sections.
+
+## 10. Methodology belongs in proportion
+
+Data caveats should be visible when they materially change interpretation.
+
+Do not let methodology become a full client-facing narrative when it can live in:
+
+- a one-line qualifier
+- source note
+- appendix
+- internal QA
+
+Example:
+
+Useful client-facing qualifier:
+`Account-level views include Stories; published-content views are shown separately.`
+
+Unnecessary client-facing detail:
+A paragraph explaining platform data architecture when it does not change a decision.
+
+## 11. Visual evidence should explain the conclusion
+
+Every major creative / content insight should be traceable to visible evidence when possible.
+
+Examples:
+
+- before / after carousel structure → show actual slides
+- top posts → show real thumbnails
+- format difference → show one representative example per format
+- hook pattern → show the hook text or first frame
+
+The viewer should not have to trust a sentence when the proof can be shown directly.
+
+## 12. Cross-client quality parity
+
+Reports should not look identical, but they should feel equally authored.
+
+Before final delivery, compare the current deck against recent approved BOOST reports in thumbnail view.
+
+Ask:
+
+- Does this feel like the same level of agency craft?
+- Is the visual evidence as strong as the source material allows?
+- Did a smaller scope become a visually sparse report?
+- Did a larger scope become a cluttered dashboard?
+
+Do not copy another client's layouts mechanically. Compare quality, not sameness.
+
+## 13. Final quality gate
+
+A report is not ready if any of the following are true:
+
+- the client cannot tell which metrics are account-level vs managed-content metrics
+- a headline overstates the evidence
+- a small sample is presented as a proven rule
+- a numeric target was invented without rationale
+- creative evidence exists but is only described in text
+- every slide uses the same visual construction
+- a single-channel report feels visually underdeveloped
+- a complex account feels like a dashboard dump
+- recommendations ignore real production constraints
+- methodology overwhelms the client narrative
+- the report repeats the same learning several times
+- the deck looks noticeably less crafted than other approved BOOST reports without a source-material reason
+
+The quality bar is met when the report is accurate, visually authored, strategically useful, client-readable, and proportionate to the evidence.
