@@ -1,0 +1,201 @@
+client:
+  id: ramiro-cardenas
+  name: Dr. Ramiro Cárdenas
+  display_name: Ramiro Cárdenas
+  instagram_handle: ramiro.derma
+  report_language: es-MX
+  currency: MXN
+
+reporting:
+  cadence: monthly
+  primary_report_type: instagram-content-authority
+  comparison_default: previous_comparable_month
+  delivery_state: boost-review-before-client
+  core_deck_target: 7-9
+  appendix_allowed: true
+  client_comprehension_level: smart_business_owner_non_marketer
+
+business_context:
+  primary_objective: Keep Instagram active, strengthen Dr. Ramiro Cárdenas's authority, and sustain content performance.
+  secondary_objectives:
+    - improve visibility and reach among relevant audiences
+    - make educational content more useful and distinctive
+    - strengthen profile authority through consistent content
+  sales_context:
+    status: agenda_consistently_full
+    note: The client already maintains a full appointment schedule. Do not force appointments, lead generation, or sales conversion to become the success frame for this account.
+  reporting_implication: Prioritize content quality, visibility, authority, audience response, and repeatable format learnings over sales KPIs.
+
+service_scope:
+  instagram_content:
+    role: primary
+    depth: deep
+    purpose: authority_visibility_content_performance
+  paid_media:
+    role: out_of_scope_unless_explicitly_requested
+    depth: none
+    note: BOOST is reporting the Instagram content service only. Do not include paid-media analysis unless Ana explicitly confirms it belongs in the reporting scope.
+
+platforms:
+  instagram:
+    active: true
+    scope: organic_content_and_platform_reported_distribution
+    reporting_depth: deep
+  metricool:
+    active: true
+    role: primary_reporting_source
+    note: Use Metricool through authorized Chrome access when Ana opens the account tab.
+
+source_priority:
+  - Metricool native export or dashboard data
+  - Instagram / Meta native data if needed for reconciliation
+  - previous monthly report for historical continuity only
+  - screenshots for creative evidence / source verification
+
+priority_kpis:
+  - metric: content_views_or_impressions
+    channel: instagram
+    directionality: higher_is_better
+    priority: primary
+  - metric: accounts_reached
+    channel: instagram
+    directionality: higher_is_better
+    priority: primary
+  - metric: saves
+    channel: instagram
+    directionality: higher_is_better
+    priority: primary
+  - metric: shares
+    channel: instagram
+    directionality: higher_is_better
+    priority: primary
+  - metric: interactions
+    channel: instagram
+    directionality: contextual
+    priority: secondary
+  - metric: profile_visits
+    channel: instagram
+    directionality: higher_is_better
+    priority: secondary
+  - metric: follower_growth
+    channel: instagram
+    directionality: contextual
+    priority: diagnostic
+  - metric: publishing_volume
+    channel: instagram
+    directionality: contextual
+    priority: diagnostic
+
+content_analysis:
+  priority: very_high
+  include_real_thumbnails: true
+  analyze_by_format:
+    - carousel
+    - static_post
+    - reel
+  analyze:
+    - hook
+    - topic
+    - educational specificity
+    - language structure
+    - carousel length
+    - slide progression / information depth when visible
+    - saves
+    - shares
+    - interactions
+    - reach / impressions
+    - repeatable content patterns
+  note: The account's value is in content and authority, so the report should spend more narrative weight on creative / format learnings than on generic profile metrics.
+
+strategic_priorities:
+  longer_carousels:
+    status: active_test_showing_positive_signals
+    importance: high
+    context: BOOST recently changed carousel structure and language, making carousels longer and more developed.
+    reporting_rule: Compare newer long-form carousels against earlier carousels / account baseline where the data allows. Determine whether the apparent improvement is supported by multiple pieces before calling it a pattern.
+    next_direction:
+      - continue developing longer educational carousels if current-period evidence supports the positive signal
+      - identify which hooks, topics, structures and slide depths are associated with stronger saves / shares / reach
+  content_mix:
+    status: active_adjustment
+    importance: high
+    context: Video production is limited by the client's availability. Few videos have been produced recently.
+    current_direction:
+      - increase the number of static posts and carousels
+      - use stronger static / carousel formats to maintain publishing cadence and authority when video availability is constrained
+    reporting_rule: Do not frame lower Reel volume as a failure when the production constraint is known. Evaluate whether the adjusted static / carousel mix is sustaining or improving content performance.
+
+production_constraints:
+  video_availability:
+    status: constrained
+    reason: client_schedule_and_availability
+    reporting_implication: Recommendations must respect the real production constraint. Do not prescribe more Reels simply because video historically performed well if the client cannot reliably produce them.
+  adaptation_rule: Recommend formats BOOST can execute consistently under the current constraint, especially stronger carousels and static educational posts.
+
+client_language:
+  principle: business_meaning_first
+  tone: confident_educational_positive_truthful
+  avoid:
+    - appointment_conversion_as_primary_goal
+    - generic_growth_language
+    - unsupported_algorithm_claims
+    - overclaiming_one_post_as_a_pattern
+  strategic_labels:
+    - "LECTURA BOOST"
+    - "DECISIÓN"
+    - "FOCOS DEL SIGUIENTE PERIODO"
+
+previous_report:
+  period: 2026-07
+  canva_design_id: DAHSANtLYbg
+  canva_shortlink: https://canva.link/6kx1qbhmnk0l8hy
+  use_for: historical_context_and_continuity_only
+  do_not_copy_blindly: true
+  known_issues:
+    - Cover / opening copy incorrectly says Onskin Dermatology even though the report body is Dr. Ramiro Cárdenas. Final QA must verify client identity everywhere.
+    - Do not repeat unsupported causal claims such as 'the algorithm rewarded consistency'.
+    - Do not repeat unsupported market claims such as 'this niche has high search intent' unless separately verified.
+    - Do not use linear extrapolations such as 'each additional Reel equals approximately X more reached accounts'.
+    - Do not make appointment conversion the next objective because the client already has a full agenda.
+  useful_continuity:
+    - July reported 112.37K views / impressions, 58,233 accounts reached, 119 interactions, net +16 followers and 11 publications.
+    - July content analysis showed educational specificity and checklist-style content as promising signals, but future reports must revalidate these patterns rather than treat one month as permanent truth.
+
+visual_skin:
+  logo: use_verified_client_or_personal_brand_asset
+  palette_mode: client_colors_plus_black_white
+  client_primary_accent: use_verified_brand_color_if_available
+  client_secondary_accent: use_verified_brand_color_if_available
+  fallback_if_unverified: black_white_neutral_do_not_invent
+  base_surface: mixed
+  boost_cosign: true
+  boost_orange_usage: signature_only
+  cover:
+    template: boost_standard_report_cover
+    left_panel: near_black
+    right_panel: dark_verified_client_color_or_neutral
+    left_accent_rule: boost_orange
+    image_usage: optional_only_if_high_quality_and_correctly_fitted
+    image_fit_rule: preserve_aspect_ratio_crop_never_stretch
+  note: Do not copy the previous report's visual identity blindly. Use the current BOOST Reporting Design System.
+
+monthly_memory:
+  enabled: true
+  fields:
+    - hypotheses
+    - tests_launched
+    - decisions
+    - recurring_winners
+    - recurring_underperformers
+    - carousel_patterns
+    - topic_patterns
+    - content_mix
+    - production_constraints
+    - benchmarks
+    - measurement_gaps
+    - unresolved_questions
+
+human_review:
+  required: true
+  reviewer: Ana Pau / BOOST
+  do_not_auto_send_to_client: true

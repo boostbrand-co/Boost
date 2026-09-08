@@ -1,0 +1,271 @@
+client:
+  id: ab-premium
+  name: AB Premium Taller Mecánico
+  display_name: AB Premium
+  report_language: es-MX
+  currency: MXN
+
+reporting:
+  cadence: monthly
+  primary_report_type: brand-content-with-paid-amplification
+  comparison_default: previous_comparable_period
+  delivery_state: boost-review-before-client
+  core_deck_target: 8-10
+  appendix_allowed: true
+  client_comprehension_level: smart_business_owner_non_marketer
+  framing_standard: studio-os/reporting/CLIENT_CONFIDENCE_FRAMING.md
+
+business_context:
+  primary_objective: Build AB Premium and its owner as a visible, trusted automotive personal brand and community presence
+  secondary_objectives:
+    - maintain consistent brand visibility
+    - strengthen authority and trust through educational and real-case content
+    - create community and profile interest around the workshop / owner
+  sales_context:
+    status: strong_existing_demand
+    note: The workshop already operates with strong appointment demand. It recently expanded into the neighboring unit, approximately doubling the physical workshop footprint because the original space was consistently full.
+  reporting_implication: Do not force sales or appointment growth to be the main success frame for this account. Brand visibility, content performance, community / profile signals and useful audience action are more central to the current engagement.
+
+service_scope:
+  organic_content:
+    role: primary
+    depth: deep
+    purpose: personal_brand_authority_visibility_community
+  meta_ads:
+    role: add_on_amplification
+    depth: concise_client_facing
+    purpose: awareness_and_content_distribution_with_message_generation_as_a_useful_secondary_result
+    note: BOOST is not running a full paid-acquisition strategy for this account. Paid activity mainly amplifies published content / awareness and is rotated as needed.
+
+strategic_priorities:
+  plan_estudiante:
+    status: active_priority
+    importance: high
+    business_context: The student plan matters commercially even though the first organic executions underperformed.
+    evidence_from_period:
+      - Reel, photo and carousel executions ranked near the bottom of organic content performance in the Jul 1–Aug 18 period.
+      - Weak organic performance is evidence that the current communication / distribution needs adjustment, not evidence that the initiative should be abandoned.
+    current_direction:
+      - strengthen the creative and message around Plan Estudiante
+      - give the campaign more punch instead of removing the initiative
+      - support the offer with paid amplification where appropriate
+      - test stronger hooks / framing and clearer value communication
+    reporting_rule: Treat Plan Estudiante as a strategically important initiative with weak current response. State both facts. Do not recommend deprioritizing it solely because organic posts underperformed.
+
+priority_kpis:
+  - metric: content_views_or_reach
+    channel: social
+    directionality: higher_is_better
+    priority: primary
+  - metric: profile_visits
+    channel: social
+    directionality: higher_is_better
+    priority: primary
+  - metric: saves_shares_or_useful_interactions
+    channel: social
+    directionality: higher_is_better
+    priority: primary
+  - metric: recurring_content_winners
+    channel: social
+    directionality: contextual
+    priority: primary
+  - metric: conversations_initiated
+    channel: paid_media
+    directionality: higher_is_better
+    priority: secondary
+  - metric: cost_per_conversation
+    channel: paid_media
+    directionality: lower_is_better
+    priority: secondary
+  - metric: ad_spend
+    channel: paid_media
+    directionality: contextual
+    priority: secondary
+  - metric: link_clicks
+    channel: social
+    directionality: higher_is_better
+    priority: secondary
+  - metric: follower_growth
+    channel: social
+    directionality: contextual
+    priority: diagnostic
+    note: Evaluate quality / geography before treating follower growth as a success metric.
+  - metric: interactions
+    channel: social
+    directionality: contextual
+    priority: diagnostic
+
+platforms:
+  instagram:
+    active: true
+    scope: organic_and_platform_reported_distribution
+    reporting_depth: deep
+  facebook:
+    active: true
+    scope: organic_and_platform_reported_distribution
+    reporting_depth: deep
+  meta_ads:
+    active: true
+    objective: awareness_amplification_with_messages
+    reporting_depth: concise
+  metricool:
+    active: optional
+    note: Use when Ana has Metricool connected or when it supplies cleaner cross-platform exports than Meta.
+
+source_priority:
+  - Meta Business Suite export
+  - Meta Ads Manager export
+  - Metricool export when available
+  - screenshots for visual verification / creative evidence only
+
+content_analysis:
+  include_real_thumbnails: true
+  priority: high
+  analyze:
+    - hooks
+    - topics
+    - real_case_series
+    - educational_or_myth_content
+    - format
+    - consistency
+    - saves_shares_profile_actions_when_available
+    - strategic_priority_content_even_when_it_underperforms
+  rank_by:
+    - views_or_reach
+    - interactions
+    - saves_or_shares_when_available
+    - profile_or_follower_action_when_available
+    - retention_when_available
+  note: Content analysis is strategically more important than ad-account mechanics for this client. Do not infer a repeatable content mechanism from one winning Reel; distinguish outlier from pattern. Do not confuse low performance with low strategic importance when the client has an active business priority such as Plan Estudiante.
+
+paid_media_analysis:
+  client_facing_core:
+    required_metrics:
+      - spend
+      - conversations_initiated
+      - cost_per_conversation
+    optional_metrics:
+      - reach
+      - trend_vs_comparable_period
+    required_read: Summarize whether amplification is producing useful reach / conversations efficiently and flag only the paid-media issues that require a client-level decision.
+  appendix_or_internal:
+    - campaign_names
+    - ad_set_names
+    - ad_names
+    - cbo_mechanics
+    - attribution_window
+    - ctr
+    - cpc
+    - cpm
+    - detailed_frequency_analysis
+    - ad_level_delivery_tables
+  escalation_rule: Move technical paid-media detail into the core deck only if it explains a material problem, a meaningful budget decision, or a result the client needs to understand.
+  benchmark_rule: Do not call cost per conversation competitive for the Monterrey premium automotive market without a verified benchmark.
+
+client_language:
+  principle: business_meaning_first
+  framing: constructive_confidence_truth_first
+  avoid_unexplained_terms:
+    - CBO
+    - CPR
+    - CPC
+    - CPM
+    - CTR
+    - attribution window
+    - ad set
+  avoid_alarmist_phrasing_when_not_material:
+    - "perdió fuerza"
+    - "Instagram castiga los huecos"
+    - "no conecta"
+    - "riesgo" 
+    - "depende de un solo anuncio"
+  preferred_examples:
+    - "Costo por conversación"
+    - "Conversaciones generadas por anuncios"
+    - "La publicidad amplificó el contenido y generó X conversaciones a un costo de Y cada una"
+    - "Instagram cerró el periodo arriba; agosto bajó de ritmo durante el hueco de publicaciones"
+    - "Plan Estudiante todavía está por debajo de la referencia y vamos a probar una ejecución más fuerte"
+    - "El anuncio actual sigue resolviendo bien; renovaremos creativos para mantener el rendimiento"
+  strategic_labels:
+    - "LECTURA BOOST"
+    - "DECISIÓN"
+    - "EN OBSERVACIÓN"
+    - "FOCOS DEL SIGUIENTE PERIODO"
+
+client_confidence_framing:
+  account_health_for_2026-07-01_to_2026-08-18: healthy_optimizing
+  rule: Lead with verified overall growth and frame Instagram as a contained cadence issue with a clear recovery plan. Do not let the Instagram slowdown dominate the emotional tone of the report.
+  repetition_rule: Explain the Instagram slowdown once in detail; subsequent slides should emphasize the action rather than repeat the decline.
+  shared_process_rule: Do not blame the client for delayed material in client-facing copy. Use collaborative language around production cadence and a shared plan to avoid long publishing gaps.
+  reassurance_rule: Build confidence through specific progress, context and next actions. Do not use vague statements such as "todo está bien" if a metric is materially down.
+
+visual_skin:
+  logo: use_verified_client_asset
+  palette_mode: client_colors_plus_black_white
+  client_primary_accent: use_verified_brand_color
+  client_secondary_accent: use_verified_brand_color_if_available
+  fallback_if_secondary_missing: use_neutral_tone_do_not_invent_brand_color
+  base_surface: mixed
+  preferred_environments:
+    - warm_white
+    - client_color_emphasis
+    - near_black_visual
+    - soft_client_wash
+  max_same_surface_core_slides: 3
+  boost_cosign: true
+  boost_orange_usage: signature_only
+  cover:
+    template: boost_standard_report_cover
+    left_panel: near_black
+    right_panel: dark_client_color
+    left_accent_rule: boost_orange
+    image_usage: optional_only_if_high_quality_and_correctly_fitted
+    image_fit_rule: preserve_aspect_ratio_crop_never_stretch
+    note: Use the approved BOOST split cover structure. Do not invent a photographic cover when the source image cannot fill the intended crop cleanly.
+  note: Build visual rhythm without mechanically changing background every slide. Use the client's actual colors plus black / white; do not invent a decorative palette.
+
+known_reporting_lessons:
+  - July 2026 reporting established the desired depth of analysis: metrics should lead to interpretation and action.
+  - The first automated Jul 1–Aug 18 pilot proved the workflow can produce strong strategic output but became too technical in paid-media sections.
+  - Client-facing Meta Ads reporting should stay concise because paid media is an add-on, not the center of the engagement.
+  - Content, personal-brand authority, visibility and community signals should carry more narrative weight than campaign mechanics.
+  - Keep technical campaign / attribution detail in appendix or internal QA unless it changes a client decision.
+  - Use varied visual environments; avoid long runs of white analytical slides without a narrative reason.
+  - Period labels and local dates must be checked carefully.
+  - Plan Estudiante is a business priority despite weak current organic performance; the next action is to improve the campaign and creative framing, not drop the initiative by default.
+  - Cover photography must never be stretched. Preserve aspect ratio and crop intentionally, or use the standard non-photographic split cover.
+  - The client-facing report should preserve confidence when overall performance is healthy. Contained declines should be contextualized, paired with a plan and not repeated as warnings throughout the deck.
+
+period_specific_notes:
+  2026-07-01_to_2026-08-18:
+    reason_for_custom_period: July report was not delivered separately, so this report intentionally combines July 1 through August 18.
+    content_pause_after_aug_18: No new content was published after August 18 because client material was delayed.
+    production_status_as_of_2026-09-07: Approximately eight videos are currently in editing and no new content has been published since August 18.
+    instagram_context: Instagram finished the full Jul 1–Aug 18 period above the prior comparable period in views and reach, but performance softened during August as publishing consistency declined. The slowdown coincides with the publishing gap; do not state that Instagram "punishes" inconsistency as a proven causal mechanism.
+    client_facing_context: Explain that the team identified the importance of continuity and is reinforcing the shared production / editing flow so long gaps do not repeat. Keep the language collaborative and forward-looking rather than assigning blame.
+    interpretation_rule: Do not frame the post-August-18 publication gap as a BOOST strategy failure or a client failure. Frame it as a production-cadence gap with a concrete recovery plan.
+    recommended_priority_order:
+      - recover_consistent_instagram_cadence
+      - strengthen_plan_estudiante
+      - continue_real_work_and_myth_content_system
+      - refresh_paid_amplification_creatives
+    report_length: Extended period may justify more than the normal 8–10 core-slide target, but remove technical or repetitive slides that do not improve the client decision.
+
+monthly_memory:
+  enabled: true
+  fields:
+    - hypotheses
+    - tests_launched
+    - decisions
+    - recurring_winners
+    - recurring_underperformers
+    - content_series
+    - strategic_priorities
+    - benchmarks
+    - measurement_gaps
+    - unresolved_questions
+
+human_review:
+  required: true
+  reviewer: Ana Pau / BOOST
+  do_not_auto_send_to_client: true
