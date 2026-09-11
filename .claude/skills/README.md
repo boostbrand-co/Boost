@@ -48,6 +48,7 @@ metadata:
 - `verbal-identity`
 - `stop-slop-2`
 - `client-communications`
+- `client-deliverables`
 
 ### Design & experience
 - `presentation-design`
@@ -132,6 +133,9 @@ When multiple skills apply, use the most foundational skill first.
 
 ### Growth / GTM
 `research-audit → offer-strategy → growth-strategy`
+
+### Client deliverables
+`client-deliverables` uses `stop-slop-2`; add `research-audit` when researching and `presentation-design` when building a deck. It owns executive synthesis, practical comparisons, evidence visibility, client templates, and consistency across deliverable files.
 
 ### Presentation
 Relevant strategy/research skill(s) → `presentation-design`

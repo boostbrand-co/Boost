@@ -40,6 +40,9 @@ BOOST's universal human-writing standard. It combines Hardik Pandya's Stop Slop 
 ### `client-communications` — Core
 Defines how BOOST handles client-facing decisions, updates, requests, explanations, follow-ups, scope, recommendations, and boundaries. It uses `stop-slop-2` in Message Mode for the writing itself.
 
+### `client-deliverables` — Core
+Defines Ana Pau's standard for client documents, comparisons, reports, and presentations: a specific recommendation, verifiable evidence, selective bold emphasis, useful visuals, correct client templates, and consistent working files. Separates internal learning from executive reading when needed. Uses `stop-slop-2` for prose; complements `research-audit` and `presentation-design` without replacing them.
+
 ## Design & experience
 
 ### `presentation-design` — Core
@@ -77,6 +80,12 @@ Always apply `presentation-design` first, then add investor-specific requirement
 ### Content system
 
 `research-audit → brand-strategy → verbal-identity → content-strategy`
+
+### Client deliverables
+
+`client-deliverables → stop-slop-2`
+
+Add `research-audit` for research and `presentation-design` for decks. Use `client-communications` for the accompanying message.
 
 ### Presentation
 
