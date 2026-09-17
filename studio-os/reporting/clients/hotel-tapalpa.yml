@@ -1,0 +1,154 @@
+client:
+  id: hotel-tapalpa
+  name: Hotel Tapalpa Country Club
+  display_name: Hotel Tapalpa
+  report_language: es-MX
+  currency: MXN
+
+reporting:
+  cadence: monthly
+  primary_report_type: social-presence-maintenance
+  comparison_default: previous_comparable_month
+  delivery_state: boost-review-before-client
+  core_deck_target: 7-9
+  appendix_allowed: true
+  client_comprehension_level: smart_business_owner_non_marketer
+
+business_context:
+  primary_objective: Keep the hotel social accounts active, professional, and consistently present with the material currently available.
+  secondary_objectives:
+    - maintain visibility and brand presence
+    - identify which available content themes and formats produce relatively stronger response
+    - make the existing asset bank work harder without inventing a growth objective the client has not set
+  reporting_implication: Do not force reservations, occupancy, revenue, lead generation, or aggressive follower growth into the success frame unless verified scope and data support it.
+
+service_scope:
+  organic_social:
+    role: primary
+    depth: medium
+    purpose: account_activity_presence_content_performance
+  paid_media:
+    role: out_of_scope_unless_explicitly_verified
+    depth: none
+
+production_constraints:
+  client_involvement:
+    status: low
+    reporting_implication: Do not blame the client. Use neutral language and focus on what BOOST can execute with the current input level.
+  fresh_video:
+    status: constrained
+    context: BOOST has limited new video and frequently reuses or re-edits clips from the existing asset bank.
+    reporting_implication: Do not recommend more Reels by default. Evaluate formats that can be produced without new filming, including strong statics, carousels, seasonal content, property features, destination content, and evergreen information.
+  information_flow:
+    status: limited
+    reporting_implication: Avoid unsupported business claims, invented offers, or strategy that depends on client information not currently available.
+
+platforms:
+  instagram:
+    active: true
+    reporting_depth: medium
+  facebook:
+    active: verify_in_metricool_or_meta
+    reporting_depth: medium_if_managed
+  metricool:
+    active: true
+    role: primary_reporting_source
+
+source_priority:
+  - Metricool native export or dashboard data
+  - Meta Business Suite native data if needed for reconciliation
+  - previous report for continuity only
+  - screenshots / creative captures for content evidence
+
+priority_kpis:
+  - metric: published_content_reach
+    directionality: higher_is_better
+    priority: primary
+  - metric: published_content_views_or_impressions
+    directionality: higher_is_better
+    priority: primary
+  - metric: interactions
+    directionality: contextual
+    priority: primary
+  - metric: engagement_rate
+    directionality: contextual
+    priority: secondary
+  - metric: follower_growth
+    directionality: contextual
+    priority: secondary
+  - metric: posting_cadence
+    directionality: contextual
+    priority: diagnostic
+  - metric: stories_interactions
+    directionality: contextual
+    priority: diagnostic_if_in_scope
+
+content_analysis:
+  priority: very_high
+  include_real_thumbnails: true
+  visual_evidence_required: true
+  analyze_by_format:
+    - reel
+    - static_post
+    - carousel
+    - story_when_data_is_reliable
+  analyze:
+    - topic
+    - hook
+    - seasonality
+    - real_moment_vs_generic_destination_copy
+    - reused_video_vs_other_formats_when_identifiable
+    - reach
+    - interactions
+    - engagement_rate
+    - repeatability_under_current_asset_constraints
+  reporting_rule: A client-facing content report must show actual published content. Do not replace visual evidence with a text-only ranking when thumbnails or post captures are available.
+
+strategy_constraints:
+  do_not_invent:
+    - reservation_goals
+    - occupancy_targets
+    - revenue_outcomes
+    - booking_conversion
+    - audience_purchase_intent
+    - offers_not_verified_in_source_material
+  recommendation_rule: Recommend only actions BOOST can execute under current asset and information constraints.
+
+client_language:
+  principle: constructive_realistic_presence_framing
+  tone: calm_positive_truthful_practical
+  avoid:
+    - blaming_client_for_missing_assets
+    - apologetic_language
+    - pretending_flat_results_are_growth
+    - unsupported_algorithm_claims
+    - overtechnical_platform_language
+
+visual_skin:
+  palette_mode: verified_client_colors_plus_black_white
+  fallback_if_unverified: black_white_neutral_do_not_invent
+  boost_cosign: true
+  boost_orange_usage: signature_only
+  canonical_canva_shell: true
+  content_evidence_requirement: show_real_posts_and_reels_in_core_deck
+  craft_parity_reference:
+    - AB Premium approved report
+    - Onskin approved report
+  rule: A lighter strategic scope must not produce a visually sparse or cheaper-looking report. Use real content, comparisons, charts, annotations, and client imagery to maintain craft parity.
+
+monthly_memory:
+  enabled: true
+  fields:
+    - posting_cadence
+    - format_performance
+    - topic_patterns
+    - seasonal_patterns
+    - reused_asset_performance
+    - production_constraints
+    - measurement_gaps
+    - unresolved_questions
+
+human_review:
+  required: true
+  reviewer: Ana Pau / BOOST
+  do_not_auto_send_to_client: true

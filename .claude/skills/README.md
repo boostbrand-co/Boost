@@ -55,6 +55,9 @@ metadata:
 - `design-system-direction`
 - `web-experience`
 
+### Operations
+- `performance-reporting`
+
 ### Specialized extensions
 - `investor-grade-presentations`
 
@@ -98,12 +101,13 @@ Before creating a skill, check whether an existing skill already owns the topic.
 Examples:
 
 - slide quality / deck layouts → `presentation-design`
+- monthly marketing data analysis / report logic → `performance-reporting`
 - AI writing cleanup / humanized prose / message naturalness → `stop-slop-2`
 - positioning → `brand-strategy`
 - messaging / voice → `verbal-identity`
 - acquisition planning → `growth-strategy`
 
-Do not create duplicate variants such as `presentation-v2`, `premium-decks`, or `better-copy`.
+Do not create duplicate variants such as `presentation-v2`, `premium-decks`, `monthly-report-v2`, or `better-copy`.
 
 ## Dependencies
 
@@ -112,6 +116,7 @@ Skills may build on other skills.
 Examples:
 
 - `investor-grade-presentations` depends on `presentation-design`
+- `performance-reporting` uses `stop-slop-2` for prose and hands presentation output to `presentation-design`
 - `verbal-identity` uses `stop-slop-2`
 - `client-communications` uses `stop-slop-2` in Message Mode
 - `web-experience` may use `brand-strategy`, `verbal-identity`, and `design-system-direction`
@@ -139,6 +144,11 @@ When multiple skills apply, use the most foundational skill first.
 
 ### Presentation
 Relevant strategy/research skill(s) → `presentation-design`
+
+### Monthly performance report
+`performance-reporting → stop-slop-2 → presentation-design`
+
+Use the approved reporting design system and active client reporting config after the skill chain.
 
 For investor-facing work:
 
