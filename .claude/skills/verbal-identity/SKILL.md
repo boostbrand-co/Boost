@@ -159,7 +159,7 @@ Microcopy should state:
 
 ## 10. Professional prose filter
 
-Apply the `stop-slop-2` skill.
+Apply the `stop-slop-3` skill.
 
 Use its universal mode for brand copy and its Message Mode when writing replies, DMs, email responses, Slack, WhatsApp, or other interpersonal communication.
 

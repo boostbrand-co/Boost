@@ -31,7 +31,7 @@ If an existing skill already owns the topic, merge the useful methodology into t
 Examples:
 
 - deck layout guidance → `presentation-design`
-- copy humanization / AI-tell removal / natural message writing → `stop-slop-2`
+- copy humanization / AI-tell removal / natural message writing → `stop-slop-3`
 - positioning methodology → `brand-strategy`
 - tone / messaging rules → `verbal-identity`
 
@@ -56,7 +56,7 @@ Extract the reusable lesson instead.
 
 If a skill was derived from a public framework or named methodology, note the source inside the skill where appropriate.
 
-Example: `stop-slop-2` materially incorporates Hardik Pandya’s public Stop Slop framework and adds BOOST’s professional application and Message Mode. Preserve attribution and source license information in the canonical skill.
+Example: `stop-slop-3` materially incorporates Hardik Pandya’s public Stop Slop framework and adds BOOST’s professional application and Message Mode. Preserve attribution and source license information in the canonical skill.
 
 ## Required skill structure
 
@@ -92,7 +92,7 @@ Good:
 - `brand-strategy`
 - `client-communications`
 - `research-audit`
-- `stop-slop-2`
+- `stop-slop-3`
 
 Avoid:
 
@@ -151,3 +151,4 @@ Before import is complete, verify:
 - sensitive data is absent
 - the skill catalog reflects the final library
 - `CLAUDE.md` can discover the final structure without hardcoded obsolete paths
+\n## Client overlays\n\nA client-specific operating method may be committed as a specialized public skill only if it excludes confidential facts, private stakeholder profiles, internal prices, conversations and sensitive notes. Place those in project-private references.\n

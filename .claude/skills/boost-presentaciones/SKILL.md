@@ -9,7 +9,7 @@ description: Diseñar, construir o revisar presentaciones de BOOST para cualquie
 
 Este skill guía decisiones editoriales, estratégicas y visuales. **TP-LIC Cypress Launch v2 es una referencia de calidad, no una plantilla literal.** Muestra rigor, ritmo, uso de evidencia y cuidado de estados; sus 18 slides, paleta, fuentes, componentes, densidad y secuencia no se trasladan automáticamente a otra marca ni a otro encargo. Las instrucciones actuales del usuario y el brand kit aprobado prevalecen sobre los ejemplos.
 
-Mantener el estándar **Stop-Slop 2** en títulos, copy y notas. Si está disponible, leer el skill vigente `stop-slop-2`; si no, aplicar aquí sus invariantes: lenguaje natural y preciso, sin jerga decorativa, promesas vacías, fórmulas repetidas, adjetivos de agencia o conclusiones disfrazadas de títulos. Editar para que cada palabra haga trabajo.
+Mantener el estándar **Stop-Slop 2** en títulos, copy y notas. Si está disponible, leer el skill vigente `stop-slop-3`; si no, aplicar aquí sus invariantes: lenguaje natural y preciso, sin jerga decorativa, promesas vacías, fórmulas repetidas, adjetivos de agencia o conclusiones disfrazadas de títulos. Editar para que cada palabra haga trabajo.
 
 ## Principios fijos / decisiones variables
 

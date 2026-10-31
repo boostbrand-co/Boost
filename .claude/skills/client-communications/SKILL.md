@@ -141,9 +141,9 @@ Avoid:
 
 Follow the client relationship and the user’s actual voice.
 
-## 10. Apply Stop Slop 2
+## 10. Apply Stop Slop 3
 
-Always apply `stop-slop-2` in Message Mode.
+Always apply `stop-slop-3` in Message Mode.
 
 Especially avoid:
 
@@ -153,7 +153,7 @@ Especially avoid:
 - long justification
 - vague action language
 
-`stop-slop-2` owns the universal anti-AI writing rules and the channel-specific Message Mode. This skill adds client-relationship, scope, recommendation, and boundary logic.
+`stop-slop-3` owns the universal anti-AI writing rules and the channel-specific Message Mode. This skill adds client-relationship, scope, recommendation, and boundary logic.
 
 ## Acceptance checklist
 

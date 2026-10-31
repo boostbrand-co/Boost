@@ -41,7 +41,7 @@ Read:
 ### Writing & communication
 
 - `verbal-identity`
-- `stop-slop-2`
+- `stop-slop-3`
 - `client-communications`
 
 ### Design & experience
@@ -50,11 +50,11 @@ Read:
 - `design-system-direction`
 - `web-experience`
 
-### Specialized extension
+### Taco Palenque workflows\n\n- `taco-palenque-director-os` — strategy, prioritization, delegating and measuring outcomes.\n- `taco-palenque-propuestas-duenos` — decision-ready recommendations for owners.\n- `taco-palenque-presentaciones` — client visual accuracy for slides.\n\n**Privacy:** this repository is public. Personal José Ochoa context, private business terms, transcripts and other project-specific facts stay in a separately installed private Claude project.\n\n### Specialized extension
 
 - `investor-grade-presentations`
 
-The universal writing cleanup standard is **`stop-slop-2`**. It combines Hardik Pandya's Stop Slop framework with BOOST's professional application and Message Mode.
+The active universal writing standard is **`stop-slop-3`**, supplied by Ana. `stop-slop-2` remains available as legacy reference.
 
 The universal presentation standard is **`presentation-design`**. The investor skill is an extension only when the audience is investors, financing partners, or diligence reviewers.
 

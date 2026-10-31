@@ -43,7 +43,7 @@ Project-specific truth stays in the project. Studio OS stores the method used to
       SKILL.md
     investor-grade-presentations/
       SKILL.md
-    stop-slop-2/
+    stop-slop-3/
       SKILL.md
     brand-strategy/
       SKILL.md
@@ -79,7 +79,7 @@ Before Claude begins substantial work, it should:
 4. layer project-specific evidence and brand constraints on top
 5. execute to the skill’s acceptance checklist
 
-For prose, copy, editing, or messages, `stop-slop-2` is the default human-writing quality layer. When the output is a message, reply, Slack note, WhatsApp, email response, DM, or text, use its Message Mode.
+For prose, copy, editing, or messages, `stop-slop-3` is the default human-writing quality layer. When the output is a message, reply, Slack note, WhatsApp, email response, DM, or text, use its Message Mode.
 
 ## Naming
 
@@ -92,7 +92,7 @@ Good:
 - `brand-strategy`
 - `presentation-design`
 - `client-communications`
-- `stop-slop-2`
+- `stop-slop-3`
 
 Avoid:
 
@@ -133,3 +133,4 @@ Public site and application code.
 Internal methods, skills, standards, templates, and AI operating rules.
 
 The current repository contains both until migration is practical.
+\n## Public versus private context\n\n`stop-slop-3` is the universal writing standard. Taco Palenque methodology lives in the specialized skills, while transcripts, José's private collaboration context and financial assumptions are loaded only inside a separately maintained private Claude project.\n

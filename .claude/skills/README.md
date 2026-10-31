@@ -46,11 +46,11 @@ metadata:
 
 ### Writing & communication
 - `verbal-identity`
-- `stop-slop-2`
+- `stop-slop-3`
 - `client-communications`
 - `client-deliverables`
 
-### Design & experience
+### Taco Palenque workflows\n- `taco-palenque-director-os` — decide priorities, delegate, lead execution, close loops.\n- `taco-palenque-propuestas-duenos` — prepare owner choices and clear recommendations.\n- `taco-palenque-presentaciones` — visual and brand-specific presentation layer.\n\nThe older `stop-slop-2` is retained as legacy material; do not use it by default.\n\n### Design & experience
 - `presentation-design`
 - `design-system-direction`
 - `web-experience`
@@ -98,7 +98,7 @@ Before creating a skill, check whether an existing skill already owns the topic.
 Examples:
 
 - slide quality / deck layouts → `presentation-design`
-- AI writing cleanup / humanized prose / message naturalness → `stop-slop-2`
+- AI writing cleanup / humanized prose / message naturalness → `stop-slop-3`
 - positioning → `brand-strategy`
 - messaging / voice → `verbal-identity`
 - acquisition planning → `growth-strategy`
@@ -112,8 +112,8 @@ Skills may build on other skills.
 Examples:
 
 - `investor-grade-presentations` depends on `presentation-design`
-- `verbal-identity` uses `stop-slop-2`
-- `client-communications` uses `stop-slop-2` in Message Mode
+- `verbal-identity` uses `stop-slop-3`
+- `client-communications` uses `stop-slop-3` in Message Mode
 - `web-experience` may use `brand-strategy`, `verbal-identity`, and `design-system-direction`
 - `content-strategy` may use `brand-strategy`, `verbal-identity`, and `growth-strategy`
 - `growth-strategy` may use `offer-strategy` and `research-audit`
@@ -135,7 +135,7 @@ When multiple skills apply, use the most foundational skill first.
 `research-audit → offer-strategy → growth-strategy`
 
 ### Client deliverables
-`client-deliverables` uses `stop-slop-2`; add `research-audit` when researching and `presentation-design` when building a deck. It owns executive synthesis, practical comparisons, evidence visibility, client templates, and consistency across deliverable files.
+`client-deliverables` uses `stop-slop-3`; add `research-audit` when researching and `presentation-design` when building a deck. It owns executive synthesis, practical comparisons, evidence visibility, client templates, and consistency across deliverable files.
 
 ### Presentation
 Relevant strategy/research skill(s) → `presentation-design`
@@ -149,3 +149,4 @@ Relevant strategy/research skill(s) → `presentation-design → investor-grade-
 Use `studio-os/IMPORT_SKILLS.md`.
 
 Inventory first. Merge duplicates. Strip client-specific facts. Normalize naming and frontmatter. Update this registry and `studio-os/SKILLS_CATALOG.md` after migration.
+\n## Private context\nClient documents, confidential numbers, personal José context and transcripts belong in a private Claude project, not this public skill repository.\n

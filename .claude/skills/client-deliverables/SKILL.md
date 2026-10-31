@@ -12,7 +12,7 @@ metadata:
 
 Aplicar cuando Ana pida preparar, revisar o elevar una entrega a un cliente o decisor, incluyendo propuestas, análisis de opciones y materiales de respaldo. También cuando diga que algo se siente superficial, genérico, demasiado técnico, demasiado largo o "hecho con AI".
 
-Este skill dirige la selección, jerarquía y entrega del contenido. [Stop Slop 2](../stop-slop-2/SKILL.md) dirige la redacción; [Research Audit](../research-audit/SKILL.md), la investigación cuando haga falta; [Presentation Design](../presentation-design/SKILL.md), el diseño de una presentación cuando ese sea el formato. Para un mensaje breve de envío o seguimiento, usar [Client Communications](../client-communications/SKILL.md). No cargar todos los skills por defecto.
+Este skill dirige la selección, jerarquía y entrega del contenido. [Stop Slop 3](../stop-slop-3/SKILL.md) dirige la redacción; [Research Audit](../research-audit/SKILL.md), la investigación cuando haga falta; [Presentation Design](../presentation-design/SKILL.md), el diseño de una presentación cuando ese sea el formato. Para un mensaje breve de envío o seguimiento, usar [Client Communications](../client-communications/SKILL.md). No cargar todos los skills por defecto.
 
 ## Estándar de Ana
 
@@ -131,7 +131,7 @@ Si no hay precio verificable, decir qué se solicitará. No fabricar un presupue
 
 ## Evidencia y voz
 
-Aplicar Stop Slop 2 antes de entregar. La prosa debe ser específica, sin solemnidad, relleno o tecnicismos de exhibición.
+Aplicar Stop Slop 3 antes de entregar. La prosa debe ser específica, sin solemnidad, relleno o tecnicismos de exhibición.
 
 - Dar acceso a la fuente que sostiene cada afirmación importante, con detalle ampliado en el respaldo si hace falta.
 - Distinguir **hechos, interpretaciones, propuestas y pendientes** con redacción natural; no etiquetar mecánicamente cada oración.
