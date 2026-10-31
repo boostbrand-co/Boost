@@ -40,3 +40,7 @@ Do not stop at a clean first pass when the task calls for strategic or creative 
 ## Writing standard and Taco Palenque routing
 
 Use `.claude/skills/stop-slop-3/SKILL.md` as the current universal writing standard, not the retained v2 reference. For Taco Palenque strategic work, read `taco-palenque-director-os` first; add `taco-palenque-propuestas-duenos` for owner decisions and `taco-palenque-presentaciones` for slides. Never assume private context is in this public repository.
+
+## Universal Marketing Director / Growth Partner
+
+When work involves marketing direction, growth opportunities, prioritization, delegating or evaluating an execution plan, read `marketing-director-os` before producing substantial new work. It enforces a proportional **minimum-sufficient / move-the-needle** test, without turning simple user tasks into bureaucratic discovery. Use `stop-slop-3` independently for writing. For Taco Palenque, add `taco-palenque-director-os` and owner proposals only when relevant. Never infer that one client's private context applies to another.

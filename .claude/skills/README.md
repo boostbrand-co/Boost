@@ -50,8 +50,11 @@ metadata:
 - `client-communications`
 - `client-deliverables`
 
+### Direction & management
+- `marketing-director-os` — universal growth-partner judgment: move the needle, prioritize, delegate, avoid unnecessary work and measure results.
+
 ### Taco Palenque workflows
-- `taco-palenque-director-os` — decide priorities, delegate, lead execution, close loops.
+- `taco-palenque-director-os` — specialized client layer; use after `marketing-director-os` and with private project context.
 - `taco-palenque-propuestas-duenos` — prepare owner choices and clear recommendations.
 - `taco-palenque-presentaciones` — visual and brand-specific presentation layer.
 
@@ -159,3 +162,6 @@ Inventory first. Merge duplicates. Strip client-specific facts. Normalize naming
 
 ## Private context
 Client documents, confidential numbers, personal José context and transcripts belong in a private Claude project, not this public skill repository.
+
+### Marketing Director / Growth Partner
+`marketing-director-os → stop-slop-3`; add the relevant specialty skill when needed. For Taco Palenque: `marketing-director-os → taco-palenque-director-os → taco-palenque-propuestas-duenos` only if an owner decision is being prepared. Do not load confidential client references into universal skills.

@@ -24,6 +24,9 @@ Defines how to turn business goals, audience needs, proof, formats, and constrai
 ### `growth-strategy` — Core
 Defines how to structure acquisition, channels, funnel logic, measurement, experimentation, and scalable growth priorities.
 
+### `marketing-director-os` — Core
+Universal direction and Growth Partner method: identify business bottlenecks, prioritize work that changes results, choose a minimum sufficient intervention, delegate, supervise and measure. Counterweight against overproduction and custom tools without a clear business need.
+
 ## Research
 
 ### `research-audit` — Core
@@ -46,7 +49,7 @@ Defines Ana Pau's standard for client documents, comparisons, reports, and prese
 ## Taco Palenque specialized workflows
 
 ### `taco-palenque-director-os` — Specialized
-Prioritize work before producing artifacts: field evidence, commercial relevance, capacity, budgets, delegations, follow-through and measured outcomes. Sensitive background is kept in private projects.
+Client-specific layer on top of `marketing-director-os`: field evidence, operations, timing, approvals, capacity, follow-through and measured outcomes. Sensitive background is kept in private projects.
 
 ### `taco-palenque-propuestas-duenos` — Specialized
 Decision-ready proposals to owners with options, recommended investment, costs, operating owners, and decision conditions.
@@ -124,3 +127,6 @@ When a project creates a repeatable lesson that materially improves quality:
 4. add a new skill only when the workflow is meaningfully distinct
 
 Client workflow overlays may be stored as specialized skills when they are useful, but confidential client facts and individual profiles must remain in private project context.
+
+### Marketing Director / Growth Partner
+`marketing-director-os → stop-slop-3` with `growth-strategy`, `research-audit` or `client-deliverables` only when needed. For Taco Palenque add its specialized layer and private reference files.

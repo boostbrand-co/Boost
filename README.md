@@ -34,6 +34,10 @@ Read:
 - `content-strategy`
 - `growth-strategy`
 
+### Direction & management
+
+- `marketing-director-os` — universal Growth Partner and Marketing Director workflow to select high-impact work, simplify, delegate and measure.
+
 ### Research
 
 - `research-audit`
@@ -131,3 +135,7 @@ See [`WEBSITE.md`](WEBSITE.md).
 **Owner:** BOOST  
 **System:** BOOST Studio OS  
 **Primary use:** Claude / AI-assisted strategic and creative work
+
+## Cross-client direction
+
+The general method belongs in `.claude/skills/marketing-director-os`. Stop Slop 3 remains the separate universal writing standard. Client-specific private knowledge (including José Ochoa, FORE! and other conversations) is **not committed** to this public repository. Load it only in the relevant private project.

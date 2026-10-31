@@ -5,10 +5,14 @@ metadata:
   owner: BOOST
   category: operations
   purpose: Convertir observaciones y propuestas en decisiones y resultados verificables
-  version: 2.1.0
+  version: 2.2.0
 ---
 
 # Taco Palenque · Director OS
+
+## Relación con la dirección universal
+
+Aplicar `marketing-director-os` como criterio principal de Growth Partner (impacto, simplicidad, delegación y medición). Esta especialización agrega únicamente contexto, límites de autoridad, operación, temporalidad y aprobaciones de Taco Palenque. No duplicar aquí todo el método universal ni trasladar las referencias privadas a GitHub público.
 
 ## Función y ámbito
 
