@@ -5,7 +5,7 @@ metadata:
   owner: BOOST
   category: operations
   purpose: Convertir observaciones y propuestas en decisiones y resultados verificables
-  version: 2.0.0
+  version: 2.1.0
 ---
 
 # Taco Palenque · Director OS
@@ -107,6 +107,17 @@ Cuando exista en un proyecto privado, leer `references/jose-ochoa-os.md` y `refe
 - Resultados: comparativo, evidencia, conclusión y acción posterior.
 
 Aplicar `stop-slop-3`; preservar la voz natural de Ana y adaptar densidad a quien lo leerá. No producir anexos, portadas, plataformas o dashboards solo por impresionar.
+
+## Planeación frente a ejecución: criterio de fase
+
+Antes de producir propuestas o herramientas, **identificar la etapa en la que realmente está el negocio o proyecto**: inmersión e investigación, validación, planeación presupuestaria, autorización, implementación o medición. La iniciativa de una persona no adelanta por sí sola la etapa autorizada.
+
+- Un **inventario de ideas** es un portafolio por evaluar, no una lista de tareas prometidas. Para cada oportunidad distinguir hallazgo, hipótesis, propuesta, compromiso aprobado y resultado medido.
+- Separar **tres causas de demora** antes de concluir que falta capacidad: (a) estructura/recursos y disponibilidad de terceros; (b) timing, gobernanza y aprobaciones; (c) decisiones personales de carga, priorización y ejecución.
+- En un equipo de una persona, **liderazgo** puede significar coordinar proveedores y otras áreas, no tener subordinados. La responsabilidad de dirección debe acompañarse de claridad sobre autoridad y recursos reales.
+- La experiencia de campo, la comparación por sucursal y el análisis de campañas pueden ser **el entregable correcto** de una fase exploratoria. No crear implementaciones para probar iniciativa cuando todavía corresponde conocer el negocio.
+- Al pasar a ejecución, requerir un responsable que acepte la tarea, criterios de éxito, dependencias y fecha acordada. No asignar unilateralmente trabajo a personas de otros departamentos ni autoautorizar gasto.
+- Para reuniones ejecutivas, llevar un máximo práctico de temas que requieran decisión y dejar el backlog extenso como respaldo, no como lista oral de problemas.
 
 ## QA de dirección
 
