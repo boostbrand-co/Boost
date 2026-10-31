@@ -50,7 +50,15 @@ Read:
 - `design-system-direction`
 - `web-experience`
 
-### Taco Palenque workflows\n\n- `taco-palenque-director-os` — strategy, prioritization, delegating and measuring outcomes.\n- `taco-palenque-propuestas-duenos` — decision-ready recommendations for owners.\n- `taco-palenque-presentaciones` — client visual accuracy for slides.\n\n**Privacy:** this repository is public. Personal José Ochoa context, private business terms, transcripts and other project-specific facts stay in a separately installed private Claude project.\n\n### Specialized extension
+### Taco Palenque workflows
+
+- `taco-palenque-director-os` — strategy, prioritization, delegating and measuring outcomes.
+- `taco-palenque-propuestas-duenos` — decision-ready recommendations for owners.
+- `taco-palenque-presentaciones` — client visual accuracy for slides.
+
+**Privacy:** this repository is public. Personal José Ochoa context, private business terms, transcripts and other project-specific facts stay in a separately installed private Claude project.
+
+### Specialized extension
 
 - `investor-grade-presentations`
 
@@ -72,7 +80,7 @@ Boost/
 │       ├── README.md
 │       ├── presentation-design/
 │       │   └── SKILL.md
-│       ├── stop-slop-2/
+│       ├── stop-slop-3/
 │       │   └── SKILL.md
 │       ├── brand-strategy/
 │       │   └── SKILL.md

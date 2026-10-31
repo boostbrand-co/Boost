@@ -151,4 +151,7 @@ Before import is complete, verify:
 - sensitive data is absent
 - the skill catalog reflects the final library
 - `CLAUDE.md` can discover the final structure without hardcoded obsolete paths
-\n## Client overlays\n\nA client-specific operating method may be committed as a specialized public skill only if it excludes confidential facts, private stakeholder profiles, internal prices, conversations and sensitive notes. Place those in project-private references.\n
+
+## Client overlays
+
+A client-specific operating method may be committed as a specialized public skill only if it excludes confidential facts, private stakeholder profiles, internal prices, conversations and sensitive notes. Place those in project-private references.

@@ -35,7 +35,7 @@ Defines how to audit a business, brand, market, customer, competitor set, websit
 Defines brand voice, messaging hierarchy, terminology, language rules, audience adaptation, and practical verbal-system use.
 
 ### `stop-slop-3` — Core
-Ana's current universal standard for messages, voice notes, briefs, strategy documents, slides, spreadsheets, scripts and deliverables; combines voice, evidence and anti-AI-writing guidance. The older `stop-slop-3` remains only for legacy compatibility.
+Ana's current universal standard for messages, voice notes, briefs, strategy documents, slides, spreadsheets, scripts and deliverables; combines voice, evidence and anti-AI-writing guidance. The older `stop-slop-2` remains only for legacy compatibility.
 
 ### `client-communications` — Core
 Defines how BOOST handles client-facing decisions, updates, requests, explanations, follow-ups, scope, recommendations, and boundaries. It uses `stop-slop-3` in Message Mode for the writing itself.
@@ -43,7 +43,18 @@ Defines how BOOST handles client-facing decisions, updates, requests, explanatio
 ### `client-deliverables` — Core
 Defines Ana Pau's standard for client documents, comparisons, reports, and presentations: a specific recommendation, verifiable evidence, selective bold emphasis, useful visuals, correct client templates, and consistent working files. Separates internal learning from executive reading when needed. Uses `stop-slop-3` for prose; complements `research-audit` and `presentation-design` without replacing them.
 
-## Taco Palenque specialized workflows\n\n### `taco-palenque-director-os` — Specialized\nPrioritize work before producing artifacts: field evidence, commercial relevance, capacity, budgets, delegations, follow-through and measured outcomes. Sensitive background is kept in private projects.\n\n### `taco-palenque-propuestas-duenos` — Specialized\nDecision-ready proposals to owners with options, recommended investment, costs, operating owners, and decision conditions.\n\n### `taco-palenque-presentaciones` — Specialized\nTaco Palenque brand-specific slide and source accuracy layer.\n\n## Design & experience
+## Taco Palenque specialized workflows
+
+### `taco-palenque-director-os` — Specialized
+Prioritize work before producing artifacts: field evidence, commercial relevance, capacity, budgets, delegations, follow-through and measured outcomes. Sensitive background is kept in private projects.
+
+### `taco-palenque-propuestas-duenos` — Specialized
+Decision-ready proposals to owners with options, recommended investment, costs, operating owners, and decision conditions.
+
+### `taco-palenque-presentaciones` — Specialized
+Taco Palenque brand-specific slide and source accuracy layer.
+
+## Design & experience
 
 ### `presentation-design` — Core
 Universal presentation standard for proposals, sales decks, brand decks, audits, workshops, internal decks, reports, keynotes, case-study decks, and investor presentations.
@@ -83,7 +94,7 @@ Always apply `presentation-design` first, then add investor-specific requirement
 
 ### Client deliverables
 
-`client-deliverables → stop-slop-2`
+`client-deliverables → stop-slop-3`
 
 Add `research-audit` for research and `presentation-design` for decks. Use `client-communications` for the accompanying message.
 
@@ -101,7 +112,7 @@ Relevant strategic context → `presentation-design → investor-grade-presentat
 
 For client communication:
 
-`client-communications → stop-slop-2` (Message Mode)
+`client-communications → stop-slop-3` (Message Mode)
 
 ## Governance
 

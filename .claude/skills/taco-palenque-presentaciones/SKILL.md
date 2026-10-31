@@ -7,7 +7,7 @@ description: Capa de marca y precisión editorial para crear o revisar presentac
 
 ## Relación con el skill universal
 
-Aplicar primero `boost-presentaciones/SKILL.md` para job, narrativa, jerarquía, evidencia, certeza y QA. Este skill agrega decisiones de Taco Palenque. **Cypress es ejemplo de rigor y acabado, no índice, template, campaña ni paleta obligatoria para todo deck.** Una comparación de proveedores, reporte operativo o workshop debe sentirse de Taco Palenque sin adoptar la densidad de un lanzamiento local. Mantener **Stop-Slop 2** en copy y notas.
+Aplicar primero `boost-presentaciones/SKILL.md` para job, narrativa, jerarquía, evidencia, certeza y QA. Este skill agrega decisiones de Taco Palenque. **Cypress es ejemplo de rigor y acabado, no índice, template, campaña ni paleta obligatoria para todo deck.** Una comparación de proveedores, reporte operativo o workshop debe sentirse de Taco Palenque sin adoptar la densidad de un lanzamiento local. Mantener **Stop-Slop 3** en copy y notas.
 
 ## Fuente de identidad y assets
 

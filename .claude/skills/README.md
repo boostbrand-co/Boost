@@ -50,7 +50,14 @@ metadata:
 - `client-communications`
 - `client-deliverables`
 
-### Taco Palenque workflows\n- `taco-palenque-director-os` — decide priorities, delegate, lead execution, close loops.\n- `taco-palenque-propuestas-duenos` — prepare owner choices and clear recommendations.\n- `taco-palenque-presentaciones` — visual and brand-specific presentation layer.\n\nThe older `stop-slop-2` is retained as legacy material; do not use it by default.\n\n### Design & experience
+### Taco Palenque workflows
+- `taco-palenque-director-os` — decide priorities, delegate, lead execution, close loops.
+- `taco-palenque-propuestas-duenos` — prepare owner choices and clear recommendations.
+- `taco-palenque-presentaciones` — visual and brand-specific presentation layer.
+
+The older `stop-slop-2` is retained as legacy material; do not use it by default.
+
+### Design & experience
 - `presentation-design`
 - `design-system-direction`
 - `web-experience`
@@ -149,4 +156,6 @@ Relevant strategy/research skill(s) → `presentation-design → investor-grade-
 Use `studio-os/IMPORT_SKILLS.md`.
 
 Inventory first. Merge duplicates. Strip client-specific facts. Normalize naming and frontmatter. Update this registry and `studio-os/SKILLS_CATALOG.md` after migration.
-\n## Private context\nClient documents, confidential numbers, personal José context and transcripts belong in a private Claude project, not this public skill repository.\n
+
+## Private context
+Client documents, confidential numbers, personal José context and transcripts belong in a private Claude project, not this public skill repository.

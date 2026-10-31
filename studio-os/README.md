@@ -133,4 +133,7 @@ Public site and application code.
 Internal methods, skills, standards, templates, and AI operating rules.
 
 The current repository contains both until migration is practical.
-\n## Public versus private context\n\n`stop-slop-3` is the universal writing standard. Taco Palenque methodology lives in the specialized skills, while transcripts, José's private collaboration context and financial assumptions are loaded only inside a separately maintained private Claude project.\n
+
+## Public versus private context
+
+`stop-slop-3` is the universal writing standard. Taco Palenque methodology lives in the specialized skills, while transcripts, José's private collaboration context and financial assumptions are loaded only inside a separately maintained private Claude project.

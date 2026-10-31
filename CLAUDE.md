@@ -36,4 +36,7 @@ If a project teaches a reusable lesson:
 Work should feel intentional, specific, evidence-led, visually considered, and ready to ship.
 
 Do not stop at a clean first pass when the task calls for strategic or creative depth.
-\n## Writing standard and Taco Palenque routing\n\nUse `.claude/skills/stop-slop-3/SKILL.md` as the current universal writing standard, not the retained v2 reference. For Taco Palenque strategic work, read `taco-palenque-director-os` first; add `taco-palenque-propuestas-duenos` for owner decisions and `taco-palenque-presentaciones` for slides. Never assume private context is in this public repository.\n
+
+## Writing standard and Taco Palenque routing
+
+Use `.claude/skills/stop-slop-3/SKILL.md` as the current universal writing standard, not the retained v2 reference. For Taco Palenque strategic work, read `taco-palenque-director-os` first; add `taco-palenque-propuestas-duenos` for owner decisions and `taco-palenque-presentaciones` for slides. Never assume private context is in this public repository.
