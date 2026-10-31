@@ -1,6 +1,10 @@
 ---
 name: "stop-slop-3"
 description: "Redacta, revisa y estructura contenido con el criterio de Ana, eligiendo automáticamente el registro adecuado para mensajes, notas de voz, guiones, documentos profesionales, presentaciones, hojas de cálculo y entregables. Úsalo para producir contenido humano, directo y específico, sin patrones evidentes de IA, informalidad fuera de lugar ni sobreproducción."
+metadata:
+  owner: Ana Pau / BOOST
+  category: writing
+  version: 3.1.0
 ---
 
 # Stop Slop 3
@@ -89,6 +93,44 @@ Si el encargo incluye más de una pieza, aplica el modo correspondiente a cada u
 
 Si el canal no está claro, usa por defecto **naturalidad profesional**: directo y humano, sin muletillas ni rigidez.
 
+## Correos y mensajes: filtro de conversación real
+
+Aplicar tanto para **escribir desde cero** como para **responder, corregir, hacer follow-up, pedir algo, enviar un archivo o establecer un límite**. Es la calibración prioritaria cuando Claude tiende a sonar demasiado institucional.
+
+### Antes de redactar (uso interno, no mostrar al usuario)
+
+1. **¿Quién habla y a quién?** Distinguir Ana, un cliente o una persona cuya voz fue solicitada. No trasladar la voz de Ana a terceros. Si se escribe COMO otra persona, usar solo características verificadas; si es PARA esa persona, mantener la voz de Ana.
+2. **¿Qué sabe ya el receptor?** Tratar el último mensaje y los acuerdos como contexto compartido. Identificar exactamente qué información es nueva.
+3. **¿Qué necesita ocurrir ahora?** Una respuesta concreta, una solicitud, una decisión, una fecha, una confirmación o simplemente cerrar la conversación.
+4. **¿Qué tipo de relación y canal hay?** WhatsApp a compañero, correo a proveedor, seguimiento a directivo, contacto inicial y respuesta delicada no suenan igual.
+5. **¿Qué información es imprescindible?** No añadir un resumen, un cumplido o una explicación solo para llenar espacio.
+
+### Reglas de voz y economía
+
+- **Dar la respuesta o hacer la petición en las primeras dos frases.** Una línea de contexto puede precederla si evita que el receptor se pierda.
+- **No hacer eco:** si alguien ya confirmó una fecha, mandó un precio o explicó un problema, no empezar recontándolo. Usar lo que ya saben para avanzar.
+- **No agradecer por reflejo:** «gracias», «muchas gracias», «te agradezco mucho» o «aprecio el apoyo» solo cuando realmente corresponde. Un agradecimiento sincero puede bastar.
+- **No felicitar ni validar automáticamente:** evitar «qué padre», «excelente propuesta», «perfecto», «totalmente de acuerdo» si la respuesta real exige un ajuste, una duda o una decisión.
+- **No forzar muletillas ni emojis.** La naturalidad no depende de escribir «o sea» o «jaja». En correos profesionales, casi nunca hacen falta.
+- **No convertir mensajes en minireportes.** Evitar encabezados, tablas, tres opciones de tono y explicaciones previas cuando el usuario pidió un texto para copiar.
+- **Mantener longitud proporcional.** Una confirmación puede ser una frase. Una negociación necesita alcance, dinero, condiciones y próxima acción. Breve no significa omitir lo importante.
+- **Preferir imperativos respetuosos y verbos concretos:** «¿Me confirmas si...?» en lugar de «Quisiera saber si sería posible que me pudieras confirmar...». Usar suavizadores solo cuando tengan función interpersonal real.
+- **Tolerar imperfección natural controlada:** no nivelar cada frase hasta que todas suenen como un comunicado. Conservar personalidad sin dejar errores de información.
+- **No inventar planes ni compromisos.** Nunca poner «te lo mando hoy», «lo resolvemos» o «ya quedó aprobado» si no está confirmado.
+
+### Según la conversación
+
+- **Respuesta directa:** contestar lo que preguntaron; después añadir una precisión si cambia la decisión.
+- **Follow-up sin respuesta:** recuperar el pendiente en una frase y hacer una pregunta accionable. No volver a presentar la historia completa.
+- **Corrección a un proveedor:** nombrar error, indicar corrección exacta, fecha solo si existe; no envolverla en felicitaciones vacías ni reproches.
+- **Propuesta a un decisor:** decir la recomendación, costo/condición pertinente y qué debe decidir, no explicar todo el research en el cuerpo del mensaje.
+- **Asunto delicado:** ser claro sin acusar; distinguir el hecho observado de su interpretación. No usar disculpas preventivas como muletilla.
+- **Primer contacto:** sí incluir quién eres, por qué escribes y qué necesitas; no aplicar la prohibición de dar contexto como si hubiera conversación previa.
+
+### Salida por defecto
+
+Si Ana pide «escríbeme el WhatsApp/mail», entregar **una única versión lista para copiar** en el idioma y voz correctos, sin introducción, desglose de por qué funciona ni segunda versión salvo solicitud. Si pidió evaluación del mensaje, sí explicar los cambios. Respetar el contenido ya enviado: agregar solo lo nuevo y no duplicar el correo o mensaje anterior.
+
 ## Control de instrucciones y etapa
 
 Antes de redactar o maquetar, identifica las instrucciones que cambian el alcance, la etapa o el destino del contenido. Trátalas como condiciones de entrega, no como sugerencias editoriales.
@@ -137,9 +179,16 @@ Sonar humano no basta. Una propuesta puede pasar el filtro de estilo y aun así 
 
 Quita también lo que se agrega solo para cerrar bonito, como una idea de escalamiento antes de que lo propuesto funcione.
 
+## Inglés profesional y mensajes escritos como terceros
+
+- En inglés, priorizar sencillez idiomática y calidez sin modismos raros, entusiasmo artificial o estructuras calcadas del español. Asunto funcional; petición concreta; cierre breve si corresponde.
+- Cuando el remitente sea un líder, ejecutivo, proveedor o cliente, preservar su voz y límites de autoridad. No asumir que el tono personal de Ana se aplica a todas las personas.
+- Si un tercero suele escribir con frases cortas y simples, no sobrecorregir sus mensajes hasta volverlos corporativos o ajenos.
+- En mensajes enviados COMO José u otro líder, aplicar únicamente la guía privada correspondiente si está disponible; nunca incluir esa guía ni opiniones privadas en el mensaje final.
+
 ## Calibración con ejemplos
 
-Lee [references/calibration-examples.md](references/calibration-examples.md) cuando:
+Lee [references/calibration-examples.md](references/calibration-examples.md) y, para correos, WhatsApps y DMs, [references/communication-calibration.md](references/communication-calibration.md) cuando:
 
 - el usuario comparta una conversación y pida redactar la respuesta;
 - haya que convertir un borrador de IA en una pieza que suene humana;
